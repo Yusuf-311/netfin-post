@@ -50,7 +50,7 @@
     <main>
       <!-- Header + Navbar -->
       <header
-        class="navbar sticky-top navbar-expand-lg navbar-light shadow-sm navbar-shadow d-lg-block"
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm navbar-shadow d-lg-block"
       >
         <div class="container justify-content-between d-flex px-0 px-xl-3">
           <button
@@ -80,13 +80,13 @@
             />
           </a>
 
-          <nav class="navbar fs-sm order-2 text-nav px-0 w-100">
+          <nav class="navbar fs-sm order-2 text-nav px-0 w-100 zindex-5">
             <div class="p-0 justify-content-between container-fluid">
               <div
                 class="collapse navbar-collapse px-0 d-lg-flex justify-content-start"
                 id="navbarSupportedContent"
               >
-                <ul class="navbar-nav px-0 mb-2 mb-lg-0">
+                <ul class="navbar-nav text-center px-0 mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" href="netfin.html">Home</a>
                   </li>
@@ -94,12 +94,10 @@
                     <a class="nav-link" href="product-netfin.html">Produk</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about-netfin.html">About Us</a>
+                    <a class="nav-link" href="about-netfin.html">About </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact-netfin.html"
-                      >Contact Us</a
-                    >
+                    <a class="nav-link" href="contact-netfin.html">Contact </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="jaringan-netfin.html">Network</a>
@@ -108,7 +106,7 @@
                   <li class="">
                     <button
                       type="button"
-                      class="btn btn-price order-3 d-lg-none"
+                      class="btn btn-price w-100 order-3 d-lg-none"
                     >
                       <a href="contact-netfin.html" class="text-light"
                         >Contact</a
@@ -131,8 +129,6 @@
         </div>
       </section>
 
-      <!-- Visi & Misi -->
-
       <section class="container">
         <div>
           <img
@@ -141,18 +137,22 @@
             class="w-auto rounded-3"
           />
         </div>
-        <div class="row py-5 my-5">
+
+        <!-- Visi & Misi -->
+        <div class="row py-5">
           <div class="col-md-6 col-lg-5">
-            <div class="fs-sm text-uppercase mb-3">Our Vision</div>
+            <div class="fs-sm text-uppercase mb-3 text-center text-lg-start">
+              Our Vision
+            </div>
             <h2 class="display-6">Team Kami memberikan Solusi Dominasi Web</h2>
             <img
               src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
               alt="netfin vision picture"
-              class="rounded-3 py-3"
+              class="rounded-5"
             />
           </div>
           <div
-            class="col-md-6 d-flex align-items-center col-xl-5 offset-lg-1 offset-xl-2 pt-1 pt-sm-2 pt-md-5"
+            class="col-md-6 d-flex align-items-center col-xl-5 offset-lg-1 offset-xl-2 pt-4"
           >
             <p class="">
               Visi kami adalah menjadi pemimpin di dunia digital, memberikan
@@ -163,19 +163,21 @@
             </p>
           </div>
         </div>
-        <div class="row py-5 my-5 justify-content-between">
+        <div class="row justify-content-between">
           <div class="col-md-6 col-lg-5 order-lg-1">
-            <div class="fs-sm text-uppercase mb-3">Our Mission</div>
+            <div class="fs-sm text-uppercase text-center text-lg-start mb-3">
+              Our Mission
+            </div>
             <h2 class="display-6">
               We are a team who create marketing strategies
             </h2>
             <img
               src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
               alt="netfin mission picture"
-              class="rounded-3 py-3"
+              class="rounded-5"
             />
           </div>
-          <div class="col-md-6 col-xl-5 pt-1 pt-sm-2 pt-md-5 order-lg-0">
+          <div class="col-md-6 col-xl-5 pt-4 order-lg-0">
             <p class="">
               Misi kami adalah menyediakan solusi yang terdepan dalam dunia web
               melalui pendekatan yang holistik dan strategis. Kami membentuk
@@ -206,10 +208,10 @@
       <!-- Social Proof -->
 
       <section
-        class="container shadow-sm rounded-3 justify-content-center align-content-center p-5 my-5"
+        class="container shadow-sm rounded-3 justify-content-center align-content-center"
       >
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 p-5">
             <div class="fs-sm text-uppercase mb-3">Our Achievement</div>
             <h2 class="display-6">We do this differently</h2>
           </div>
@@ -252,7 +254,7 @@
           <div class="col-lg-8 col-md-7 bg-position-center bg-repeat-0">
             <div class="mx-auto" style="max-width: 610px">
               <div class="row align-items-center">
-                <div class="col">
+                <div class="col-12 col-lg">
                   <div
                     class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
                   >
@@ -497,13 +499,15 @@
                 alt="Logo"
                 width="30"
                 height="24"
-                class="mx-2 align-text-top d-inline-block"
+                class="mx-2 align-text-top d-inline-block text-center"
               />
               Netfin
             </a>
-            <p class="my-4">Proudly Present by Tiga Pilar Digital Inc</p>
+            <p class="my-4 text-lg-start text-center">
+              Proudly Present by Tiga Pilar Digital Inc
+            </p>
             <div
-              class="d-flex my-sm-3 justify-content-sm-center justify-content-md-start"
+              class="d-flex my-sm-3 justify-content-sm-center d-none d-lg-block justify-content-md-start"
             >
               <a
                 href="#"
@@ -540,7 +544,7 @@
               </a>
             </div>
           </div>
-          <div class="col">
+          <div class="col text-center">
             <ul class="list-unstyled">
               <a href="netfin.html"> <li>Home</li></a>
               <a href=" about-netfin.html"> <li>About</li></a>
@@ -553,7 +557,7 @@
               <a href=" product-netfin.html"> <li>Produk</li></a>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 my-3">
             <h6>Stay Up to date with Netfin</h6>
             <p>Subscribe to our news and case studies</p>
             <div class="px-2 py-2 border input-group rounded-3">
@@ -568,6 +572,43 @@
               </button>
             </div>
           </div>
+        </div>
+        <div
+          class="d-flex my-sm-3 justify-content-center d-lg-none justify-content-start"
+        >
+          <a
+            href="#"
+            class="p-2 text-black bg-body-tertiary rounded-circle d-inline-block"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/material-two-tone/24/facebook-f--v1.png"
+              alt="facebook-f--v1"
+            />
+          </a>
+          <a
+            href="#"
+            class="p-2 mx-2 text-black bg-body-tertiary rounded-circle d-inline-block"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/windows/32/instagram-new.png"
+              alt="instagram-new"
+            />
+          </a>
+          <a
+            href="#"
+            class="p-2 text-black bg-body-tertiary rounded-circle d-inline-block"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/windows/32/linkedin-2.png"
+              alt="linkedin-2"
+            />
+          </a>
         </div>
         <section class="mt-5 border-top">
           <div class="p-3">
