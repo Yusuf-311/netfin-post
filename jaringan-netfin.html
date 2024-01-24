@@ -138,6 +138,27 @@
           <div class="row row-cols-lg-2 row-cols-1">
             <div class="px-5 text-center col">
               <h1 class="my-3 text-white">List Jaringan Kami</h1>
+              <div class="row">
+                <div class="col-sm-4 mb-4 mb-sm-0">
+                  <div class="h2 text-light mb-1">14</div>
+                  <div class="h5 text-light fw-normal opacity-70 mb-2">
+                    Demo Homepages
+                  </div>
+                  <span class="badge rounded-pill bg-success">More coming</span>
+                </div>
+                <div class="col-sm-4 mb-4 mb-sm-0">
+                  <div class="h2 text-light mb-1">50+</div>
+                  <div class="h5 text-light fw-normal opacity-70 mb-1">
+                    Flexible Components
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="h2 text-light mb-1">47</div>
+                  <div class="h5 text-light fw-normal opacity-70 mb-1">
+                    Inner Page Templates
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="px-5 text-justify text-white col fw-medium">
               <p>
@@ -163,10 +184,9 @@
         </div>
       </section>
 
-      <section class="" id="body">
-        <h1>Jaringan Kami</h1>
-      </section>
-      <section class="py-3 mx-5 overflow-y-scroll text-center">
+      <!-- Button jaringan -->
+
+      <section class="container py-3 mx-5 overflow-y-scroll text-center">
         <div class="px-2 py-1 my-3 border input-group rounded-4">
           <input
             type="text"
@@ -239,60 +259,124 @@
           </div>
         </div>
       </section>
-
-      <section class="container py-5">
-        <h1 class="fw-bold">
-          Dapatkan Pinjaman <br />
-          Dana Kamu Disini
-        </h1>
-        <br />
-        <p class="fw-medium text-secondary">
-          Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB Truck.
-        </p>
-        <div class="p-5 mt-5 border rounded-3">
-          <h1 class="mb-5 text-center">Informasi Diri</h1>
-
-          <form class="px-7 mb-5" novalidate="">
-            <div class="input-group mb-3">
-              <i
-                class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-3"
-              ></i>
-              <input
-                class="form-control rounded"
-                type="text"
-                placeholder="Name"
-                required=""
-              />
-            </div>
-            <div class="input-group mb-3">
-              <i
-                class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3"
-              ></i>
-              <input
-                class="form-control rounded"
-                type="email"
-                placeholder="Email"
-                required=""
-              />
-            </div>
-            <div class="mb-3 pb-1">
-              <textarea
-                class="form-control"
-                rows="4"
-                placeholder="Project description"
-                required=""
-              ></textarea>
-            </div>
-            <div class="row pt-2">
-              <div class="text-center">
-                <button class="btn btn-primary btn-block" type="submit">
-                  Send Request
-                </button>
+      <!-- Contact Form -->
+      <div class="row">
+        <div class="col-lg-3 col-md-3 text-end order-md-2"></div>
+        <div class="col-lg-3 col-md-3 pt-5 pb-3 py-md-5"></div>
+        <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5">
+          <div
+            class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1"
+            style="max-width: 516px"
+          >
+            <form
+              class="needs-validation"
+              novalidate=""
+              action="/ajukan"
+              method="post"
+            >
+              <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
+              <p
+                class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
+              >
+                Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB Truck.
+              </p>
+              <b>Informasi Diri</b>
+              <div class="input-group mb-3 mt-2">
+                <i
+                  class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"
+                ></i>
+                <input
+                  class="form-control rounded"
+                  type="text"
+                  name="nama"
+                  placeholder="Nama"
+                  required="true"
+                />
               </div>
-            </div>
-          </form>
+              <div class="input-group mb-3">
+                <i
+                  class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"
+                ></i>
+                <input
+                  class="form-control rounded"
+                  type="text"
+                  name="hp"
+                  placeholder="Nomor Handphone"
+                  required="true"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <i
+                  class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"
+                ></i>
+                <input
+                  class="form-control rounded"
+                  type="text"
+                  name="kota"
+                  placeholder="Kota"
+                  required="true"
+                />
+              </div>
+              <b>Divisi</b>
+
+              <div class="form-check mt-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="ex-radio-1"
+                  name="divisi"
+                  value="Customer Service"
+                  checked=""
+                />
+                <label class="form-check-label" for="ex-radio-1"
+                  >Customer Service</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="ex-radio-2"
+                  name="divisi"
+                  value="Marketing BPKB Mobil"
+                />
+                <label class="form-check-label" for="ex-radio-2"
+                  >Marketing BPKB Mobil</label
+                >
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="ex-radio-3"
+                  name="divisi"
+                  value="Marketing BPKB Motor"
+                />
+                <label class="form-check-label" for="ex-radio-3"
+                  >Marketing BPKB Motor</label
+                >
+              </div>
+              <b>Keterangan Tambahan</b>
+              <div class="mb-3 mt-3 pb-1">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  name="keterangan"
+                  placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb"
+                  required="true"
+                ></textarea>
+              </div>
+              <div class="row pt-2">
+                <div class="col-lg-6 col-md-8">
+                  <button class="btn btn-primary btn-block" type="submit">
+                    Hubungi Kami
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="px-5 pt-5 border">
