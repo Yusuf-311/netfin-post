@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Retail 1</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative"
+    />
+    <meta name="author" content="Createx Studio" />
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon and Touch Icons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/netfin-logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/netfin-logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/netfin-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#766df4" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+    <!-- Vendor Styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar Floating light for Index page only-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <header
+        class="header navbar navbar-expand-lg navbar-dark navbar-floating navbar-sticky"
+        data-fixed-element
+      >
+        <div class="container px-0 px-xl-3">
+          <button
+            class="navbar-toggler ms-n2 me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#primaryMenu"
+          >
+            <span class="navbar-toggler-icon"></span></button
+          ><a
+            class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+            href="https://netfin.id/"
+            ><img
+              class="navbar-floating-logo d-none d-lg-block"
+              src="images/netfin-logo.png"
+              alt="Netfin"
+              width="50" /><img
+              class="navbar-stuck-logo"
+              src="images/netfin-logo.png"
+              alt="Netfin"
+              width="50" /><img
+              class="d-lg-none"
+              src="images/netfin-logo.png"
+              alt="Netfin"
+              width="58"
+          /></a>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              target="_blank"
+              rel="noopener"
+              ><i class="ai-shopping-cart fs-lg me-2"></i>Sewa Sekarang
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Intro-->
+      <section
+        class="d-flex align-items-center position-relative bg-dark bg-size-cover bg-position-center min-vh-100 overflow-hidden pt-6 pb-lg-5"
+        style="background-image: url(images/demo/presentation/intro/bg.jpg)"
+      >
+        <div class="container-fluid pt-4 pb-5 py-lg-5">
+          <div class="row align-items-center py-3">
+            <div class="d-flex justify-content-center gap-3">
+              <h1 class="text-center text-light">Subdomain</h1>
+              <button class="btn btn-success align-items-center">
+                <i class="bi bi-whatsapp">
+                  Sewa sekarang sebelum Kompetitor yang Menyewa</i
+                >
+              </button>
+            </div>
+
+            <div class="col-xl-6 col-lg-5 d-flex justify-content-end">
+              <div
+                class="pt-2 mx-auto mb-5 mb-lg-0 ms-lg-0 me-xl-7 text-center text-lg-start"
+                style="max-width: 495px"
+              >
+                <h1 class="display-4 text-light pb-2">
+                  <span class="fw-light">Web ini tersedia untuk </span>DISEWAKAN
+                </h1>
+                <p class="h4 fw-light text-light opacity-70 line-height-base">
+                  Tinggal masukkan Produk tidak usah mikir SEO
+                </p>
+                <a
+                  class="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5"
+                  href="#demos"
+                  data-scroll
+                  ><span
+                    class="btn btn-icon rounded-circle border-light flex-shrink-0 px-3"
+                    ><i class="ai-arrow-down h4 text-light my-1"></i></span
+                  ><span class="ms-3 text-light fw-medium"
+                    >Request Demo</span
+                  ></a
+                >
+                <hr class="hr-light mt-0 mb-5" />
+                <div class="row">
+                  <div class="col-sm-4 mb-4 mb-sm-0">
+                    <div class="h1 text-light mb-1">14</div>
+                    <div class="h5 text-light fw-normal opacity-70 mb-2">
+                      Demo Homepages
+                    </div>
+                    <span class="badge rounded-pill bg-success"
+                      >More coming</span
+                    >
+                  </div>
+                  <div class="col-sm-4 mb-4 mb-sm-0">
+                    <div class="h1 text-light mb-1">50+</div>
+                    <div class="h5 text-light fw-normal opacity-70 mb-1">
+                      Flexible Components
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="h1 text-light mb-1">47</div>
+                    <div class="h5 text-light fw-normal opacity-70 mb-1">
+                      Inner Page Templates
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7">
+              <div class="parallax ms-lg-n5" style="max-width: 920px">
+                <div class="parallax-layer position-relative" data-depth="0.1">
+                  <img
+                    src="images/demo/presentation/intro/layer01.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" style="z-index: 2" data-depth="0.3">
+                  <img
+                    src="images/demo/presentation/intro/layer02.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" data-depth="0.2">
+                  <img
+                    src="images/demo/presentation/intro/layer03.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" style="z-index: 3" data-depth="0.1">
+                  <img
+                    src="images/demo/presentation/intro/layer04.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" data-depth="0.15">
+                  <img
+                    src="images/demo/presentation/intro/layer05.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div
+                  class="parallax-layer"
+                  style="z-index: 4"
+                  data-depth="0.25"
+                >
+                  <img
+                    src="images/demo/presentation/intro/layer06.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" data-depth="0.3">
+                  <img
+                    src="images/demo/presentation/intro/layer07.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" data-depth="0.4">
+                  <img
+                    src="images/demo/presentation/intro/layer08.png"
+                    alt="Layer"
+                  />
+                </div>
+                <div class="parallax-layer" data-depth="0.35">
+                  <img
+                    src="images/demo/presentation/intro/layer09.png"
+                    alt="Layer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Demos-->
+      <section class="bg-secondary" id="demos">
+        <div class="container pt-5 pb-4 py-md-6 py-lg-7">
+          <div class="text-center mb-5 pt-3 pt-lg-4">
+            <h2 class="h1 mb-4">Template Landing Page yang bisa anda pilih</h2>
+            <h1 class="text-center">Subdomain</h1>
+            <p class="text-muted">Pilih sesuai dengan Kebutuhan anda</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/business-consulting.jpg"
+                    alt="Business Consulting"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Business Consulting</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Corporate, Business, Agency</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/shop-homepage.jpg"
+                    alt="Shop Homepage"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Shop Homepage</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >E-Commerce, Retail, Electronics, Fashion</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/booking.jpg"
+                    alt="Booking &amp;amp; Directory"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Booking / Directory</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Listings, Flights, Destinations</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/creative-agency.jpg"
+                    alt="Creative Agency"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Creative Agency</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Creative Business, Portfolio, Agency</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/web-studio.jpg"
+                    alt="Web Studio"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Web Studio</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Web Design, Portfolio, Agency</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/software-landing.jpg"
+                    alt="Product Landing - Software"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">
+                  Product Landing - Software
+                </h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Software, Showcase, Landing Page</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/gadget-landing.jpg"
+                    alt="Product Landing - Gadget"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">
+                  Product Landing - Gadget
+                </h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Gadget, Showcase, Landing Page</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/mobile-app.jpg"
+                    alt="Mobile App Showcase"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Mobile App Showcase</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Mobile App, Showcase, Landing</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/coworking.jpg"
+                    alt="Coworkin Space"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Coworking Space</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Coworking Space Landing Page</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/event-landing.jpg"
+                    alt="Event Landing"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Event Landing</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Landing Page, Event, Countdown, Tickets</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/template-presentation.jpg"
+                    alt="Web Template Presentation"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">
+                  Web Template Presentation
+                </h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Showcase your Web Template features beautifully</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/marketing-seo.jpg"
+                    alt="Digital Marketing &amp; SEO"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">
+                  Digital Marketing &amp; SEO
+                </h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Marketing services, Agency, Portfolio</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/food-blog.jpg"
+                    alt="Food Blog"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Food Blog</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Cooking, Recipes, Personal Blog</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <a
+                class="d-block nav-heading text-center"
+                href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+              >
+                <div class="card card-hover border-0 shadow-lg mb-4">
+                  <img
+                    class="card-img"
+                    src="images/demo/presentation/demos/personal-portfolio.jpg"
+                    alt="Personal Portfolio"
+                  />
+                </div>
+                <h3 class="h5 nav-heading-title mb-0">Personal Portfolio</h3>
+                <span class="fs-sm fw-normal text-muted"
+                  >Cooking, Recipes, Personal Blog</span
+                ></a
+              >
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-grid-gutter pb-3">
+              <img
+                class="d-block mb-4"
+                src="images/demo/presentation/demos/coming.png"
+                alt="Coming"
+              />
+              <h3 class="h5 text-center mb-0">Coming Soon</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Components-->
+      <section class="bg-gradient py-5 py-md-6 py-lg-7">
+        <div class="container-fluid py-3 py-lg-4 overflow-hidden">
+          <div class="row align-items-center">
+            <div
+              class="col-xl-6 col-lg-5 d-flex justify-content-end mb-5 mb-lg-0"
+            >
+              <div
+                class="mx-auto ms-lg-0 me-xl-7 text-center text-lg-start"
+                style="max-width: 495px"
+              >
+                <h2 class="h1 text-light mb-4">
+                  Flexible
+                  <span class="bg-faded-light rounded px-3 py-2"
+                    >Components</span
+                  >
+                </h2>
+                <p class="text-light opacity-70 mb-5">
+                  The complete UI Kit with over 50 modular and highly
+                  customizable components: Bootstrap + Around unique elements.
+                </p>
+                <div class="row mb-2 mx-n2">
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/carousel.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/carousel.svg"
+                        alt="Sliders &amp; Carousels"
+                        width="68"
+                      />
+                      <h3 class="h6 text-light mb-0">
+                        Sliders &amp; Carousels
+                      </h3></a
+                    >
+                  </div>
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/gallery.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/gallery.svg"
+                        alt="Image / Video Gallery"
+                        width="45"
+                      />
+                      <h3 class="h6 text-light mb-0">
+                        Image / Video Gallery
+                      </h3></a
+                    >
+                  </div>
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/charts.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/chart.svg"
+                        alt="Line, Bar &amp; Pie Charts"
+                        width="39"
+                      />
+                      <h3 class="h6 text-light mb-0">
+                        Line, Bar &amp; Pie Charts
+                      </h3></a
+                    >
+                  </div>
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/video-popup.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/play.svg"
+                        alt="Video Popup &amp; Embed"
+                        width="44"
+                      />
+                      <h3 class="h6 text-light mb-0">
+                        Video Popup &amp; Embed
+                      </h3></a
+                    >
+                  </div>
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/forms.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/forms.svg"
+                        alt="Form Controls"
+                        width="42"
+                      />
+                      <h3 class="h6 text-light mb-0">Form Controls</h3></a
+                    >
+                  </div>
+                  <div class="col-6 px-2 mb-3">
+                    <a
+                      class="d-block border border-light rounded-3 pt-3 pb-4 px-3 text-center text-decoration-none"
+                      href="components/testimonials.html"
+                      ><img
+                        class="d-inline-block opacity-60 mb-3"
+                        src="images/demo/presentation/icons/review.svg"
+                        alt="Testimonials &amp; Reviews"
+                        width="46"
+                      />
+                      <h3 class="h6 text-light mb-0">
+                        Testimonials &amp; Reviews
+                      </h3></a
+                    >
+                  </div>
+                </div>
+                <a class="btn btn-success" href="components/typography.html"
+                  >View All Components</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 d-flex justify-content-end pe-0">
+              <a class="d-block me-n3" href="components/hotspots.html"
+                ><img
+                  class="d-block"
+                  src="images/demo/presentation/macbook.png"
+                  alt="Components"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Inner Pages-->
+      <section class="py-5 py-md-6 py-lg-7">
+        <div class="container pb-3 pt-4 pb-lg-2">
+          <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-xl-6 col-lg-7 col-md-8">
+              <h2 class="h1 mb-4 text-center">
+                Fungsi Landing Page
+
+                <span class="bg-faded-primary rounded text-primary px-3 py-2">
+                  Kami</span
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+              <ul
+                class="nav nav-tabs media-tabs justify-content-center justify-content-lg-start"
+                role="tablist"
+              >
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#portfolio"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/portfolio.svg"
+                        alt="Portfolio"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">Portfolio</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#ecommerce"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/shopping-cart.svg"
+                        alt="E-Commerce"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">E-Commerce</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#pages"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/web-page.svg"
+                        alt="Secondary Pages"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">Marketing</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#blog"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/blog.svg"
+                        alt="Blog &amp; News"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">Blog &amp; News</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#specialty"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/error-404.svg"
+                        alt="Specialty Pages"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">Specialty Pages</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+                <li class="nav-item mb-3" style="width: 16.5rem">
+                  <a
+                    class="nav-link me-2"
+                    href="#portfolio"
+                    data-bs-toggle="tab"
+                    role="tab"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded"
+                        src="images/demo/presentation/icons/portfolio.svg"
+                        alt="Portfolio"
+                        width="60"
+                      />
+                      <div class="w-100 ps-2 ms-1">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="fs-sm pe-1">PILKADA</div>
+                          <i class="ai-chevron-right lead ms-2 me-1"></i>
+                        </div>
+                      </div></div
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mobile Interface-->
+      <section class="bg-secondary py-5 py-md-6 py-lg-7">
+        <div class="container py-3 py-lg-4">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <div class="mx-auto mx-md-0" style="max-width: 525px">
+                <img
+                  class="d-block"
+                  src="images/demo/presentation/mobile-screens.jpg"
+                  alt="Mobile screens"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+              <h2 class="h1 mb-4">
+                <span class="bg-faded-primary rounded text-primary px-3 py-2"
+                  >Mobile Friendly</span
+                >
+                Interface
+              </h2>
+              <p>
+                Dengan membuat landing page subdomain produk anda akan berda di
+                halaman 1 Google. Kemungkinan produk / info yang anda sebarkan
+                semakin banyak yang melihat dan tertarik. Ayo segera sewa spot
+                ini.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features-->
+      <section class="container py-5 py-md-6 py-lg-7">
+        <div class="text-center mb-5 pt-3 pt-lg-4">
+          <h2 class="h1">
+            NETFIN Network Section
+            <span class="bg-faded-primary rounded text-primary px-3 py-2"
+              >Feature Highlights</span
+            >
+          </h2>
+        </div>
+        <div class="row pt-3 pt-lg-4">
+          <div class="col-md-6">
+            <div class="d-flex mb-4 pb-2">
+              <i class="ai-check-circle h4 text-success"></i>
+              <div class="ps-3">
+                <h3 class="h5">Page sudah ter Index dengan Baik di Google</h3>
+                <p class="fs-md mb-0">
+                  Tidak usah menunggu 1 - 2 bulan untuk di index Google. Produk
+                  anda sudah bisa langsung di jual di page *subsection ini.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-4 pb-2">
+              <i class="ai-check-circle h4 text-success"></i>
+              <div class="ps-3">
+                <h3 class="h5">
+                  Tidak perlu memamakan waktu lama untuk design
+                </h3>
+                <p class="fs-md mb-0">
+                  Untuk proses go live web hanya diperlukan waktu 1 - 2 hari
+                  dari kesepakatan design dan produk data.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex mb-4 pb-2">
+              <i class="ai-check-circle h4 text-success"></i>
+              <div class="ps-3">
+                <h3 class="h5">Landing page kami 100% mobile Friendly</h3>
+                <p class="fs-md mb-0">
+                  Tidak mengherankan jika saat ini lebih dari 70% pengguna
+                  menjelajahi internet dan berbelanja online menggunakan
+                  perangkat seluler mereka. Landing Page kami 100% responsif dan
+                  dioptimalkan untuk layar sentuh kecil.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-4 pb-2">
+              <i class="ai-check-circle h4 text-success"></i>
+              <div class="ps-3">
+                <h3 class="h5">Harga yang Hemat</h3>
+                <p class="fs-md mb-0">
+                  Kami memberikan harga sewa web mulai dari idr 250.000 / bulan
+                  / landing page. Tersedia juga paket Tahunan dan per
+                  500 Landing Page
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-dark pt-5 pt-md-6 pt-lg-7">
+      <div class="container pt-3 pt-md-0">
+        <div class="pb-md-4 text-center">
+          <h3 class="text-light fw-light mb-3">
+            Netfin Network Solution, AI dan SEO networking
+          </h3>
+          <h2 class="text-light mb-5">
+            Kapan lagi bisa secepat ini di halaman pertama
+          </h2>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6281558444484?text=Saya%20mau%C2%A0sewa%C2%A0Web"
+            target="_blank"
+            rel="noopener"
+            ><i class="bi bi-whatsapp fs-lg me-2"></i>Sewa Sekarang</a
+          >
+        </div>
+
+        <hr class="hr-light my-5" />
+        <p class="fs-sm text-center mb-0 pb-5">
+          <span class="text-light opacity-50 me-1"
+            >© All rights reserved. Made by</span
+          ><a
+            class="nav-link-style nav-link-light"
+            href="https://netfin.id/"
+            target="_blank"
+            rel="noopener"
+            >Netfin.id</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a
+      class="btn-scroll-top"
+      href="#top"
+      data-scroll
+      data-fixed-element
+      ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span
+      ><i class="btn-scroll-top-icon ai-arrow-up"> </i
+    ></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
