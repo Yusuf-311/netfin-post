@@ -1,745 +1,507 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Titile -->
-    <title>Adira Finance</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta Tag SEO -->
+  <!-- Titile -->
+  <title>Adira Finance</title>
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <!-- Meta Tag SEO -->
 
-    <!-- Browser Logo -->
-    <link
-      rel="icon"
-      href="https://www.adira.co.id/frontend/images/AVA-NON-MASK-100x100.png"
-    />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
-    <!-- Vendor Styles-->
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="vendor/simplebar/dist/simplebar.min.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="vendor/tiny-slider/dist/tiny-slider.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
-    />
-    <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+  <!-- Browser Logo -->
+  <link rel="icon" href="https://www.adira.co.id/frontend/images/AVA-NON-MASK-100x100.png" />
 
-    <link rel="stylesheet" href="css/jaringan.css" />
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
+  <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css" />
+  <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="css/theme.min.css" />
 
-    <!-- Bootstrap icon CDN link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <!-- Font Style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@200;300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="overflow-y-hidden">
-    <main>
-      <header
-        class="navbar sticky-top navbar-expand-lg navbar-light bg-light navbar-shadow d-lg-block"
-      >
-        <div class="container justify-content-between px-0 px-xl-3">
-          <button
-            class="navbar-toggler order-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <link rel="stylesheet" href="css/jaringan.css" />
 
-          <a class="navbar-brand order-1 m-0 pe-lg-2 me-lg-4" href="#">
-            <img
-              class="d-none d-lg-block"
-              width="100%"
-              src="https://www.adira.co.id/frontend/images/Logo-Adira-Finance-200-yellow.png"
-              alt="logo Adira Finance"
-            />
-            <img
-              class="d-lg-none"
-              width="50%"
-              src="https://www.adira.co.id/frontend/images/Logo-Adira-Finance-200-yellow.png"
-              alt="logo Adira Finance"
-            />
-          </a>
+  <!-- Bootstrap icon CDN link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Font Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@200;300;400;600&display=swap"
+    rel="stylesheet" />
+</head>
 
-          <nav class="navbar fs-sm order-2 text-nav px-0 w-100">
-            <div class="p-0 justify-content-between me-auto container-fluid">
-              <div
-                class="collapse navbar-collapse px-0 d-lg-flex justify-content-end"
-                id="navbarSupportedContent"
-              >
-                <ul class="navbar-nav px-0 mb-2 mb-lg-0">
-                  <a class="nav-link" href="#">Tentang Kami</a>
-                  <a class="nav-link" href="#">Jaringan Kantor</a>
+<body class="overflow-y-hidden">
+  <main>
+    <header class="navbar sticky-top navbar-expand-lg navbar-light bg-light navbar-shadow d-lg-block">
+      <div class="container justify-content-between px-0 px-xl-3">
+        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                  <button type="button" class="btn bg-adira">
-                    Kontak kami
-                  </button>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+        <a class="navbar-brand order-1 m-0 pe-lg-2 me-lg-4" href="#">
+          <img class="d-none d-lg-block" width="100%"
+            src="https://www.adira.co.id/frontend/images/Logo-Adira-Finance-200-yellow.png" alt="logo Adira Finance" />
+          <img class="d-lg-none" width="50%"
+            src="https://www.adira.co.id/frontend/images/Logo-Adira-Finance-200-yellow.png" alt="logo Adira Finance" />
+        </a>
 
-      <section class="container-fluid text-center">
-        <h1 class="display-2 lh-base">ADIRA DIGITAL</h1>
-        <p class="lh-base">Subsection</p>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="images/adira_hero.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section
-        class="container position-relative zindex-5 pb-2 pb-sm-3 pb-md-4 pb-lg-5 mb-xl-3 mb-xxl-5"
-        style="margin-top: -5%"
-      >
-        <div class="bg-light text-center shadow-lg rounded py-4">
-          <h4>Simulasikan Kredit Sesuai Kebutuhanmu</h4>
-          <div
-            class="row row-cols-3 row-cols-md-4 row-cols-lg-6 d-flex justify-content-center gap-5"
-          >
-            <a
-              class="col text-decoration-none d-md-flex justify-content-center text-center text-md-start position-relative"
-              href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-            >
-              <div class="p-3 px-sm-0 py-sm-4 text-center">
-                <img src="images/mobil-bekas-icon.png" width="150" alt="" />
+        <nav class="navbar fs-sm order-2 text-nav px-0 w-100">
+          <div class="p-0 justify-content-between me-auto container-fluid">
+            <div class="collapse navbar-collapse px-0 d-lg-flex justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav px-0 mb-2 mb-lg-0">
+                <a class="nav-link" href="#">Tentang Kami</a>
+                <a class="nav-link" href="#">Jaringan Kantor</a>
 
-                <p>Mobil Bekas</p>
-              </div>
-            </a>
-
-            <a
-              class="col d-md-flex justify-content-center text-center text-md-start position-relative"
-              href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-            >
-              <div class="p-3 px-sm-0 py-sm-4 text-center">
-                <img src="images/motor-bekas-icon.png" width="150" alt="" />
-
-                <p>Motor Bekas</p>
-              </div>
-            </a>
-
-            <a
-              class="col d-md-flex justify-content-center text-center text-md-start position-relative"
-              href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-            >
-              <div class="p-3 px-sm-0 py-sm-4 text-center">
-                <img src="images/multiguna.png" width="150" alt="" />
-
-                <p>Pinjaman Dana Tunai</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Choose Us -->
-      <section class="container px-5 my-lg-3 my-xl-4">
-        <div class="text-center mx-auto mb-3 mb-lg-4">
-          <h2 class="h1 pt-1 mb pt-sm-2">Mengapa Memilih ADIRA DIGITAL ?</h2>
-          <p>Subsection</p>
-          <p class="mb-0">
-            Adira digital memberikan Bunga paling rendah diantara leasing
-            lainnya. Dengan Layanan Profesional Adira anda akan mendapatkan
-            solusi keuangan anda dengan cepat dan mudah.
-          </p>
-        </div>
-        <div class="row g-4 mb-3 mb-xl-0 pb-sm-2 pb-md-4 pb-xl-5">
-          <div class="col-md-6 col-lg-7 order-md-1">
-            <div class="card border-0 rounded-5 px-xl-4 pb-sm-2 pb-xl-4">
-              <div class="card-body m-0 text-center text-lg-start">
-                <h3>Ayo Chat kami, Kita bicarakan masalah keuangan anda.</h3>
-                <p class="fs-sm my-3">
-                  Konsultan keuangan handal kami siap membatu anda selama 24 jam
-                  untuk memberikan jalan terbaik untuk masalah anda. Mulai dari
-                  keperluan anda, nilai taksasi kendaraan sampai dengan proses
-                  pencairan dana anda di ADIRA
-                </p>
-                <button type="button" class="btn btn-success mt-3">
-                  <a
-                    class="text-light"
-                    href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-                    >Kontak kami</a
-                  >
+                <button type="button" class="btn bg-adira">
+                  Kontak kami
                 </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 order-md-2">
-            <div
-              class="card border-0 bg-size-cover rounded-5 bg-position-top-center"
-              style="
-                min-height: 350px;
-                background-image: url(https://images.unsplash.com/photo-1618667054276-690d5271d35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
-              "
-            ></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- News -->
-      <section class="border-top py-5 py-lg-6">
-        <div class="container py-3 py-md-0">
-          <h2 class="h3 text-center mb-5">Promo & Info Terbaru</h2>
-          <div class="tns-carousel-wrapper">
-            <div
-              class="tns-carousel-inner"
-              data-carousel-options='{"items": 2, "controls": false, "nav": true, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":2, "gutter": 16}, "780":{"items":3, "gutter": 16}, "1000":{"items":4, "gutter": 23}}}'
-            >
-              <!-- Item-->
-              <div class="pb-2">
-                <div class="card shadow card-slide mx-1">
-                  <div class="card-slide-inner">
-                    <img
-                      class="card-img"
-                      src="images/berita (5).jpg"
-                      alt="Portfolio thumb"
-                    /><a class="card-body text-center" href="#"> </a>
-                  </div>
-                </div>
-              </div>
-              <div class="pb-2">
-                <div class="card shadow card-slide mx-1">
-                  <div class="card-slide-inner">
-                    <img
-                      class="card-img"
-                      src="images/berita (6).jpg"
-                      alt="Portfolio thumb"
-                    /><a class="card-body text-center" href="#"> </a>
-                  </div>
-                </div>
-              </div>
-              <div class="pb-2">
-                <div class="card shadow card-slide mx-1">
-                  <div class="card-slide-inner">
-                    <img
-                      class="card-img"
-                      src="images/berita (7).jpg"
-                      alt="Portfolio thumb"
-                    /><a class="card-body text-center" href="#"> </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pb-2">
-                <div class="card shadow card-slide mx-1">
-                  <div class="card-slide-inner">
-                    <img
-                      class="card-img"
-                      src="images/berita (9).jpg"
-                      alt="Portfolio thumb"
-                    /><a class="card-body text-center" href="#"> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA Netfin -->
-      <section class="container bg-light py-5 rounded overflow-hidden py-md-5">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 px-5">
-            <div
-              class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1"
-              style="max-width: 516px"
-            >
-              <form
-                class="needs-validation"
-                novalidate=""
-                action="/ajukan"
-                method="post"
-              >
-                <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
-                <p
-                  class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
-                >
-                  Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB
-                  Truck.
-                </p>
-                <b>Informasi Diri</b>
-                <div class="input-group mb-3 mt-2">
-                  <i
-                    class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="nama"
-                    placeholder="Nama"
-                    required="true"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <i
-                    class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="hp"
-                    placeholder="Nomor Handphone"
-                    required="true"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <i
-                    class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="kota"
-                    placeholder="Kota"
-                    required="true"
-                  />
-                </div>
-                <b>Divisi</b>
-
-                <div class="form-check mt-2">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-1"
-                    name="divisi"
-                    value="Customer Service"
-                    checked=""
-                  />
-                  <label class="form-check-label" for="ex-radio-1"
-                    >Customer Service</label
-                  >
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-2"
-                    name="divisi"
-                    value="Marketing BPKB Mobil"
-                  />
-                  <label class="form-check-label" for="ex-radio-2"
-                    >Marketing BPKB Mobil</label
-                  >
-                </div>
-                <div class="form-check mb-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-3"
-                    name="divisi"
-                    value="Marketing BPKB Motor"
-                  />
-                  <label class="form-check-label" for="ex-radio-3"
-                    >Marketing BPKB Motor</label
-                  >
-                </div>
-                <b>Keterangan Tambahan</b>
-                <div class="mb-3 mt-3 pb-1">
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    name="keterangan"
-                    placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb"
-                    required="true"
-                  ></textarea>
-                </div>
-                <div class="row pt-2">
-                  <div class="col-lg-6 col-md-8">
-                    <button class="btn btn-primary btn-block" type="submit">
-                      Hubungi Kami
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
-            <h2 class="h1 text-center">Hubungi Kami</h2>
-            <p class="text-center pb-4 mb-2 mb-lg-3">
-              Kami Adira finance 24 jam siap Melayani
-            </p>
-            <a
-              target="_blank"
-              href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-            >
-              <img
-                src="https://netfin.id/site-assets/netfin/button-wa.png"
-                class="rounded mx-auto"
-                alt="adira finance whatsapp"
-                style="width: 250px"
-              /> </a
-            ><br />
-          </div>
-        </div>
-      </section>
-
-      <!-- QNA awal -->
-      <section class="container py-5 px-5">
-        <h2 class="h1 text-center">FAQ</h2>
-        <p class="text-center">
-          FAQ Pengajuan BPKB Mobil dan Motor di Adira Finance
-        </p>
-        <p class="text-center pb-4 mb-2 mb-lg-3">Subsection</p>
-
-        <div class="accordion" id="accordionDefault">
-          <!-- Item -->
-          <div class="accordion-item bg-light">
-            <h3 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                1. Apa saja syarat pengajuan BPKB Mobil dan Motor di Adira
-                Finance?
-              </button>
-            </h3>
-            <div
-              class="accordion-collapse collapse show"
-              id="collapseOne"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionDefault"
-            >
-              <div class="accordion-body mt-3 fs-sm">
-                Warga Negara Indonesia (WNI) <br />
-                Usia minimal 21 tahun dan maksimal 60 tahun <br />
-                Memiliki penghasilan tetap <br />
-                Memiliki BPKB Mobil/Motor atas nama sendiri <br />
-                Kendaraan dalam kondisi baik dan tidak bekas kecelakaan <br />
-                Melengkapi dokumen yang diperlukan (KTP, KK, Slip Gaji, BPKB
-                Mobil/Motor, dll.)
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="accordion-item bg-light">
-            <h3 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                2. Bagaimana proses pengajuan BPKB Mobil dan Motor di Adira
-                Finance?
-              </button>
-            </h3>
-            <div
-              class="accordion-collapse collapse"
-              id="collapseTwo"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionDefault"
-            >
-              <div class="accordion-body mt-3 fs-sm">
-                Kunjungi kantor cabang Adira Finance terdekat atau ajukan secara
-                online melalui website Adira Finance. <br />
-                Isi formulir pengajuan dan lengkapi dokumen yang diperlukan.
-                <br />
-
-                Petugas Adira Finance akan melakukan survei terhadap kendaraan
-                Anda. <br />
-                Jika pengajuan disetujui, Anda akan menerima dana pinjaman dan
-                BPKB Mobil/Motor Anda akan disimpan sebagai jaminan. <br />
-                Lakukan pembayaran angsuran setiap bulan sesuai dengan tenor
-                yang dipilih.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item -->
-          <div class="accordion-item bg-light">
-            <h3 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                3. Berapa lama waktu proses pengajuan BPKB Mobil dan Motor di
-                Adira Finance?
-              </button>
-            </h3>
-            <div
-              class="accordion-collapse collapse"
-              id="collapseThree"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionDefault"
-            >
-              <div class="accordion-body mt-3 fs-sm">
-                Proses pengajuan BPKB Mobil dan Motor di Adira Finance biasanya
-                memakan waktu 1-2 hari kerja.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item bg-light">
-            <h3 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                4. Apa saja keuntungan mengajukan BPKB Mobil dan Motor di Adira
-                Finance?
-              </button>
-            </h3>
-            <div
-              class="accordion-collapse collapse"
-              id="collapseFour"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionDefault"
-            >
-              <div class="accordion-body mt-3 fs-sm">
-                Proses mudah dan cepat Bunga kompetitif <br />
-                Bunga kompetitif <br />
-                Tenor pinjaman yang fleksibel <br />
-                Dana pinjaman dapat digunakan untuk berbagai keperluan <br />
-                Tersedia program cicilan ringan
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item bg-light">
-            <h3 class="accordion-header" id="headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                5. Apa yang dimaksud dengan cicilan ringan di Adira Finance?
-              </button>
-            </h3>
-            <div
-              class="accordion-collapse collapse"
-              id="collapseFive"
-              aria-labelledby="headingFive"
-              data-bs-parent="#accordionDefault"
-            >
-              <div class="accordion-body mt-3 fs-sm">
-                Adira Finance menawarkan program cicilan ringan dengan angsuran
-                yang terjangkau. Anda dapat memilih tenor pinjaman yang sesuai
-                dengan kemampuan finansial Anda. <br />
-                Informasi tambahan: <br />
-                Anda dapat menggunakan simulasi kredit di website Adira Finance
-                untuk menghitung estimasi angsuran pinjaman. Adira Finance juga
-                menyediakan layanan asuransi kendaraan untuk melindungi
-                kendaraan Anda.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- QNA akhir -->
-
-      <!-- Footer-->
-      <footer class="footer pt-5 bg-dark text-center text-lg-start pt-md-6">
-        <div class="container pt-3 pt-md-0">
-          <div class="row pb-3">
-            <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
-              <a class="d-block mb-3 mx-auto mx-lg-0" href="adira.html"
-                ><img
-                  width="200px"
-                  src="images/logo_adira_putih.png"
-                  alt="logo adira finance putih"
-              /></a>
-
-              <p class="text-light">
-                Jl.Wijaya I, No.19 Kebayoran Baru, <br />
-                Jakarta Selatan
-              </p>
-              <hr />
-              <a
-                class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="bi bi-facebook"></i></a
-              ><a
-                class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="bi bi-twitter"></i></a
-              ><a
-                class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="bi bi-instagram"></i></a
-              ><a
-                class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
-                href="#"
-                ><i class="bi bi-envelope-at-fill"></i
-              ></a>
-            </div>
-            <div class="col-md-2 col-sm-4 ms-auto pb-1 mb-4">
-              <div class="widget widget-light">
-                <h4 class="widget-title">Tentang Kami</h4>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 pb-1 mb-4">
-              <div class="widget widget-light">
-                <h4 class="widget-title">Jaringan Kantor</h4>
-                <ul>
-                  <li><a class="widget-link" href="#">Jaringan Kantor</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-              <div class="widget widget-light">
-                <h4 class="widget-title">Berita dan Acara</h4>
-              </div>
-            </div>
-            <div class="col text-center order-3">
-              <h4 class="text-light">Hubungi Kami</h4>
-              <a
-                href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-              >
-                <img
-                  src="images/button-wa.png"
-                  alt="QR-General-NETFIN-ccexpress"
-                />
-              </a>
-            </div>
-          </div>
-          <hr class="my-0 border-light" />
-          <div class="row align-items-center mt-3 py-4">
-            <div class="col-md-6 order-md-2 text-md-end mb-3">
-              <ul class="list-inline fs-sm mb-0">
-                <li class="list-inline-item">
-                  <a class="nav-link-style nav-link-light" href="#">Support</a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="nav-link-style nav-link-light" href="#">Kontak</a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="nav-link-style nav-link-light" href="#"
-                    >Terms &amp; Conditions</a
-                  >
-                </li>
               </ul>
             </div>
-            <div class="col-md-6 order-md-1 mb-3">
-              <p class="fs-sm mb-0">
-                <span class="text-light opacity-50 me-1"
-                  >© All rights reserved. Made by</span
-                ><a
-                  class="nav-link-style nav-link-light"
-                  href="https://netfin.id/"
-                  target="_blank"
-                  rel="noopener"
-                  >Netfin</a
-                >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container-fluid text-center">
+      <h1 class="display-2 lh-base">ADIRA DIGITAL</h1>
+      <p class="lh-base">Subsection</p>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/adira_hero.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="container position-relative zindex-5 pb-2 pb-sm-3 pb-md-4 pb-lg-5 mb-xl-3 mb-xxl-5"
+      style="margin-top: -5%">
+      <div class="bg-light text-center shadow-lg rounded py-4">
+        <h4>Simulasikan Kredit Sesuai Kebutuhanmu</h4>
+        <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 d-flex justify-content-center gap-5">
+          <a class="col text-decoration-none d-md-flex justify-content-center text-center text-md-start position-relative"
+            href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">
+            <div class="p-3 px-sm-0 py-sm-4 text-center">
+              <img src="images/mobil-bekas-icon.png" width="150" alt="" />
+
+              <p>Mobil Bekas</p>
+            </div>
+          </a>
+
+          <a class="col d-md-flex justify-content-center text-center text-md-start position-relative"
+            href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">
+            <div class="p-3 px-sm-0 py-sm-4 text-center">
+              <img src="images/motor-bekas-icon.png" width="150" alt="" />
+
+              <p>Motor Bekas</p>
+            </div>
+          </a>
+
+          <a class="col d-md-flex justify-content-center text-center text-md-start position-relative"
+            href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">
+            <div class="p-3 px-sm-0 py-sm-4 text-center">
+              <img src="images/multiguna.png" width="150" alt="" />
+
+              <p>Pinjaman Dana Tunai</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container px-5 my-lg-3 my-xl-4">
+      <div class="text-center mx-auto mb-3 mb-lg-4">
+        <h2 class="h1 pt-1 mb pt-sm-2">Mengapa Memilih ADIRA DIGITAL ?</h2>
+        <p>Subsection</p>
+        <p class="mb-0">
+          Adira digital memberikan Bunga paling rendah diantara leasing
+          lainnya. Dengan Layanan Profesional Adira anda akan mendapatkan
+          solusi keuangan anda dengan cepat dan mudah.
+        </p>
+      </div>
+      <div class="row g-4 mb-3 mb-xl-0 pb-sm-2 pb-md-4 pb-xl-5">
+        <div class="col-md-6 col-lg-7 order-md-1">
+          <div class="card border-0 rounded-5 px-xl-4 pb-sm-2 pb-xl-4">
+            <div class="card-body m-0 text-center text-lg-start">
+              <h3>Ayo Chat kami, Kita bicarakan masalah keuangan anda.</h3>
+              <p class="fs-sm my-3">
+                Konsultan keuangan handal kami siap membatu anda selama 24 jam
+                untuk memberikan jalan terbaik untuk masalah anda. Mulai dari
+                keperluan anda, nilai taksasi kendaraan sampai dengan proses
+                pencairan dana anda di ADIRA
               </p>
+              <button type="button" class="btn btn-success mt-3">
+                <a class="text-light"
+                  href="https://wa.me/6281558444484?text=Halo%20adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">Kontak
+                  kami</a>
+              </button>
             </div>
           </div>
         </div>
-        <section
-          class="container-fluid text-center fs-sm bg-light text-light p-4"
-        >
-          <div class="">
-            <img src="images/logo-ojk.png" alt="" class="logo ojk" /><br />
-            adira FINANCE TERDAFTAR DAN DIAWASI OLEH OTORITAS JASA KEUANGAN<br />
-            Copyright 2017. <b>adira Finance.</b> All Rights Reserved
+        <div class="col-md-6 col-lg-5 order-md-2">
+          <div class="card border-0 bg-size-cover rounded-5 bg-position-top-center" style="
+                min-height: 350px;
+                background-image: url(https://images.unsplash.com/photo-1618667054276-690d5271d35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+              "></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="border-top py-5 py-lg-6">
+      <div class="container py-3 py-md-0">
+        <h2 class="h3 text-center mb-5">Promo & Info Terbaru</h2>
+        <div class="tns-carousel-wrapper">
+          <div class="tns-carousel-inner"
+            data-carousel-options='{"items": 2, "controls": false, "nav": true, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":2, "gutter": 16}, "780":{"items":3, "gutter": 16}, "1000":{"items":4, "gutter": 23}}}'>
+            <!-- Item-->
+            <div class="pb-2">
+              <div class="card shadow card-slide mx-1">
+                <div class="card-slide-inner">
+                  <img class="card-img" src="images/berita (5).jpg" alt="Portfolio thumb" /><a
+                    class="card-body text-center" href="#"> </a>
+                </div>
+              </div>
+            </div>
+            <div class="pb-2">
+              <div class="card shadow card-slide mx-1">
+                <div class="card-slide-inner">
+                  <img class="card-img" src="images/berita (6).jpg" alt="Portfolio thumb" /><a
+                    class="card-body text-center" href="#"> </a>
+                </div>
+              </div>
+            </div>
+            <div class="pb-2">
+              <div class="card shadow card-slide mx-1">
+                <div class="card-slide-inner">
+                  <img class="card-img" src="images/berita (7).jpg" alt="Portfolio thumb" /><a
+                    class="card-body text-center" href="#"> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <div class="card shadow card-slide mx-1">
+                <div class="card-slide-inner">
+                  <img class="card-img" src="images/berita (9).jpg" alt="Portfolio thumb" /><a
+                    class="card-body text-center" href="#"> </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-      </footer>
-      <!-- Footer Akhir -->
-    </main>
-    <script>
-      const trigger = document.querySelector("menu > .trigger");
-      trigger.addEventListener("click", (e) => {
-        e.currentTarget.parentElement.classList.toggle("open");
-      });
-    </script>
-    <!-- Vendor scrits: js libraries and plugins-->
-    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
-    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
-    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
-    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
-    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
-    <!-- Main theme script-->
-    <script src="js/theme.min.js"></script>
-  </body>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Netfin -->
+    <section class="container bg-light py-5 rounded overflow-hidden py-md-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 px-5">
+          <div class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1" style="max-width: 516px">
+            <form class="needs-validation" novalidate="" action="/ajukan" method="post">
+              <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
+              <p class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter">
+                Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB
+                Truck.
+              </p>
+              <b>Informasi Diri</b>
+              <div class="input-group mb-3 mt-2">
+                <i class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded" type="text" name="nama" placeholder="Nama" required="true" />
+              </div>
+              <div class="input-group mb-3">
+                <i class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded" type="text" name="hp" placeholder="Nomor Handphone"
+                  required="true" />
+              </div>
+              <div class="input-group mb-3">
+                <i class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded" type="text" name="kota" placeholder="Kota" required="true" />
+              </div>
+              <b>Divisi</b>
+
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="radio" id="ex-radio-1" name="divisi" value="Customer Service"
+                  checked="" />
+                <label class="form-check-label" for="ex-radio-1">Customer Service</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="ex-radio-2" name="divisi"
+                  value="Marketing BPKB Mobil" />
+                <label class="form-check-label" for="ex-radio-2">Marketing BPKB Mobil</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" id="ex-radio-3" name="divisi"
+                  value="Marketing BPKB Motor" />
+                <label class="form-check-label" for="ex-radio-3">Marketing BPKB Motor</label>
+              </div>
+              <b>Keterangan Tambahan</b>
+              <div class="mb-3 mt-3 pb-1">
+                <textarea class="form-control" rows="4" name="keterangan"
+                  placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb" required="true"></textarea>
+              </div>
+              <div class="row pt-2">
+                <div class="col-lg-6 col-md-8">
+                  <button class="btn btn-primary btn-block" type="submit">
+                    Hubungi Kami
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
+          <h2 class="h1 text-center">Hubungi Kami</h2>
+          <p class="text-center pb-4 mb-2 mb-lg-3">
+            Kami Adira finance 24 jam siap Melayani
+          </p>
+          <a target="_blank"
+            href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">
+            <img src="https://netfin.id/site-assets/netfin/button-wa.png" class="rounded mx-auto"
+              alt="adira finance whatsapp" style="width: 250px" /> </a><br />
+        </div>
+      </div>
+    </section>
+
+    <!-- QNA awal -->
+    <section class="container py-5 px-5">
+      <h2 class="h1 text-center">FAQ</h2>
+      <p class="text-center">
+        FAQ Pengajuan BPKB Mobil dan Motor di Adira Finance
+      </p>
+      <p class="text-center pb-4 mb-2 mb-lg-3">Subsection</p>
+
+      <div class="accordion" id="accordionDefault">
+        <!-- Item -->
+        <div class="accordion-item bg-light">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              1. Apa saja syarat pengajuan BPKB Mobil dan Motor di Adira
+              Finance?
+            </button>
+          </h3>
+          <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+            data-bs-parent="#accordionDefault">
+            <div class="accordion-body mt-3 fs-sm">
+              Warga Negara Indonesia (WNI) <br />
+              Usia minimal 21 tahun dan maksimal 60 tahun <br />
+              Memiliki penghasilan tetap <br />
+              Memiliki BPKB Mobil/Motor atas nama sendiri <br />
+              Kendaraan dalam kondisi baik dan tidak bekas kecelakaan <br />
+              Melengkapi dokumen yang diperlukan (KTP, KK, Slip Gaji, BPKB
+              Mobil/Motor, dll.)
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="accordion-item bg-light">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2. Bagaimana proses pengajuan BPKB Mobil dan Motor di Adira
+              Finance?
+            </button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionDefault">
+            <div class="accordion-body mt-3 fs-sm">
+              Kunjungi kantor cabang Adira Finance terdekat atau ajukan secara
+              online melalui website Adira Finance. <br />
+              Isi formulir pengajuan dan lengkapi dokumen yang diperlukan.
+              <br />
+
+              Petugas Adira Finance akan melakukan survei terhadap kendaraan
+              Anda. <br />
+              Jika pengajuan disetujui, Anda akan menerima dana pinjaman dan
+              BPKB Mobil/Motor Anda akan disimpan sebagai jaminan. <br />
+              Lakukan pembayaran angsuran setiap bulan sesuai dengan tenor
+              yang dipilih.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="accordion-item bg-light">
+          <h3 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              3. Berapa lama waktu proses pengajuan BPKB Mobil dan Motor di
+              Adira Finance?
+            </button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+            data-bs-parent="#accordionDefault">
+            <div class="accordion-body mt-3 fs-sm">
+              Proses pengajuan BPKB Mobil dan Motor di Adira Finance biasanya
+              memakan waktu 1-2 hari kerja.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-light">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              4. Apa saja keuntungan mengajukan BPKB Mobil dan Motor di Adira
+              Finance?
+            </button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour"
+            data-bs-parent="#accordionDefault">
+            <div class="accordion-body mt-3 fs-sm">
+              Proses mudah dan cepat Bunga kompetitif <br />
+              Bunga kompetitif <br />
+              Tenor pinjaman yang fleksibel <br />
+              Dana pinjaman dapat digunakan untuk berbagai keperluan <br />
+              Tersedia program cicilan ringan
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-light">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              5. Apa yang dimaksud dengan cicilan ringan di Adira Finance?
+            </button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive"
+            data-bs-parent="#accordionDefault">
+            <div class="accordion-body mt-3 fs-sm">
+              Adira Finance menawarkan program cicilan ringan dengan angsuran
+              yang terjangkau. Anda dapat memilih tenor pinjaman yang sesuai
+              dengan kemampuan finansial Anda. <br />
+              Informasi tambahan: <br />
+              Anda dapat menggunakan simulasi kredit di website Adira Finance
+              untuk menghitung estimasi angsuran pinjaman. Adira Finance juga
+              menyediakan layanan asuransi kendaraan untuk melindungi
+              kendaraan Anda.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- QNA akhir -->
+
+    <!-- Footer-->
+    <footer class="footer pt-5 bg-dark text-center text-lg-start pt-md-6">
+      <div class="container pt-3 pt-md-0">
+        <div class="row pb-3">
+          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+            <a class="d-block mb-3 mx-auto mx-lg-0" href="adira.html"><img width="200px"
+                src="images/logo_adira_putih.png" alt="logo adira finance putih" /></a>
+
+            <p class="text-light">
+              Jl.Wijaya I, No.19 Kebayoran Baru, <br />
+              Jakarta Selatan
+            </p>
+            <hr />
+            <a class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2" href="#"><i
+                class="bi bi-facebook"></i></a><a class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
+              href="#"><i class="bi bi-twitter"></i></a><a
+              class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2" href="#"><i
+                class="bi bi-instagram"></i></a><a class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
+              href="#"><i class="bi bi-envelope-at-fill"></i></a>
+          </div>
+          <div class="col-md-2 col-sm-4 ms-auto pb-1 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Tentang Kami</h4>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 pb-1 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Jaringan Kantor</h4>
+              <ul>
+                <li><a class="widget-link" href="#">Jaringan Kantor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Berita dan Acara</h4>
+            </div>
+          </div>
+          <div class="col text-center order-3">
+            <h4 class="text-light">Hubungi Kami</h4>
+            <a href="https://wa.me/6281558444484?text=Halo%20Adira%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">
+              <img src="images/button-wa.png" alt="QR-General-NETFIN-ccexpress" />
+            </a>
+          </div>
+        </div>
+        <hr class="my-0 border-light" />
+        <div class="row align-items-center mt-3 py-4">
+          <div class="col-md-6 order-md-2 text-md-end mb-3">
+            <ul class="list-inline fs-sm mb-0">
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Support</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Kontak</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 order-md-1 mb-3">
+            <p class="fs-sm mb-0">
+              <span class="text-light opacity-50 me-1">© All rights reserved. Made by</span><a
+                class="nav-link-style nav-link-light" href="https://netfin.id/" target="_blank"
+                rel="noopener">Netfin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="container-fluid text-center fs-sm bg-light text-light p-4">
+        <div class="">
+          <img src="images/logo-ojk.png" alt="" class="logo ojk" /><br />
+          adira FINANCE TERDAFTAR DAN DIAWASI OLEH OTORITAS JASA KEUANGAN<br />
+          Copyright 2017. <b>adira Finance.</b> All Rights Reserved
+        </div>
+      </section>
+    </footer>
+    <!-- Footer Akhir -->
+  </main>
+  <script>
+    const trigger = document.querySelector("menu > .trigger");
+    trigger.addEventListener("click", (e) => {
+      e.currentTarget.parentElement.classList.toggle("open");
+    });
+  </script>
+  <!-- Vendor scrits: js libraries and plugins-->
+  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+  <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+  <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+  <!-- Main theme script-->
+  <script src="js/theme.min.js"></script>
+</body>
+
 </html>
