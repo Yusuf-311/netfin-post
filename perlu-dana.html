@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Perlu Dana</title>
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Around - Multipurpose Bootstrap Template" />
+  <meta name="keywords"
+    content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative" />
+  <meta name="author" content="Createx Studio" />
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg" />
+  <meta name="msapplication-TileColor" content="#766df4" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Page loading styles-->
+
+  <link rel="icon" href="images/netfin-logo.png" />
+  <style>
+    .page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.4s 0.2s ease-in-out;
+      transition: all 0.4s 0.2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+    }
+
+    .page-loading.active>.page-loading-inner {
+      opacity: 1;
+    }
+
+    .page-loading-inner>span {
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #737491;
+    }
+
+    .page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: 0.75rem;
+      vertical-align: text-bottom;
+      border: 0.15em solid #766df4;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner 0.75s linear infinite;
+      animation: spinner 0.75s linear infinite;
+    }
+
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <!-- Page loading scripts-->
+  <script>
+    (function () {
+      window.onload = function () {
+        var preloader = document.querySelector(".page-loading");
+        preloader.classList.remove("active");
+        setTimeout(function () {
+          preloader.remove();
+        }, 2000);
+      };
+    })();
+  </script>
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
+  <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css" />
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+  <style></style>
+  <style></style>
+  <style></style>
+  <style type="text/css" id="jarallax-clip-0">
+    #jarallax-container-0 {
+      clip: rect(0 855px 615.09375px 0);
+      clip: rect(0, 855px, 615.09375px, 0);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+  <style type="text/css" id="jarallax-clip-1">
+    #jarallax-container-1 {
+      clip: rect(0 855px 683.6875px 0);
+      clip: rect(0, 855px, 683.6875px, 0);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar sticky-top navbar-expand-lg navbar-light shadow-sm navbar-shadow d-lg-block zindex-5"
+    style="z-index: 100000">
+    <div class="container justify-content-between d-flex px-0 px-xl-3 zindex-5">
+      <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand order-1 m-0 pe-lg-2 me-lg-4" href="https://netfin.id/">
+        <img class="d-none d-lg-block" width="50px" src="images/netfin-logo.png" alt="logo netfin">
+        <img class="d-lg-none" width="50px" src="images/netfin-logo.png" alt="logo netfin">
+      </a>
+
+      <nav class="navbar fs-sm order-2 text-nav px-0 w-100 zindex-5">
+        <div class="p-0 justify-content-between container-fluid">
+          <div class="collapse navbar-collapse px-0 d-lg-flex justify-content-start" id="navbarSupportedContent">
+            <ul class="navbar-nav px-0 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="perlu-dana.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-perludana.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-perludana.html">Contact Us</a>
+              </li>
+              <li class="">
+                <button type="button" class="btn btn-price order-3 d-lg-none text-light">
+                  <a href="contact-perludana.html" class="text-light">Contact</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button type="button" class="btn btn-price order-3 d-none d-lg-flex">
+        <a href="https://wa.me/6281558444484" class="text-light">
+          Contact
+        </a>
+      </button>
+    </div>
+  </header>
+  <section class="container">
+    <div class="row align-items-center  py-5">
+      <div class="col-md-6 py-3">
+        <img class="d-block mx-auto" src="images/car_loan.svg" alt="Responsive Web Design" />
+      </div>
+      <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+        <h1 class="h2 mb-4">Butuh Dana Cepat? Butuh Modal Kerja ? Gadai BPKB Mobil, Motor, atau Sertifikat Tanah di <a
+            href="http://PerluDana.id ">PerluDana.id !</a>
+        </h1>
+
+        <p>
+          Keperluan finansial mendesak seringkali datang tanpa diduga. Saat Anda membutuhkan dana tambahan dengan cepat,
+          gadai
+          BPKB bisa menjadi solusi yang efektif. <a href="http://PerluDana.id">PerluDana.id</a> hadir untuk memenuhi
+          kebutuhan Anda dengan proses
+          yang cepat,
+          mudah, dan tanpa ribet.
+        </p>
+        <p>Dengan menggadaikan BPKB mobil, motor, atau sertifikat tanah Anda di <a
+            href="http://PerluDana.id">PerluDana.id</a> , Anda bisa
+          mendapatkan dana
+          tunai dalam waktu singkat. Dana ini dapat Anda gunakan untuk berbagai keperluan, mulai dari biaya pendidikan,
+          renovasi
+          rumah, hingga modal usaha.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="container pt-2 pt-md-0 ">
+    <h2 class="text-center mb-5">Our Partner</h2>
+    <div class="row text-center">
+      <div class="col"><img src="images/bfi_logo.png" alt="" width=100px;></div>
+      <div class="col"><img src="images/Fif_group_logo.png" alt="" width=150px;></div>
+      <div class="col"><img src="images/mega_multiguna_logo.png" alt="" width=150px;></div>
+      <div class="col"><img src="images/Sampoerna_logo.png" alt="" width=100px;></div>
+    </div>
+  </section>
+
+  <section class=" container bg-faded ">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 pb-3 py-md-5 px-5">
+        <div class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1" style="max-width: 516px">
+          <form class="needs-validation" id="contactForm">
+            <h2 class="pb-4">Form pengajuan</h2>
+            <p class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter">
+              Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB
+              Truck.
+            </p>
+            <b>Informasi Diri</b>
+            <div class="input-group mb-3 mt-2">
+              <i class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded" type="text" name="nama" placeholder="Nama" required="">
+            </div>
+            <div class="input-group mb-3">
+              <i class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded" type="text" name="hp" placeholder="Nomor Handphone" required="">
+            </div>
+            <div class="input-group mb-3">
+              <i class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded" type="text" name="kota" placeholder="Kota" required="">
+            </div>
+            <b>Divisi</b>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" id="ex-radio-1" name="divisi" value="Customer Service"
+                checked="">
+              <label class="form-check-label" for="ex-radio-1">Customer Service</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="ex-radio-2" name="divisi" value="Marketing BPKB Mobil">
+              <label class="form-check-label" for="ex-radio-2">Marketing BPKB Mobil</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" id="ex-radio-3" name="divisi" value="Marketing BPKB Motor">
+              <label class="form-check-label" for="ex-radio-3">Marketing BPKB Motor</label>
+            </div>
+            <b>Keterangan Tambahan</b>
+            <div class="mb-3 mt-3 pb-1">
+              <textarea class="form-control" rows="4" name="keterangan"
+                placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb" required=""></textarea>
+            </div>
+            <div class="row pt-2">
+              <div class="col-lg-6 col-md-8">
+                <button class="btn btn-primary btn-block" type="button" onclick="sendEmail()">
+                  Hubungi Kami
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
+        <h2 class="h1 text-center">Hubungi Kami</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">
+          Kami Adira Finance *cbg 24 jam siap Melayani
+        </p>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=6281558444484&amp;text=">
+          <img src="https://netfin.id/site-assets/netfin/button-wa.png" class="rounded mx-auto"
+            alt="adira finance whatsapp" style="width: 300px"> </a><br>
+      </div>
+    </div>
+  </section>
+
+  <section class="container  my-sm-0 ">
+    <h2 class="text-center pb-2 mb-5">Syarat dan Ketentuan</h2>
+    <div class="row pb-2">
+      <div class="col-lg-6">
+        <div class="accordion" id="faq">
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne"
+                aria-expanded="true" aria-controls="questionOne">
+                1. Berapa minimal dan maksimal dana yang bisa dipinjam?
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse show" id="questionOne" aria-labelledby="headingOne"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                Dana yang bisa dipinjam mulai dari Rp 10juta hingga 85% dari
+                nilai Kendaraan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                2. Bagaimana ketentuan jenis dan tahun kendaraan yang bisa
+                dijaminkan?
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                <p>
+                  Profil Kendaraan yang bisa dipinjam adalah sebagai berikut:
+                </p>
+                <ul>
+                  <li>
+                    Mobil merupakan kendaraan milik sendiri dengan BPKB Asli
+                  </li>
+                  <li>
+                    BPKB bisa atas nama sendiri, pasangan dan orang lain
+                    (Lampirkan bukti pembelian)
+                  </li>
+                  <li>
+                    BPKB bisa atas nama perusahaan dengan syarat melampirkan
+                    SPH(Surat Pelepasan Hak)
+                  </li>
+                  <li>Usia kendaraan</li>
+                  <li>
+                    Maksimal 15 tahun (Minimal Tahun Kendaraan 2009 untuk
+                    jenis mobil sedan, jeep dan minibus)
+                  </li>
+                  <li>
+                    Maksimal 13 tahun (Minimal Tahun Kendaraan 2011 untuk
+                    jenis mobil pick-up dan truck)
+                  </li>
+                  <li>STNK / Pajak</li>
+                  <li>
+                    <p class="fw-bold">Atas Nama Sendiri</p>
+                    <ul>
+                      <li>Masih Berlaku</li>
+                      <li>
+                        Pajak Mati maksimal 2 tahun (akan dipotong ke jumlah
+                        pencairan)
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="fw-bold">Atas Nama Orang Lain</p>
+                    <ul>
+                      <li>Hidup</li>
+                      <li>Pajak Mati (Balik nama di *placement)</li>
+                    </ul>
+                  </li>
+                  <li>Plat Hitam</li>
+                  <li>
+                    Plat Kuning kecuali angkutan plat kuning khusus komersil
+                    (angkot & taxi)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                3. Apa saja syarat pengajuan di pinjaman BPKB Mobil?
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse" id="questionThree" aria-labelledby="headingThree"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                <p>Persiapkan dokumen persyaratan awal, seperti:</p>
+                <ul>
+                  <li>KTP pemohon (dan pasangan jika sudah menikah)</li>
+                  <li>Kartu Keluarga</li>
+                  <li>Rekening Listrik / PBB</li>
+                  <li>Bukti Penghasilan</li>
+                  <li>STNK & BPKB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+                4. Bagaimana cara mengajukan pinjaman?
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse" id="questionFour" aria-labelledby="headingFour"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                Klik
+                <span class="text-danger fw-bold"> Ajukan sekarang </span>
+                dan silahkan mengisi form pengajuan pembiayaan di website
+                kami, maka call center kami akan menghubungi Anda, membuatkan
+                jadwal survey. Setelah itu data dikirim ke cabang terdekat
+                dari domisili Anda untuk dilakukan verifikasi fisik unit
+                jaminan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                5. Apakah BPKB bisa a/n orang lain?
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse" id="questionFive" aria-labelledby="headingFive"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                BPKB bisa atas nama sendiri, pasangan dan orang lain
+                (Lampirkan bukti pembelian)
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-light">
+            <h3 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                6. Apa saja Persyaratan Gadai BPKB Mobil dan Motor
+              </button>
+            </h3>
+            <div class="accordion-collapse collapse" id="questionSix" aria-labelledby="headingSix"
+              data-bs-parent="#faq">
+              <div class="accordion-body fs-sm">
+                <p>
+                  BPKB Motor: Tentu saja, syarat utama adalah memiliki BPKB motor yang akan dijadikan jaminan.
+                  Pastikan BPKB tersebut berada dalam kondisi baik.
+                  Identitas Diri: Kamu perlu menyertakan dokumen identitas diri seperti KTP atau SIM untuk verifikasi
+                  identitas.
+                  Bukti Pendapatan: Beberapa lembaga mungkin meminta bukti pendapatan sebagai salah satu persyaratan.
+                  Ini
+                  bisa berupa slip
+                  gaji atau dokumen lain yang menunjukkan kemampuan pembayaran.
+                  Fotokopi NPWP: Beberapa lembaga mungkin memerlukan fotokopi Nomor Pokok Wajib Pajak (NPWP) sebagai
+                  salah
+                  satu syarat.
+                  Fotokopi Rekening Listrik atau Air: Dokumen ini mungkin diminta sebagai bukti alamat tempat tinggal.
+                </p>
+                <p>Apa saja Persyaratan Gadai Sertifikat Rumah ? <br>
+                <ul>
+                  <li>Fotokopi Kartu Tanda Penduduk (KTP).</li>
+                  <li>Fotokopi Surat Nikah (jika sudah menikah).</li>
+                  <li>Fotokopi Kartu Keluarga.</li>
+                  <li>Fotokopi Nomor Pokok Wajib Pajak (NPWP).</li>
+                  <li>Fotokopi slip gaji.</li>
+                  <li>Fotokopi keterangan karyawan dari perusahaan.</li>
+                  <li>Fotokopi buku tabungan.</li>
+                  <li>Wajib memiliki Usaha</li>
+                </ul>
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-block col-lg-5 offset-lg-1">
+        <img src="images/syarat.svg" alt="Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabel Harga -->
+
+  <section class="container mt-3">
+    <p class="text-center">
+      *) Estimasi nilai pinjaman jaminan BPKB bukan merupakan persetujuan
+      pinjaman dana, bersifat tidak mengikat, dan dapat disesuaikan
+      berdasarkan penilaian lebih lanjut.
+    </p>
+
+    <div class="">
+      <div class="text-center mb-2">
+        <span style="font-size: 24px">Skema Angsuran Pinjaman Jaminan BPKB Mobil</span>
+      </div>
+      <div class="text-center mb-3">
+        <div class="table-responsive">
+          <table class="table table-bordered" style="
+                    width: 99.9606%;
+                    height: 268.75px;
+                    border-collapse: collapse;
+                    background-color: rgb(206, 212, 217);
+                    border-width: 1px;
+                  " border="1">
+            <tbody>
+              <tr style="height: 22.3958px">
+                <th style="background: #f99d1c">Pinjaman</th>
+                <th style="background: #f99d1c">12 Bulan</th>
+                <th style="background: #f99d1c">18 Bulan</th>
+                <th style="background: #f99d1c">24 Bulan</th>
+                <th style="background: #f99d1c">36 Bulan</th>
+                <th style="background: #f99d1c">48 Bulan</th>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 15%; height: 22.3958px">50.000.000</td>
+                <td style="height: 22.3958px">5,027</td>
+                <td style="height: 22.3958px">3,556</td>
+                <td style="height: 22.3958px">2,773</td>
+                <td style="height: 22.3958px">2,030</td>
+                <td style="height: 22.3958px">1,665</td>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">75.000.000</td>
+                <td style="height: 22.3958px">7,348</td>
+                <td style="height: 22.3958px">5,166</td>
+                <td style="height: 22.3958px">4,029</td>
+                <td style="height: 22.3958px">2,933</td>
+                <td style="height: 22.3958px">2,395</td>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">100.000.000</td>
+                <td style="height: 22.3958px">9,724</td>
+                <td style="height: 22.3958px">6,814</td>
+                <td style="height: 22.3958px">5,314</td>
+                <td style="height: 22.3958px">3,858</td>
+                <td style="height: 22.3958px">3,142</td>
+              </tr>
+              <tr style="background: rgb(219, 219, 219); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">125.000.000</td>
+                <td style="height: 22.3958px">12,044</td>
+                <td style="height: 22.3958px">8,423</td>
+                <td style="height: 22.3958px">6,569</td>
+                <td style="height: 22.3958px">4,761</td>
+                <td style="height: 22.3958px">3,871</td>
+              </tr>
+              <tr style="background: rgb(219, 219, 219); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">150.000.000</td>
+
+                <td style="height: 22.3958px">14,365</td>
+                <td style="height: 22.3958px">10,033</td>
+                <td style="height: 22.3958px">7,824</td>
+                <td style="height: 22.3958px">5,664</td>
+                <td style="height: 22.3958px">4,601</td>
+              </tr>
+              <tr style="background: rgb(219, 219, 219); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">175.000.000</td>
+                <td style="height: 22.3958px">16,686</td>
+                <td style="height: 22.3958px">11,642</td>
+                <td style="height: 22.3958px">9,079</td>
+                <td style="height: 22.3958px">6,567</td>
+                <td style="height: 22.3958px">5,330</td>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">200.000.000</td>
+
+                <td style="height: 22.3958px">19,006</td>
+                <td style="height: 22.3958px">13,252</td>
+                <td style="height: 22.3958px">10,334</td>
+                <td style="height: 22.3958px">7,471</td>
+                <td style="height: 22.3958px">6,060</td>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">225.000.000</td>
+
+                <td style="height: 22.3958px">21,327</td>
+                <td style="height: 22.3958px">14,861</td>
+                <td style="height: 22.3958px">11,590</td>
+                <td style="height: 22.3958px">8,374</td>
+                <td style="height: 22.3958px">6,769</td>
+              </tr>
+              <tr style="background: rgb(242, 242, 242); height: 22.3958px">
+                <td style="width: 20%; height: 22.3958px">250.000.000</td>
+
+                <td style="height: 22.3958px">23,671</td>
+                <td style="height: 22.3958px">16,487</td>
+                <td style="height: 22.3958px">12,857</td>
+                <td style="height: 22.3958px">9,286</td>
+                <td style="height: 22.3958px">7,526</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="bg-dark border-2 border-top border-dark" />
+  <footer class="px-5 container pt-5">
+
+    <div class=" row ">
+      <div class="col">
+        <a class="navbar-brand fw-medium fs-4" href="https://perludana.id/">
+          <img src="images/netfin-logo.png" alt="Logo" width="30" height="24"
+            class="mx-2 align-text-top d-inline-block">
+          Perludana.id
+        </a>
+        <p class="mt-4 mb-0">We are Part Of Netfin.id</p>
+        <p class="">We are All Around&nbsp;You</p>
+        <div class="d-flex my-sm-3 justify-content-sm-center justify-content-md-start">
+          <a href="#" class="p-2 text-black bg-body-tertiary rounded-circle d-inline-block">
+            <img width="30" height="30" src="https://img.icons8.com/material-two-tone/24/facebook-f--v1.png"
+              alt="facebook-f--v1">
+          </a>
+          <a href="#" class="p-2 mx-2 text-black bg-body-tertiary rounded-circle d-inline-block">
+            <img width="30" height="30" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram-new">
+          </a>
+          <a href="#" class="p-2 text-black bg-body-tertiary rounded-circle d-inline-block">
+            <img width="30" height="30" src="https://img.icons8.com/windows/32/linkedin-2.png" alt="linkedin-2">
+          </a>
+        </div>
+      </div>
+      <div class="col my-4">
+        <ul class="list-unstyled">
+          <h6>Menu</h6>
+          <a href="perlu-dana.html">
+            <li>Home</li>
+          </a>
+          <a href="/about-perludana.html">
+            <li>About</li>
+          </a>
+          <a href="/contact-perludana.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+
+    </div>
+    <section class="mt-5 border-top">
+      <div class="p-3">
+        <span class="text-body-tertiary">© All rights reserved. Made by</span>
+        Netfin
+      </div>
+    </section>
+  </footer>
+  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+  <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+  <script src="js/theme.min.js"></script>
+</body>
+
+</html>
