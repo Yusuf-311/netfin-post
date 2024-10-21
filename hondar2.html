@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honda r2</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+    <!-- Vendor styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/chartist/dist/chartist.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <link rel="stylesheet" href="vendor/tiny-slider/dist/tiny-slider.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+    />
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap CDN icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    .bg-honda {
+      background-color: #e61b33;
+      color: #ffffff;
+    }
+
+    .bg-dark-honda {
+      background-color: #282828;
+      color: #ffffff;
+    }
+
+    .btn-dark-honda,
+    .navbar-sticky.navbar-stuck {
+      background-color: #282828;
+      color: #ffffff;
+    }
+
+    .btn-dark-honda:hover {
+      background-color: #e61b33;
+      color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+    }
+    .gallery {
+      background-color: #dbddf1;
+      padding: 80px 0;
+    }
+    .gallery img {
+      background-color: #ffffff;
+      padding: 15px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    #gallery-modal .modal-img {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-dark-honda navbar-shadow navbar-sticky navbar-stuck"
+      data-scroll-header=""
+    >
+      <div class="navbar-search bg-light">
+        <div class="container d-flex flex-nowrap align-items-center">
+          <i class="ai-search fs-xl"></i>
+          <input
+            class="form-control form-control-xl navbar-search-field"
+            type="text"
+            placeholder="Search site"
+          />
+          <div class="d-flex align-items-center">
+            <span class="text-muted fs-xs d-none d-sm-inline">Close</span>
+            <button
+              class="btn-close p-2"
+              type="button"
+              data-bs-toggle="search"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="container px-0 px-xl-3">
+        <button
+          class="navbar-toggler ms-n2 me-4"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#primaryMenu"
+        >
+          <span class="navbar-toggler-icon"></span></button
+        ><a
+          class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+          href="index.html"
+          ><img
+            class="d-none d-lg-block"
+            src="images/honda.svg"
+            alt="Around"
+            width="153" /><img
+            class="d-lg-none"
+            src="images/honda.svg"
+            alt="Around"
+            width="58"
+        /></a>
+
+        <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+          <div class="offcanvas-header navbar-shadow">
+            <h5 class="mt-1 mb-0">Menu</h5>
+            <button
+              class="btn-close lead"
+              type="button"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
+                  data-bs-toggle="dropdown"
+                  >Hubungi Sales</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
+                  data-bs-toggle="dropdown"
+                  >Mediator</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
+                  data-bs-toggle="dropdown"
+                  >Cek PO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero slider -->
+    <section>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/hero1.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero2.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero3.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero4.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero5.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero6.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero7.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/hero8.webp" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative bg-honda pt-5 pt-lg-6">
+      <h2 class="text-center mb-5 text-light">Pilih Motor Favorit Anda</h2>
+      <div class="shape shape-bottom shape-curve bg-body">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+          <path
+            fill="currentColor"
+            d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Tabs-->
+      <div class="container pb-7">
+        <div class="row align-items-center pb-7">
+          <div class="col-lg-3">
+            <ul
+              class="nav nav-tabs media-tabs media-tabs-light justify-content-center justify-content-lg-start pb-3 mb-4 pb-lg-0 mb-lg-0"
+              role="tablist"
+            >
+              <li class="nav-item me-3 mb-3" style="width: 200px">
+                <a
+                  class="nav-link active"
+                  href="#matic"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 rounded"
+                      src="images/matic-thumb.webp"
+                      alt="Product"
+                      width="60"
+                    />
+                    <div class="w-100 ps-2 ms-1">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="fs-sm fw-medium pe-1">MATIC</div>
+                        <i class="ai-chevron-right lead ms-2 me-1"></i>
+                      </div>
+                    </div></div
+                ></a>
+              </li>
+              <li class="nav-item me-3 mb-3" style="width: 200px">
+                <a
+                  class="nav-link"
+                  href="#sport"
+                  data-bs-toggle="tab"
+                  role="tab"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 rounded"
+                      src="images/sport-thumb.webp"
+                      alt="Product"
+                      width="60"
+                    />
+                    <div class="w-100 ps-2 ms-1">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="fs-sm pe-1">SPORT</div>
+                        <i class="ai-chevron-right lead ms-2 me-1"></i>
+                      </div>
+                    </div></div
+                ></a>
+              </li>
+              <li class="nav-item me-3 mb-3" style="width: 200px">
+                <a class="nav-link" href="#cub" data-bs-toggle="tab" role="tab">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 rounded"
+                      src="images/cub-thumb.webp"
+                      alt="Product"
+                      width="60"
+                    />
+                    <div class="w-100 ps-2 ms-1">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="fs-sm pe-1">CUB</div>
+                        <i class="ai-chevron-right lead ms-2 me-1"></i>
+                      </div>
+                    </div></div
+                ></a>
+              </li>
+              <li class="nav-item me-3 mb-3" style="width: 200px">
+                <a class="nav-link" href="#ev" data-bs-toggle="tab" role="tab">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="flex-shrink-0 rounded"
+                      src="images/ev-thumb.webp"
+                      alt="Product"
+                      width="60"
+                    />
+                    <div class="w-100 ps-2 ms-1">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div class="fs-sm pe-1">EV</div>
+                        <i class="ai-chevron-right lead ms-2 me-1"></i>
+                      </div>
+                    </div></div
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="matic">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Beat.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">BeAT</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 18,430,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Beat Street.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">BeAT Street</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 19,300,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Genio.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">Genio</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 19,575,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Beat.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">Scoopy</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 22,525,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sport">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/CB150 Verza.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">CB150 Verza</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 22,160,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Sonic 150R.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">Sonic 150R</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 27,040,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/CB150R Streetfire.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">CB150R Streetfire</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 31,780,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/CB150X.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">CB150X</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 34,520,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cub">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Revo.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">REVO</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 16,535,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Supra X 125 FI.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">Supra X 125 FI</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 19,900,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/GTR 150.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">GTR 150</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 25,915,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Supercub C125.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">Supercub C125</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 77,665,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ev">
+                <div class="row align-items-center">
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/Beat.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">ICON e:</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 28,000,000 - 32,000,000*</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/EM1.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">EM1 e: & EM1 e: PLUS</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 40,000,000</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
+                    <a
+                      class="card card-hover border-0 shadow mx-auto"
+                      href="#"
+                      style="max-width: 400px"
+                      ><img
+                        class="card-img-top"
+                        src="images/CUV3.webp"
+                        alt="Life Science"
+                      />
+                      <div class="card-body">
+                        <h3 class="h5 mb-3">CUV e: & CUV e: RoadSync Duo</h3>
+                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
+                        <p class="h5 fw-bold">Rp. 53,000,000 - 61,000,000*</p>
+                        <button class="btn btn-dark-honda rounded">
+                          Selengkapnya
+                        </button>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-5 text-center text-md-start mb-5 mb-md-0">
+          <h2 class="mb-3">
+            Mengapa Harus <br />
+            AHASS ?
+          </h2>
+        </div>
+
+        <div class="mx-auto" style="max-width: 610px">
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div
+                class="bg-honda shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+              >
+                <h3 class="h5 mb-2 text-light">Berkualitas dan Bergaransi</h3>
+                <p class="fs-sm">
+                  Parts Asli & Lengkap Kepastian Pekerjaan Kepastian Biaya
+                  Tenaga Kerja Professional
+                </p>
+              </div>
+              <div
+                class="bg-honda shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+              >
+                <h3 class="h5 mb-2 text-light">Responsif</h3>
+                <p class="fs-sm">
+                  Pelayanan responsif Pekerjaan cepat & terukur Kepastian waktu
+                </p>
+              </div>
+              <div
+                class="bg-honda shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+              >
+                <h3 class="h5 mb-2 text-light">Nyaman</h3>
+                <p class="fs-sm">Fasilitas nyaman Petugas yang ramah</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div
+                class="bg-honda shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+              >
+                <h3 class="h5 mb-2 text-light">Jaringan Luas</h3>
+                <p class="fs-sm">Jaringan luas dan mudah ditemui</p>
+              </div>
+              <div
+                class="bg-honda shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+              >
+                <h3 class="h5 mb-2 text-light">Modern & Lengkap</h3>
+                <p class="fs-sm">Peralatan yang digunakan modern dan lengkap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery text-center">
+      <div class="container-lg">
+        <div class="row gy-4 row-cols-2 row-cols-md-4">
+          <div class="col">
+            <img
+              src="images/materi1.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi2.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi3.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi4.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi5.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi6.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi7.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi8.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi9.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi10.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi11.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi12.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi13.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi14.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi15.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/materi16.webp"
+              class="gallery-item rounded-2"
+              alt="gallery"
+            />
+          </div>
+        </div>
+        <div class="mt-4">
+          <a
+            class="mt-4"
+            target="_blank"
+            href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
+          >
+            <img
+              src="https://netfin.id/site-assets/netfin/button-wa.png"
+              class="rounded"
+              alt="adira finance whatsapp"
+              style="width: 300px"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/materi1.webp" class="modal-img" alt="modal img" />
+            <img src="images/materi2.webp" class="modal-img" alt="modal img" />
+            <img src="images/materi3.webp" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container pt-5 pb-4 mt-3 mt-md-0 mb-md-3 pb-md-5 pt-md-7">
+      <h2 class="text-center">Service</h2>
+      <p class="text-center">Kelebihan Service di AHASS</p>
+      <div class="row pt-3 row-cols-1 row-cols-lg-4">
+        <!-- Image on top -->
+        <div class="col">
+          <img
+            src="images/Wing Corner.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Wing Corner</h5>
+            <p class="card-text fs-sm">
+              Pelanggan bisa melihat semua line up motor premium Honda serta
+              aksesorisnya dengan pelayanan terbaik seperti makanan, minuman,
+              dan lain lain.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Wing Sales Person.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Wing Sales Person</h5>
+            <p class="card-text fs-sm">
+              Pelanggan akan dilayani dengan baik oleh seorang Wing Sales Person
+              untuk melakukan pembelian motor premium Honda dan juga bertanya
+              detail tentang produk. PEMBAYARAN
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Pembayaran.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pembayaran</h5>
+            <p class="card-text fs-sm">Pembayaran Non tunai dengan mesin EDC</p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Free Coffee.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Free Coffee and Tea</h5>
+            <p class="card-text fs-sm">FREE COFFEE AND TEA</p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Free Nitrogen.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Free Nitrogen</h5>
+            <p class="card-text fs-sm">
+              Pelanggan dapat mengisi tekanan ban dengan gas nitrogen secara
+              gratis setelah melakukan servis motor premium Honda. (Lifetime
+              Free Nitrogen)
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Free Helmet Deodorizer.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Free Helmet Deodorizer</h5>
+            <p class="card-text fs-sm">
+              Pelanggan mendapatkan layanan pengharum helm secara cuma-cuma
+              setelah melakukan servis motor premium Honda.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Ahass Booking.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ahass Booking</h5>
+            <p class="card-text fs-sm">Layanan pemesanan</p>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="images/Ahass Booking.webp"
+            class="card-img-top rounded"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pit Express</h5>
+            <p class="card-text fs-sm">Pit Express</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark pt-5 pt-md-6">
+      <div class="container pt-3 pt-md-0">
+        <div class="row pb-3">
+          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+            <img
+              src="https://netfin.id/site-assets/netfin/logo.svg"
+              width="54"
+              class="pb-2"
+              alt=""
+            />
+            <h3 class="fs-5 text-light">Honda Jabar Solusi Motor Baru</h3>
+            <p class="">
+              <span class="text-light me-1"
+                >© All rights reserved. Made by</span
+              ><a
+                class="nav-link-style nav-link-light"
+                href="https://netfin.id/"
+                target="_blank"
+                rel="noopener"
+                >Netfin.id</a
+              >
+            </p>
+            <a
+              class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-facebook"></i></a
+            ><a
+              class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-twitter"></i></a
+            ><a
+              class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-instagram"></i></a
+            ><a
+              class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-google"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-0 border-light" />
+        <div class="row align-items-center mt-3 py-4">
+          <div class="col-md-6 order-md-2 text-md-end mb-3">
+            <ul class="list-inline fs-sm mb-0">
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Support</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Contacts</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#"
+                  >Terms &amp; Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 order-md-1 mb-3">
+            <p class="fs-sm mb-0">
+              <span class="text-light opacity-50 me-1"
+                >© All rights reserved. Made by</span
+              ><a
+                class="nav-link-style nav-link-light"
+                href="https://netfin.id/"
+                target="_blank"
+                rel="noopener"
+                >Netfin.id</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+    <script>
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("gallery-item rounded-2")) {
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(
+            document.getElementById("gallery-modal")
+          );
+          myModal.show();
+        }
+      });
+    </script>
+  </body>
+</html>
