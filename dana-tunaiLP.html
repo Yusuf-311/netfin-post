@@ -1,0 +1,2345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dana Tunai LP</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon and Touch Icons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/Dana-Tunai-Logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/Dana-Tunai-Logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/Dana-Tunai-Logo.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#766df4" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="images/Dana-Tunai-Logo.png" />
+
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-250px * 7));
+        }
+      }
+
+      .slider-brand {
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+      }
+      .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+      }
+      .slide-brand {
+        height: 100px;
+        width: 250px;
+        margin: 0px 30px;
+      }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+    <!-- Vendor Styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/tiny-slider/dist/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+    />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .hero {
+        background-image: url(images/hero-section-background.svg);
+        background-size: cover;
+      }
+
+      .cta {
+        background-image: url(images/background-cta.png);
+        background-size: cover;
+      }
+
+      .text-bfi {
+        color: #04559f;
+      }
+
+      .bg-bfi {
+        background-color: #04559f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="header navbar navbar-expand-lg navbar-light navbar-floating navbar-sticky navbar-stuck"
+      style="background-color: #04559f"
+      data-scroll-header=""
+      data-fixed-element=""
+    >
+      <div class="container px-0 px-xl-3">
+        <button
+          class="navbar-toggler ms-n2 me-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#primaryMenu"
+        >
+          <span class="navbar-toggler-icon"></span></button
+        ><a
+          class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+          href=""
+          ><img
+            class="d-none d-lg-block bg-white rounded-3"
+            src="images/Dana-Tunai-Logo.png"
+            alt="Logo BFI"
+            width="80" /><img
+            class="d-lg-none bg-white rounded-3"
+            src="images/Dana-Tunai-Logo.png"
+            alt="Logo BFI"
+            width="58"
+        /></a>
+
+        <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+          <div class="offcanvas-header navbar-shadow">
+            <h5 class="mt-1 mb-0">Menu</h5>
+            <button
+              class="btn-close lead"
+              type="button"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container-fluid hero p-lg-5 pt-5 pt-lg-6">
+      <div class="row align-items-center border-bottom py-5">
+        <div class="col text-light">
+          <span class="bg-light text-bfi p-2 fs-5 mb-5 rounded-3">
+            Pinjaman Jaminan BPKB Mobil
+          </span>
+          <h1 class="mb-4 mt-4 text-light display-4">
+            <span> Butuh dana tunai Untuk</span>
+            <br />
+            <span class="text-warning">Pendidikan?</span>
+          </h1>
+
+          <div>
+            <h3 class="text-light fs-3">Dana-tunai.id siap membantu Anda</h3>
+            <ul class="fs-4 list-unstyled">
+              <li>
+                <i class="ai-check-circle text-success me-2"></i>Pengajuan cepat
+                disetujui
+              </li>
+              <li>
+                <i class="ai-check-circle text-success me-2"></i>Tenor Panjang
+                sampai 48 bulan
+              </li>
+            </ul>
+          </div>
+          <div
+            class="row align-items-center d-lg-flex justify-content-center my-lg-4 gap-lg-7"
+          >
+            <div class="col-lg-3">
+              <a href="https://wa.me/6288221963390"
+                ><button class="btn btn-lg btn-warning rounded-0 fs-4">
+                  Ajukan Sekarang <i class="ai-chevron-right"></i></button
+              ></a>
+            </div>
+            <div class="col fw-bold mt-3 mt-lg-0">
+              <a href="https://wa.me/6288221963390"
+                ><button class="btn btn-lg btn-outline-light fs-4 rounded-0">
+                  <i class="ai-percent"></i>
+                  Hitung Simulasi
+                </button></a
+              >
+            </div>
+          </div>
+          <p class="">
+            Dana-tunai.id berizin dan diawasi oleh Otoritas Jasa Keuangan<img
+              src="images/logo ojk.png"
+              width="80"
+              alt=""
+            />
+          </p>
+        </div>
+        <div class="col-md-6 py-3">
+          <img
+            class="d-block mx-auto"
+            src="images/hero.png"
+            alt="Responsive Web Design"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="p-lg-5 p-3 bg-faded-info">
+      <div
+        class="container d-lg-flex justify-content-between gap-lg-5 align-items-center"
+      >
+        <div class="col-lg-6">
+          <h3 class="text-center text-bfi text-lg-start">
+            Dana-tunai.id adalah Perusahaan Pembiayaan Tepercaya di Indonesia
+          </h3>
+        </div>
+        <div class="d-lg-flex gap-3 text-center mt-4 mt-0 text-lg-start">
+          <div class="col-lg-4">
+            <h4 class="text-bfi">Sejak 2023</h4>
+            41 tahun hadir dan melayani kebutuhan keuangan masyarakat
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <h4 class="text-bfi">500+ Orang</h4>
+
+            Orang lebih telah memilih dana-tunai.id sebagai mitra keuangannya
+          </div>
+          <div class="col-lg-4">
+            <h4 class="text-bfi">1000 Cabang</h4>
+            Cabang tersebar di seluruh xxx
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROMO -->
+    <section class="container p-lg-5 py-4">
+      <h1 class="my-lg-4 text-bfi">
+        Promo Spesial dan Informasi Bulan Ini Subsection
+      </h1>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="images/kini-mobil-niaga.webp"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/pembiayaan-aman.webp"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/penuhi-segala-keinginan.webp"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Brand -->
+    <section class="container pt-5 mt-3 mt-md-0 pt-md-6 pt-lg-7 pb-md-4">
+      <p class="my-lg-4 text-bfi text-center fs-1 fw-bold mb-7">
+        Partner Leasing Kami
+      </p>
+
+      <div class="slider-brand">
+        <div class="slide-track">
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-adira.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-baf.webp"
+                  alt="Brand logo"
+                  width="50"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-bfi.png"
+                  alt="Brand logo"
+                  width="50"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-bfisyariah.png"
+                  alt="Brand logo"
+                  width="70"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-fif.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-sampoerna.png"
+                  alt="Brand logo"
+                  width="50"
+                /></div
+            ></a>
+          </div>
+          <div class="slide-brand">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <img
+                  src="images/logo-brand-wom.png"
+                  alt="Brand logo"
+                  width="150"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KENAPA HARUS BFI -->
+
+    <section class="p-5 text-center">
+      <h3 class="text-bfi fs-1">Kenapa Harus di Dana-tunai.id?</h3>
+      <p class="fw-medium fs-4">
+        Dana-tunai.id siap memenuhi kebutuhan keuangan Anda
+      </p>
+      <p class="fw-medium fs-4">Subsection</p>
+
+      <div class="row">
+        <div
+          class="col border p-4 m-lg-3 align-items-center align-content-center align-self-center rounded"
+        >
+          <img src="images/icon-uvp1.svg" width="120" alt="" />
+          <h4 class="text-bfi">Cair Tanpa Potongan</h4>
+          <p class="fs-5 text-dark">
+            Dapatkan dana penuh guna memenuhi kebutuhan Anda
+          </p>
+        </div>
+        <div
+          class="col border p-4 my-3 m-lg-3 align-items-center align-content-center align-self-center rounded"
+        >
+          <img src="images/icon-uvp2.svg" width="120" alt="" />
+          <h4 class="text-bfi">Bunga Rendah</h4>
+          <p class="fs-5 text-dark">
+            Bunga mulai 0.89% per bulan, dengan suku bunga per tahun mulai
+            10.86%
+          </p>
+        </div>
+        <div
+          class="col border p-4 m-lg-3 align-items-center align-content-center align-self-center rounded"
+        >
+          <img src="images/icon-uvp3.svg" width="120" alt="" />
+          <h4 class="text-bfi">Dana Cair Tinggi</h4>
+          <p class="fs-5 text-dark">
+            Pembiayaan cair mulai dari Rp10 juta hingga 80% dari nilai kendaraan
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Pembiayaan kami -->
+    <section
+      class="container text-center pt-5 pb-4 mt-3 mt-md-0 mb-md-3 pb-md-5 pt-md-7"
+    >
+      <h3 class="text-bfi fs-1 mb-6">Produk Pembiayaan Kami</h3>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/dana-tunai-konvensional.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Dana Tunai Konvensional</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/dana-tunai-syariah.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Dana Tunai Syariah</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/mobil-bekas.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Pembiayaan Pembelian mobil bekas Konvensional</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/icons8-car-sale-100.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Pembiayaan Pembelian Mobil bekas Syariah</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/rekening-koran.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Kredit PRK / Rekening Koran</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/sertifikat-rumah.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Jaminan sertifikat Rumah / Pabrik / Apartemen</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/bpkb-mobil.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Dana Tunai Jaminan BPKB MOBIL</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="mx-auto mb-5 text-center" style="max-width: 280px">
+            <img
+              class="mb-3"
+              src="images/jaminan-bpkb-motor.png"
+              alt="Icon"
+              width="112"
+            />
+            <h3 class="h5">Dana Tunai jaminan BPKB MOTOR</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="p-5 px-lg-7 bg-faded-info d-flex justify-content-center">
+      <div
+        class="row cta p-5 rounded align-items-center d-flex justify-content-between"
+      >
+        <div class="col-lg-8 text-light text-center text-lg-end">
+          <h3 class="text-light">
+            Segera Dapatkan Dana Tunai dengan Pinjaman Jaminan BPKB Mobil di
+            Dana-tunai.id
+          </h3>
+          <p class="fs-5">Bunga flat 2.25% per bulan</p>
+        </div>
+        <div class="col text-end">
+          <a href="https://wa.me/6288221963390"
+            ><button class="btn btn-lg bg-warning rounded-0 fs-4 text-light">
+              Ajukan Sekarang <i class="ai-chevron-right"></i></button
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Langkah-langkah -->
+    <section class="container-fluid p-lg-5 py-4 bg-faded-info">
+      <div class="container text-center">
+        <h1 class="text-center text-bfi">
+          Langkah-langkah Mudah Pengajuan Pinjaman
+        </h1>
+        <p class="fw-medium">Proses Cepat dan Sederhana!</p>
+        <p class="fw-medium">Subsection</p>
+        <div class="d-lg-flex">
+          <!-- Item -->
+          <div>
+            <a class="border-0 text-center text-decoration-none" href="#">
+              <div class="card-body">
+                <img src="images/tangan-step-1.png" alt="" width="120" />
+                <h5 class="text-info">1. Isi Form Online</h5>
+                <p class="text-dark">
+                  Siapkan data jaminan BPKB Mobil dan data diri Anda
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div>
+            <a class="border-0 text-center text-decoration-none" href="#">
+              <div class="card-body">
+                <img src="images/tangan-step-2.png" alt="" width="120" />
+                <h5 class="text-info">2. Kami akan menghubungimu</h5>
+                <p class="text-dark">
+                  Anda akan dihubungi Call Center kami untuk konsultasi pinjaman
+                  dan tenor
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item -->
+          <div>
+            <a class="border-0 text-center text-decoration-none" href="#">
+              <div class="card-body">
+                <img src="images/tangan-step-3.png" alt="" width="120" />
+                <h5 class="text-info">3. Survei dan Validasi Aset</h5>
+                <p class="text-dark">
+                  kami akan lakukan survei dan cek aset untuk proses selanjutnya
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Item -->
+          <div>
+            <a class="border-0 text-center text-decoration-none" href="#">
+              <div class="card-body">
+                <img src="images/tangan-step-4.png" alt="" width="120" />
+                <h5 class="text-info">4. Pencairan Dana</h5>
+                <p class="text-dark">
+                  Setelah survei dan disetujui, dana akan segera cair ke
+                  rekening Anda
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kalkulator Angsuran -->
+    <section class="p-lg-5">
+      <div class="hero rounded p-4 align-items-center">
+        <h1 class="text-light">
+          Kalkulator Angsuran Pinjaman Jaminan BPKB Mobil
+        </h1>
+        <p class="text-light">Rencanakan Pembiayaan Anda Gratis</p>
+        <div class="d-lg-flex align-items-center">
+          <div class="m-1">
+            <div class="d-flex p-3 bg-light align-items-center rounded">
+              <img src="images/car_icon.svg" alt="Hotel" width="30" />
+              <div class="ps-2">
+                <h3 class="h6 mb-2">Tipe Kendaraan yang dijaminkan</h3>
+              </div>
+            </div>
+          </div>
+          <div class="m-1">
+            <div class="d-flex p-3 bg-light align-items-center rounded">
+              <img
+                src="images/currency_icon_green.svg"
+                alt="Hotel"
+                width="30"
+              />
+              <div class="ps-1">
+                <h3 class="h6 mb-2">Maksimum Pembiayaan</h3>
+              </div>
+            </div>
+          </div>
+          <div class="m-1">
+            <div class="d-flex p-3 bg-light align-items-center rounded">
+              <img
+                src="images/currency_icon_yellow.svg"
+                alt="Hotel"
+                width="30"
+              />
+              <div class="ps-2">
+                <h3 class="h6 mb-2">Pembiayaan Yang Diinginkan</h3>
+              </div>
+            </div>
+          </div>
+          <div class="m-1">
+            <div class="d-flex p-3 bg-light align-items-center rounded">
+              <img src="images/calendar_icon.svg" alt="Hotel" width="30" />
+              <div class="ps-2">
+                <h3 class="h6 mb-2">Tenor</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-1 my-4 my-lg-0">
+            <button class="btn p-4 w-100 btn-warning">Minta Simulasi</button>
+          </div>
+        </div>
+        <p class="text-light">
+          *Nominal bersifat estimasi, ajukan untuk cek angsuran sesuai mobil
+          yang dijaminkan
+        </p>
+      </div>
+    </section>
+
+    <!-- informasi pembiayaan start -->
+
+    <section
+      class="container-fluid p-lg-5 my-4 my-sm-0 bg-light py-sm-6 py-md-7"
+    >
+      <div class="container">
+        <h1 class="text-center pb-3 pb-lg-4 text-bfi">
+          Informasi Penting yang Anda Harus Tahu
+        </h1>
+        <p class="fs-5 text-center">
+          Dana-tunai.id menerima pinjaman jaminan BPKB Mobil
+        </p>
+        <div class="row pb-2">
+          <div class="col">
+            <div class="accordion" id="faq">
+              <div class="accordion-item shadow">
+                <h2 class="accordion-header" id="faq-heading-1">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1"
+                    aria-expanded="false"
+                    aria-controls="faq-content-1"
+                  >
+                    Persyaratan Profil Diri (Peminjam)
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-content-1"
+                  aria-labelledby="faq-heading-1"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      <h5>Profil Diri</h5>
+                      <ul>
+                        <li>Warga Negara Indonesia</li>
+                        <li>
+                          Berusia 21-60 tahun dan status perkawinan belum
+                          menikah, menikah dan cerai
+                        </li>
+                        <li>
+                          Status tempat tinggal rumah sendiri, pasangan,
+                          keluarga, kontrak tahunan
+                        </li>
+                        <li>
+                          Profesi pekerjaan :
+
+                          <ul>
+                            <li>Karyawan (Tetap/Kontrak)</li>
+                            <li>PNS</li>
+                            <li>Wiraswasta</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <li>
+                        Karyawan (Tetap/Kontrak) PNS Wiraswasta Tidak bisa
+                        diterima apabila Jenis usaha/profesi melanggar hukum
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item shadow">
+                <h2 class="accordion-header" id="faq-heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2"
+                    aria-expanded="false"
+                    aria-controls="faq-content-2"
+                  >
+                    Persyaratan Profil Kendaraan
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-content-2"
+                  aria-labelledby="faq-heading-2"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      <h5>Profil Kendaraan</h5>
+                      <ul>
+                        <li>
+                          Mobil merupakan kendaraan milik sendiri dengan BPKB
+                          Asli
+                        </li>
+                        <li>
+                          BPKB bisa atas nama sendiri, pasangan dan orang lain
+                          (Lampirkan bukti pembelian)
+                        </li>
+                        <li>
+                          BPKB bisa atas nama perusahaan dengan syarat
+                          melampirkan SPH(Surat Pelepasan Hak)
+                        </li>
+                        <li>
+                          Usia kendaraan :
+                          <ul>
+                            <li>
+                              Maksimal 15 tahun (Minimal Tahun Kendaraan 2008
+                              untuk jenis mobil sedan, jeep dan minibus)
+                            </li>
+                            <li>
+                              Maksimal 13 tahun (Minimal Tahun Kendaraan 2010
+                              untuk jenis mobil pick-up dan truck)
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          STNK / Pajak :
+                          <ul>
+                            <li>
+                              Atas Nama Sendiri
+                              <ul>
+                                <li>Masih Berlaku</li>
+                                <li>
+                                  Pajak Mati maksimal 2 tahun (akan dipotong ke
+                                  jumlah pencairan)
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              Atas Nama Orang Lain
+                              <ul>
+                                <li>Hidup</li>
+                                <li>Pajak Mati (Balik nama di BFI)</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>Plat Hitam</li>
+                        <li>Plat Kuning (Khusus Truck)</li>
+                      </ul>
+                      <h5>
+                        Yang Tidak Dapat Diterima (non-eligible condition)
+                      </h5>
+                      <ul>
+                        <li>Kendaraan plat merah</li>
+                        <li>
+                          Kendaraan pernah digunakan sebagai taksi atau ambulans
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Persyaratan -->
+    <section class="container-fluid p-lg-5">
+      <div class="p-lg-5 py-4 border-top border-bottom">
+        <h1 class="mb-4 text-center text-bfi">Persyaratan Mudah</h1>
+        <p class="mb-5 fs-5 text-center">
+          Pinjaman dana Anda bisa langsung diproses dengan menyiapkan dokumen di
+          bawah ini
+        </p>
+        <div class="p-lg-0 px-lg-3 gap-4 justify-content-center d-lg-flex">
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">
+              KTP Pemohon &amp; Pasangan (Jika sudah menikah)
+            </p>
+          </div>
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">Kartu Keluarga</p>
+          </div>
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">Rekening Listrik / PBB</p>
+          </div>
+        </div>
+        <div
+          class="p-lg-0 px-lg-3 mt-lg-5 gap-4 justify-content-center d-lg-flex"
+        >
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">Bukti Penghasilan</p>
+          </div>
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">STNK</p>
+          </div>
+          <div
+            class="col bg-faded-info p-3 m-2 m-lg-0 d-flex align-items-center justify-content-start gap-3"
+          >
+            <img src="images/check.svg" alt="" />
+            <p class="mb-0 fs-5 fw-semibold">BPKB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-secondary text-light bg-size-cover py-5 py-md-6">
+      <div
+        class="container p-lg-5 p-3 pb-lg-0 rounded"
+        style="
+          background-image: url(images/background-cta.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center text-md-start">
+            <img src="images/asset-CTA.png" width="500px" alt="" />
+          </div>
+          <div
+            class="col-lg-8 align-items-center justify-content-between col-md-6 d-lg-flex"
+          >
+            <div class="col-sm-9 col-md-12 col-lg-7 pe-4 mb-3 mb-lg-0">
+              <h4
+                class="text-light text-center text-lg-start fs-3 py-3 py-lg-0"
+              >
+                Dapatkan Dana Tunai dengan Pengajuan Pinjaman Jaminan BPKB Mobil
+                di Dana-tunai.id
+              </h4>
+              <p class="fs-5 text-lg-start text-center">
+                Tenor panjang sampai 48 bulan
+              </p>
+            </div>
+            <div class="col-sm-3 col-md-12 col-lg-5">
+              <a href="https://wa.me/6288221963390">
+                <button
+                  class="btn btn-lg btn-warning py-3 d-block w-100 rounded-0 fs-5"
+                  type="submit"
+                >
+                  Ajukan Sekarang
+                  <i class="ai-chevron-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skema Angsuran -->
+    <section class="container py-5">
+      <h1 class="text-center text-bfi mb-4">
+        Skema Angsuran Pinjaman Jaminan BPKB Mobil
+      </h1>
+      <div class="table-responsive">
+        <div class="table-responsive table-wrapper">
+          <table
+            cellspacing="0"
+            class="Table"
+            style="border-collapse: collapse; width: 100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    background-color: #04559f;
+                    border-color: #d3d6d9;
+                    border-radius: 6px 0px 0px 0px;
+                    height: 37px;
+                    width: 30%;
+                  "
+                >
+                  <p
+                    style="
+                      margin-left: 0cm;
+                      margin-right: 0cm;
+                      text-align: center;
+                    "
+                  >
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><strong
+                          ><span style="font-family: Helvetica Neue"
+                            ><span style="color: white">Pinjaman</span>
+                          </span>
+                        </strong>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  colspan="2"
+                  style="
+                    background-color: #04559f;
+                    border-radius: 0px 6px 0px 0px;
+                    height: 37px;
+                    width: 70%;
+                  "
+                >
+                  <p
+                    style="
+                      margin-left: 0cm;
+                      margin-right: 0cm;
+                      text-align: center;
+                    "
+                  >
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><strong
+                          ><span style="font-family: Helvetica Neue"
+                            ><span style="color: white">Tenor</span>
+                          </span>
+                        </strong>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  colspan="1"
+                  rowspan="4"
+                  style="
+                    background-color: white;
+                    border-color: #d3d6d9;
+                    border-style: solid;
+                    border-width: 1px;
+                    height: 36.85pt;
+                    width: 34%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px">Rp 10.000.000</span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">12 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black"
+                            >Rp 1.327.000&nbsp;</span
+                          ></span
+                        ></span
+                      ></span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">24 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black"
+                            >Rp 718.000&nbsp;</span
+                          ></span
+                        ></span
+                      ></span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">36 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black"
+                            >Rp 516.500&nbsp;</span
+                          ></span
+                        ></span
+                      ></span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: center;
+                    width: 30%;
+                  "
+                >
+                  <span style="font-size: 14px">48 Bulan</span>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: right;
+                    width: 40%;
+                  "
+                >
+                  <span style="font-size: 14px">Rp 417.500</span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  colspan="1"
+                  rowspan="4"
+                  style="
+                    background-color: #f0f0f0;
+                    border-color: #d3d6d9;
+                    border-style: solid;
+                    border-width: 1px;
+                    height: 36.85pt;
+                    width: 34%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px">Rp 50.000.000</span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">12 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px">Rp 4.966.000&nbsp;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">24 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px">Rp 2.686.000&nbsp;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">36 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px">Rp 1.933.000&nbsp;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: center;
+                    width: 30%;
+                  "
+                >
+                  <span style="font-size: 14px">48 Bulan</span>
+                </td>
+                <td
+                  style="
+                    background-color: #f0f0f0;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: right;
+                    width: 40%;
+                  "
+                >
+                  <span style="font-size: 14px">Rp 1.561.500</span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  colspan="1"
+                  rowspan="4"
+                  style="
+                    background-color: white;
+                    border-color: #d3d6d9;
+                    border-style: solid;
+                    border-width: 1px;
+                    height: 36.85pt;
+                    width: 34%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px">Rp 100.000.000</span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">12 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 36.85pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px"
+                      >Rp 9.514.500<span
+                        style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">&nbsp;</span></span
+                        ></span
+                      ></span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">24&nbsp;Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 41.9pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px">Rp 5.146.000&nbsp;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 30%;
+                  "
+                >
+                  <p style="text-align: center">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black">36 Bulan</span>
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    width: 40%;
+                  "
+                >
+                  <p style="text-align: right">
+                    <span style="font-size: 14px">Rp 3.703.000&nbsp;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    background-color: white;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: center;
+                    width: 30%;
+                  "
+                >
+                  <span style="font-size: 14px"
+                    ><span style="color: #000000">48 Bulan</span></span
+                  >
+                </td>
+                <td
+                  style="
+                    background-color: white;
+                    border-bottom: 1px solid #d3d6d9;
+                    border-right: 1px solid #d3d6d9;
+                    height: 37.5pt;
+                    text-align: right;
+                    width: 40%;
+                  "
+                >
+                  <span style="color: #000000"
+                    ><span style="font-size: 14px">Rp 2.991.000</span></span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          <span class="text-dark" style="font-size: 14px"
+            ><span style="color: #e74c3c">*</span>Skema angsuran hanya bersifat
+            simulasi, jika ingin perhitungan lebih akurat silahkan melihat di
+            kalkulator form</span
+          >
+        </p>
+
+        <p class="text-dark fs-sm">
+          Hal yang Anda perlu ketahui jika pengajuan dengan jaminan BPKB Mobil
+          di Dana-tunai.id
+        </p>
+
+        <div class="table-responsive border-1 table-wrapper">
+          <table
+            cellspacing="0"
+            class="Table p-4"
+            style="border-collapse: collapse; width: 100%"
+          >
+            <tbody>
+              <tr>
+                <td
+                  style="background-color: white; height: 36.85pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <strong
+                      ><span style="font-size: 14px"
+                        ><span style="font-family: Calibri, sans-serif"
+                          ><span style="font-family: Helvetica Neue"
+                            ><span style="color: black"
+                              >Bunga Flat per Bulan</span
+                            >
+                          </span>
+                        </span>
+                      </span></strong
+                    >
+                  </p>
+                </td>
+                <td
+                  style="background-color: white; height: 36.85pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <span style="font-size: 14px"
+                      >Bunga rendah mulai 0.89% s/d 1.1% flat per bulan</span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="background-color: #f0f0f0; height: 41.9pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <strong
+                      ><span style="font-size: 14px"
+                        ><span style="font-family: Calibri, sans-serif"
+                          ><span style="font-family: Helvetica Neue"
+                            ><span style="color: black"
+                              >Suku Bunga per Tahun</span
+                            ></span
+                          ></span
+                        ></span
+                      ></strong
+                    >
+                  </p>
+                </td>
+                <td
+                  style="background-color: #f0f0f0; height: 41.9pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <span style="font-size: 14px"
+                      >Mulai 10.86% s/d 12.12% (sesuai kondisi aset &amp; dan
+                      kelengkapan dokumen)</span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="background-color: white; height: 37.5pt; width: 50%">
+                  <p style="text-align: left">
+                    <strong
+                      ><span style="font-size: 14px"
+                        >Minimum &amp; Maksimum Pinjaman</span
+                      ></strong
+                    >
+                  </p>
+                </td>
+                <td style="background-color: white; height: 37.5pt; width: 50%">
+                  <p style="text-align: left">
+                    <span style="font-size: 14px"
+                      >Mulai dari Rp 10juta hingga 85% dari nilai
+                      Kendaraan</span
+                    >
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="background-color: #f0f0f0; height: 36.85pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <strong
+                      ><span style="font-size: 14px"
+                        ><span style="font-family: Calibri, sans-serif"
+                          ><span style="font-family: Helvetica Neue"
+                            ><span style="color: black">Domisili</span>
+                          </span>
+                        </span>
+                      </span></strong
+                    >
+                  </p>
+                </td>
+                <td
+                  style="background-color: #f0f0f0; height: 36.85pt; width: 50%"
+                >
+                  <p style="text-align: left">
+                    <span style="font-size: 14px"
+                      ><span style="font-family: Calibri, sans-serif"
+                        ><span style="font-family: Helvetica Neue"
+                          ><span style="color: black"
+                            >Seluruh Indonesia, kecuali Aceh</span
+                          >
+                        </span>
+                      </span>
+                    </span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="container my-2 py-5 py-md-6 py-lg-7">
+      <h2 class="text-center text-bfi mb-5">Pengalaman Mereka Bersama Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-xl-11">
+          <div class="tns-carousel-wrapper">
+            <div class="tns-outer" id="tns1-ow">
+              <div
+                class="tns-controls"
+                aria-label="Carousel Navigation"
+                tabindex="0"
+              >
+                <button
+                  type="button"
+                  data-controls="prev"
+                  tabindex="-1"
+                  aria-controls="tns1"
+                >
+                  <i class="bi bi-arrow-left"></i></button
+                ><button
+                  type="button"
+                  data-controls="next"
+                  tabindex="-1"
+                  aria-controls="tns1"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <div
+                class="tns-liveregion tns-visually-hidden"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                slide <span class="current">2</span> of 2
+              </div>
+              <div class="tns-inner" id="tns1-iw">
+                <div
+                  class="tns-carousel-inner tns-slider tns-gallery tns-subpixel tns-calc tns-horizontal"
+                  data-carousel-options='{"mode": "gallery", "nav": false}'
+                  id="tns1"
+                >
+                  <!-- Item-->
+                  <div
+                    class="tns-item tns-normal"
+                    id="tns1-item0"
+                    style=""
+                    aria-hidden="true"
+                    tabindex="-1"
+                  >
+                    <div class="pb-3 pb-md-0 ps-md-7 ms-md-3">
+                      <div
+                        class="bg-size-cover bg-position-center rounded-3 py-7"
+                        style="
+                          background-image: url(images/thumbnail-farida.png);
+                        "
+                      >
+                        <div
+                          class="d-md-flex align-items-center ms-md-n7 text-center text-md-start"
+                        >
+                          <div
+                            class="card card-body d-none d-md-flex py-grid-gutter px-grid-gutter border-0 shadow-lg me-6 scale-up"
+                            style="max-width: 28rem"
+                          >
+                            <p>
+                              "Peran Dana Tunai buat saya, sangatlah membantu
+                              kebutuhan diwaktu saya butuh modal dan usaha saya
+                              bisa berkembang juga atas bantuan dari
+                              Dana-tunai.id"
+                            </p>
+                            <footer class="blockquote-footer">
+                              <span class="fw-bold">Farida</span> , Warung mbah
+                              mie - Ketapang
+                            </footer>
+                          </div>
+                          <a
+                            class="bi bi-play-circle-fill text-light display-4"
+                            href="https://www.youtube.com/watch?v=PjNJfOrKT3I"
+                          ></a>
+                        </div>
+                      </div>
+                      <div class="d-md-none mt-n6 px-3 scale-up">
+                        <div
+                          class="card card-body py-grid-gutter px-grid-gutter border-0 shadow mx-auto"
+                          style="max-width: 28rem"
+                        >
+                          <p>
+                            “Pada tahun 2014, saya mempercayakan jaminan
+                            kendaraan-kendaraan kepada Dana-tunai.id untuk
+                            mengembangkan armada dan menambah modal.”
+                          </p>
+                          <footer class="blockquote-footer">
+                            Paul Anderson, CEO Company Ltd.
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item-->
+                  <div
+                    class="tns-item tns-slide-active tns-fadeIn"
+                    id="tns1-item1"
+                    style="left: 0%"
+                  >
+                    <div class="pb-3 pb-md-0 ps-md-7 ms-md-3">
+                      <div
+                        class="bg-size-cover bg-position-center rounded-3 py-7"
+                        style="
+                          background-image: url(images/thumbnail-deddy.png);
+                        "
+                      >
+                        <div
+                          class="d-md-flex align-items-center ms-md-n7 text-center text-md-start"
+                        >
+                          <div
+                            class="card card-body d-none d-md-flex py-grid-gutter px-grid-gutter border-0 shadow-lg me-6 scale-up"
+                            style="max-width: 28rem"
+                          >
+                            <p>
+                              “Pada tahun 2014, saya mempercayakan jaminan
+                              kendaraan-kendaraan kepada Dana-tunai.id untuk
+                              mengembangkan armada dan menambah modal.”
+                            </p>
+
+                            <footer class="blockquote-footer">
+                              <span class="fw-bold"> Dedy Setiawan </span>,
+                              Pengusaha jasa transportasi
+                            </footer>
+                          </div>
+                          <a
+                            class="bi bi-play-circle-fill text-light display-4"
+                            href="https://www.youtube.com/watch?v=PjNJfOrKT3I"
+                          ></a>
+                        </div>
+                      </div>
+                      <div class="d-md-none mt-n6 px-3 scale-up">
+                        <div
+                          class="card card-body py-grid-gutter px-grid-gutter border-0 shadow mx-auto"
+                          style="max-width: 28rem"
+                        >
+                          <blockquote class="blockquote">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris.
+                            </p>
+                            <footer class="blockquote-footer">
+                              Miguel Sánchez, CEO Company Ltd.
+                            </footer>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pertanyaan -->
+    <section class="bg-secondary py-5">
+      <div
+        class="container py-md-2 py-lg-3 py-xl-5 my-2 my-sm-3 my-md-4 my-xxl-5"
+      >
+        <div class="row">
+          <div class="col-md-4 text-center text-md-start">
+            <h2 class="text-bfi">Pertanyaan yang Sering Diajukan</h2>
+
+            <div class="d-none d-md-flex justify-content-center">
+              <svg
+                class="text-warning ms-n4"
+                width="200"
+                height="211"
+                viewBox="0 0 200 211"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-7 offset-lg-1">
+            <div class="accordion" id="faq">
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionOne"
+                    aria-expanded="true"
+                    aria-controls="questionOne"
+                  >
+                    1. Berapa minimal dan maksimal dana yang bisa dipinjam?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse show"
+                  id="questionOne"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    Dana yang bisa dipinjam mulai dari Rp 10juta hingga 85% dari
+                    nilai Kendaraan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionTwo"
+                    aria-expanded="false"
+                    aria-controls="questionTwo"
+                  >
+                    2. Bagaimana ketentuan jenis dan tahun kendaraan yang bisa
+                    dijaminkan?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="questionTwo"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    <p>
+                      Profil Kendaraan yang bisa dipinjam adalah sebagai
+                      berikut:
+                    </p>
+                    <ul>
+                      <li>
+                        Mobil merupakan kendaraan milik sendiri dengan BPKB Asli
+                      </li>
+                      <li>
+                        BPKB bisa atas nama sendiri, pasangan dan orang lain
+                        (Lampirkan bukti pembelian)
+                      </li>
+                      <li>
+                        BPKB bisa atas nama perusahaan dengan syarat melampirkan
+                        SPH(Surat Pelepasan Hak)
+                      </li>
+                      <li>Usia kendaraan</li>
+                      <li>
+                        Maksimal 15 tahun (Minimal Tahun Kendaraan 2009 untuk
+                        jenis mobil sedan, jeep dan minibus)
+                      </li>
+                      <li>
+                        Maksimal 13 tahun (Minimal Tahun Kendaraan 2011 untuk
+                        jenis mobil pick-up dan truck)
+                      </li>
+                      <li>STNK / Pajak</li>
+                      <li>
+                        <p class="fw-bold">Atas Nama Sendiri</p>
+                        <ul>
+                          <li>Masih Berlaku</li>
+                          <li>
+                            Pajak Mati maksimal 2 tahun (akan dipotong ke jumlah
+                            pencairan)
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p class="fw-bold">Atas Nama Orang Lain</p>
+                        <ul>
+                          <li>Hidup</li>
+                          <li>Pajak Mati (Balik nama di BFI)</li>
+                        </ul>
+                      </li>
+                      <li>Plat Hitam</li>
+                      <li>
+                        Plat Kuning kecuali angkutan plat kuning khusus komersil
+                        (angkot & taxi)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionThree"
+                    aria-expanded="false"
+                    aria-controls="questionThree"
+                  >
+                    3. Apa saja syarat pengajuan di pinjaman BPKB Mobil?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="questionThree"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    <p>Persiapkan dokumen persyaratan awal, seperti:</p>
+                    <ul>
+                      <li>KTP pemohon (dan pasangan jika sudah menikah)</li>
+                      <li>Kartu Keluarga</li>
+                      <li>Rekening Listrik / PBB</li>
+                      <li>Bukti Penghasilan</li>
+                      <li>STNK & BPKB</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionFour"
+                    aria-expanded="false"
+                    aria-controls="questionFour"
+                  >
+                    4. Bagaimana cara mengajukan pinjaman?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="questionFour"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    Klik
+                    <span class="text-info fw-bold"> Ajukan sekarang </span>
+                    dan silahkan mengisi form pengajuan pembiayaan di website
+                    kami, maka call center kami akan menghubungi Anda,
+                    membuatkan jadwal survey. Setelah itu data dikirim ke cabang
+                    terdekat dari domisili Anda untuk dilakukan verifikasi fisik
+                    unit jaminan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionFive"
+                    aria-expanded="false"
+                    aria-controls="questionFive"
+                  >
+                    5. Apakah BPKB bisa a/n orang lain?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="questionFive"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    BPKB bisa atas nama sendiri, pasangan dan orang lain
+                    (Lampirkan bukti pembelian)
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-light">
+                <h3 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#questionSix"
+                    aria-expanded="false"
+                    aria-controls="questionSix"
+                  >
+                    6. Apakah Dana-tunai.id aman?
+                  </button>
+                </h3>
+                <div
+                  class="accordion-collapse collapse"
+                  id="questionSix"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body fs-sm">
+                    Aman karena Dana-tunai.id berizin dan diawasi oleh Otoritas
+                    Jasa Keuangan
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+
+    <!-- Form -->
+
+    <!-- <section class="container zindex-5 p-5">
+      <h1 class="text-center text-info">Data Pemohon Jaminan BPKB Mobil</h1>
+      <h6 class="text-center">Silahkan masukkan data diri Anda</h6>
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-7 offset-lg-1 pb-2 mb-5">
+          <div class="card border-0 shadow-lg">
+            <form class="card-body needs-validation p-5" novalidate="">
+              <div class="mb-3 pb-1">
+                <label class="form-label text-info" for="cont-fn"
+                  >Nama Lengkap<sup class="text-danger ms-1">*</sup></label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="cont-fn"
+                  placeholder="Ketik Nama Sesuai KTP"
+                  required=""
+                />
+                <div class="invalid-feedback">Please enter your full name!</div>
+              </div>
+
+              <div class="mb-3 pb-1">
+                <label class="form-label text-info" for="cont-phone"
+                  >Nomor Handphone</label
+                >
+                <input
+                  class="form-control bg-image-0"
+                  type="text"
+                  id="cont-phone"
+                  data-format="custom"
+                  data-delimiter="-"
+                  data-blocks="2 4 2 2"
+                  placeholder="Ketik No Handphone"
+                />
+                <div class="bg-faded-info rounded mt-2 p-2">
+                  Isi nomor handphone yang aktif dan Anda akan dihubungi pada
+                  hari & jam kerja
+                </div>
+              </div>
+              <div class="mb-3 pb-1">
+                <label class="form-label text-info" for="cont-email"
+                  >Email<sup class="text-danger ms-1">*</sup></label
+                >
+                <input
+                  class="form-control"
+                  type="email"
+                  id="cont-email"
+                  placeholder="Ketik Email"
+                  required=""
+                />
+                <div class="bg-faded-info rounded mt-2 p-2">
+                  Contoh: vira@gmail.com
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid email address!
+                </div>
+              </div>
+              <h6 class="text-info">Data Domisili Saat Ini</h6>
+              <p>
+                Isi data alamat domisili Anda untuk cek ketersediaan cover area
+                yang akan dijaminkan
+              </p>
+
+              <div class="mb-3 pb-1">
+                <label class="form-label text-info" for="cont-subject"
+                  >Alamat Domisili<sup class="text-danger ms-1">*</sup></label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  id="cont-subject"
+                  placeholder="Pilih Alamat Domisili Anda"
+                  required=""
+                />
+                <div class="invalid-feedback">Please enter a subject!</div>
+              </div>
+
+              <h6 class="text-info">Data Mobil yang Akan Dijaminkan</h6>
+              <p>Isi data plat nomor kendaraan Anda</p>
+              <div class="mb-3 pb-1">
+                <label class="form-label text-info" for="cont-company"
+                  >Plat Nomor Mobil</label
+                >
+                <input
+                  class="form-control bg-image-0"
+                  type="text"
+                  id="cont-company"
+                  placeholder="Plat Nomor Mobil"
+                />
+                <div class="bg-faded-info rounded mt-2 p-2">
+                  Contoh: A 1234 XYZ (menggunakan spasi)
+                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Saya bersedia dihubungi oleh pihak Dana-tunai.id pada jam dan
+                  hari kerja.
+                </label>
+              </div>
+
+              <div class="text-center pt-4">
+                <button class="btn btn-lg btn-primary" type="submit">
+                  Isi Data Mobil >
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 offset-md-1">
+          <h2 class="h4 pb-3">Contact details</h2>
+          <h3 class="h6 pb-2">North America - New York, NY</h3>
+          <ul class="list-unstyled fs-sm pb-3">
+            <li class="d-flex align-items-top mb-3">
+              <i class="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"></i>
+              <div>
+                396 Lillian Blvd, Holbrook,<br />NY 11741, USA<br /><a
+                  class="fancy-link"
+                  href="#map"
+                  data-scroll=""
+                  >See on the map</a
+                >
+              </div>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <i class="ai-mail fs-xl text-muted me-2 pe-1"></i>
+              <div>new.york@example.com</div>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <i class="ai-phone fs-xl text-muted me-2 pe-1"></i>
+              <div>+ 1 526 220 0459</div>
+            </li>
+          </ul>
+          <h3 class="h6 pb-2">Europe - Berlin, Germany</h3>
+          <ul class="list-unstyled fs-sm">
+            <li class="d-flex align-items-top mb-3">
+              <i class="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"></i>
+              <div>Mohrenstrasse 37 10117,<br />Berlin, Germany<br /></div>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <i class="ai-mail fs-xl text-muted me-2 pe-1"></i>
+              <div>berlin@example.com</div>
+            </li>
+            <li class="d-flex align-items-center mb-3">
+              <i class="ai-phone fs-xl text-muted me-2 pe-1"></i>
+              <div>030 778 345 26</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CTA akhir -->
+    <section class="bg-bfi p-lg-5 p-3">
+      <div class="row d-flex justify-content-between">
+        <div class="col-lg-8">
+          <h1 class="text-light text-center text-lg-start fs-2">
+            Nikmati proses pencairan cepat dengan melengkapi persyaratan yang
+            ada
+          </h1>
+        </div>
+        <div class="col text-center">
+          <a href="https://wa.me/6288221963390"
+            ><button class="btn rounded-0 btn-lg btn-warning m-2">
+              Ajukan Sekarang
+            </button></a
+          >
+          <br />
+          <a href="https://wa.me/6288221963390"
+            ><button class="btn rounded-0 btn-lg btn-warning m-2">
+              Konsultasi Pengajuan
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer bg-dark pt-5 pb-4">
+      <div
+        class="container pb-2 text-center text-md-start"
+        bis_skin_checked="1"
+      >
+        <div class="row pt-md-2 pb-3" bis_skin_checked="1">
+          <div class="col-lg-3 col-md-4 pb-4" bis_skin_checked="1">
+            <div class="">
+              <img
+                class="bg-light rounded-3"
+                src="images/Dana-Tunai-Logo.png"
+                width="50"
+                alt=""
+              />
+              <p class="fs-3 fw-bold text-light">Dana Tunai</p>
+            </div>
+
+            <p class="fs-sm text-light opacity-50 mb-0">
+              Proudly Present by Tiga Pilar Digital Inc We are All Around You
+            </p>
+          </div>
+          <div class="col-md-5 pt-2 pb-4" bis_skin_checked="1"></div>
+          <div class="col-md-3 pt-2 pb-4" bis_skin_checked="1">
+            <div class="widget widget-light" bis_skin_checked="1">
+              <h4 class="widget-title mb-3">Follow</h4>
+              <a
+                class="btn-social bs-outline bs-light bs-facebook bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-facebook"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-twitter bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-twitter"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-instagram bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-instagram"></i></a
+              ><a
+                class="btn-social bs-outline bs-light bs-google bs-lg mb-2"
+                href="#"
+                ><i class="bi bi-google"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="fs-sm text-center mb-0">
+          <span class="text-light opacity-50"
+            >© All rights reserved. Made by </span
+          ><a
+            class="nav-link-style nav-link-light"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            >Netfin</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a
+      class="btn-scroll-top"
+      href="#top"
+      data-scroll
+      data-fixed-element
+      ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span
+      ><i class="btn-scroll-top-icon bi bi-arrow-up"> </i
+    ></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
