@@ -35,6 +35,11 @@
       media="screen"
       href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
     />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
@@ -48,12 +53,118 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <style>
+      li,
+      td {
+        color: grey !important;
+      }
       .bg-bfi-agency {
         background-color: #04559f;
       }
 
       .text-bfi-agency {
         color: #04559f;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+      th {
+        background-color: #175aa0;
+        color: white;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #ffeb99;
+        transition: 0.3s;
+      }
+      .header {
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        background: white;
+        color: black;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .title-box {
+        background: white;
+        color: #0072ff;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      body {
+        background: linear-gradient(to right, #0072ff, #00c6ff);
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Section 3 */
+      .card-custom {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .card-custom:hover {
+        transform: translateY(-5px);
+      }
+      .card-header-custom {
+        background: linear-gradient(45deg, #00aaff, #00ccff);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .icon-container img {
+        width: 50px;
+        height: auto;
+      }
+
+      .bonus-card {
+        background: white;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .bonus-card:hover {
+        transform: scale(1.05);
+      }
+      .bonus-icon {
+        font-size: 40px;
+        color: #0072ff;
       }
     </style>
   </head>
@@ -124,20 +235,17 @@
       </header>
 
       <!-- Hero -->
-      <section
-        class="py-5 align-content-center"
-        style="background-color: #d8eafb; background-size: cover"
-      >
+      <section class="py-5 align-content-center" style="background-size: cover">
         <div class="container align-items-center">
           <div class="row row-cols-1 row-cols-lg-2 align-items-center">
             <div class="col">
               <h1 class="pb-1 pt-7 mb-0 display-4 text-bfi-agency">
                 #SelaluAdaJalan
               </h1>
-              <p class="h1">Untuk semua Kebutuhan Anda</p>
+              <p class="h1 text-light">Untuk semua Kebutuhan Anda</p>
               <div class="row">
                 <div class="col-8">
-                  <p class="fs-lg text-start text-dark">
+                  <p class="fs-lg text-start text-light">
                     Mulai dari pendidikan, kesehatan, hingga modal usaha. BFI
                     Finance siap membantu Anda.
                   </p>
@@ -178,86 +286,58 @@
         </div>
       </section>
 
-      <!-- Why BFI -->
-      <section class="container my-5">
-        <div class="d-none d-lg-block"></div>
-        <div class="row mt-0 mt-md-n4 pt-5 pt-md-0">
-          <div class="col-12 col-lg-7">
-            <div class="d-lg-block bg-faded-primary p-4 rounded">
-              <h2 class="text-center text-md-start">Kelebihan Agency BFI</h2>
-              <p>
-                Merupakan bentuk bisnis kemitraan yang bertujuan untuk
-                mendapatkan calon-calon nasabah BFI Finance yang ingin
-                mengajukan pembiayaan berdasarkan jaminan (collateral) kendaraan
-                bermotor, atau yang biasa disebut juga dengan istilah
-                Refinancing/Non Dealer Financing (NDF). Untuk Agent Mobil,
-                konteks jaminan pembiayaan konsumen dalam hal ini yaitu jaminan
-                kendaraan jenis mobil, pada buku saku agent ini akan membantu
-                Anda untuk memahami secara umum mengenai proses bisnis sebagai
-                Agent BFI produk mobil dan beragam benefit yang akan Anda
-                dapatkan.
-              </p>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-3 text-center text-sm-start">
-              <div
-                class="col mb-sm-4l card border-0 bg-faded-primary bg-opacity-10 mt-4 mt-sm-0 mt-lg-4"
-              >
-                <div class="card-body">
-                  <h3 class="h5">CEPAT</h3>
-                  <ul class="fs-sm">
-                    <li>Proses pengajuan sampai dengan persetujuan cepat</li>
-                    <li>Respon pelayanan terhadap agent yang cepat</li>
-                    <li>Proses pemberian bonus cepat</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col mb-sm-4l card border-0 bg-faded-warning bg-opacity-10 mt-4 mt-sm-0 mt-lg-4"
-              >
-                <div class="card-body">
-                  <h3 class="h5">TRANSPARAN</h3>
-                  <ul class="fs-sm">
-                    <li>Proses transfer bonus langsung oleh BFI Finance</li>
-                    <li>Agent mendapatkan slip gaji bonus</li>
-                    <li>Agent dapat mengetahui setiap unit kendaraan masuk</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col mb-sm-4l card border-0 bg-faded-info bg-opacity-10 mt-4 mt-sm-0 mt-lg-4"
-              >
-                <div class="card-body">
-                  <h3 class="h5">DUKUNGAN</h3>
-                  <ul class="fs-sm">
-                    <li>
-                      Pendampingan personal untuk membantu kebutuhan
-                      masing-masing agent
-                    </li>
-                    <li>Aktivitas Agent didukung dengan tools</li>
-                    <li>Penjualan yang didukung oleh sistem</li>
-                  </ul>
-                </div>
-              </div>
+      <section class="container py-5 body">
+        <div class="title-box mb-4">AGENCY VALUE PROPOSITION</div>
+        <p class="text-white text-center">
+          Agency BFI merupakan bentuk bisnis kemitraan yang bertujuan untuk
+          mendapatkan calon-calon nasabah BFI Finance yang ingin mengajukan
+          pembiayaan berdasarkan jaminan (collateral) BPKB kendaraan bermotor.
+        </p>
+        <p class="text-white text-center">
+          Pada buku saku agent ini akan membantu Anda untuk memahami proses
+          bisnis sebagai Agent BFI produk mobil dan motor, serta beragam benefit
+          yang akan Anda dapatkan dengan bergabung bersama kami.
+        </p>
+        <div class="row text-dark g-4">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="text-primary">🚀 CEPAT</h5>
+              <ul>
+                <li>Proses pengajuan sampai dengan persetujuan cepat</li>
+                <li>Respon pelayanan terhadap agent yang cepat</li>
+                <li>Proses pemberian bonus cepat</li>
+              </ul>
             </div>
           </div>
-          <div class="col align-items-center text-center">
-            <img
-              class="rounded-3"
-              src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="why choose us"
-            />
-
-            <a
-              target="_blank"
-              href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
-            >
-              <img
-                src="https://netfin.id/site-assets/netfin/button-wa.png"
-                class="rounded mx-auto"
-                alt="adira finance whatsapp"
-                style="width: 300px"
-              />
-            </a>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="text-success">📜 TRANSPARAN</h5>
+              <ul>
+                <li>Proses transfer bonus langsung oleh BFI Finance</li>
+                <li>Bonus dikirim tanpa perantara</li>
+                <li>
+                  Agent dapat mengetahui informasi bonus & konsumen melalui
+                  platform
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="text-danger">🤝 SUPORTIF</h5>
+              <ul>
+                <li>
+                  Pendampingan personal untuk membantu kebutuhan masing-masing
+                  agent
+                </li>
+                <li>
+                  Aktivitas agent didukung dengan tools (<strong
+                    >GENFI APPS</strong
+                  >)
+                </li>
+                <li>Penjualan yang didukung oleh sistem</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -269,7 +349,7 @@
           <div
             class="col-lg-4 col-md-5 order-md-2 text-center text-md-start mb-5 mb-md-0"
           >
-            <h2>INFO BISNIS PROSES AGENT BFI</h2>
+            <h2 class="text-light">INFO BISNIS PROSES AGENT BFI</h2>
 
             <a
               class="btn btn-primary"
@@ -294,7 +374,7 @@
                       width="100"
                     />
                     <h3 class="h5 mb-2">OFFERING</h3>
-                    <p class="fs-sm">
+                    <p class="fs-sm text-dark">
                       Calon konsumen menghubungi Agent BFI Finance
                     </p>
                   </div>
@@ -308,7 +388,7 @@
                       width="100"
                     />
                     <h3 class="h5 mb-2">REFFERAL</h3>
-                    <p class="fs-sm">
+                    <p class="fs-sm text-dark">
                       Agent memberikan informasi & menginput pada platform calon
                       konsumen ke BFI
                     </p>
@@ -323,7 +403,7 @@
                       width="100"
                     />
                     <h3 class="h5 mb-2">ANALYSIS</h3>
-                    <p class="fs-sm">
+                    <p class="fs-sm text-dark">
                       Proses analisis kelayakan konsumen oleh BFI Finance
                     </p>
                   </div>
@@ -339,7 +419,7 @@
                       width="100"
                     />
                     <h3 class="h5 mb-2">APPROVAL</h3>
-                    <p class="fs-sm">
+                    <p class="fs-sm text-dark">
                       Persetujuan pembiayaan konsumen & Pencairan
                     </p>
                   </div>
@@ -353,7 +433,7 @@
                       width="100"
                     />
                     <h3 class="h5 mb-2">BONUS AGENT</h3>
-                    <p class="fs-sm">
+                    <p class="fs-sm text-dark">
                       Pembayaran bonus secara real-time ke rekening agent
                     </p>
                   </div>
@@ -364,334 +444,620 @@
         </div>
       </section>
 
-      <!-- Skema Bonus Agent Mobil  -->
+      <!-- Keunggulan Agent -->
 
-      <section class="container">
-        <h2 class="text-center">SKEMA BONUS AGENT MOBIL</h2>
-
-        <!-- RWD Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6">
-            <img
-              class="d-block mx-auto"
-              src="images/Tabel 1.webp"
-              alt="tabel1"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
-            <h3 class="h4 mb-4">Bonus Promosi</h3>
-
-            <p class="pb-1">
-              Merupakan bonus atas setiap unit kendaraan konsumen yang
-              direferensikan oleh Agent hingga funding secara real-time
-            </p>
-          </div>
-        </div>
-        <!-- Web Dev Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6 offset-lg-1 order-md-2">
-            <img
-              class="d-block mx-auto"
-              src="images/Tabel 3.webp"
-              alt="Web Development"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
-            <h3 class="h4 mb-4">Bonus Progressif</h3>
-
-            <p class="pb-1">
-              Merupakan Akumulasi bonus data setiap unit kendaraan konsumen yang
-              direferensikan oleh agent hingga funding selama satu bulan
-            </p>
-          </div>
-        </div>
-        <!-- Mobile Dev Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6">
-            <img
-              class="d-block mx-auto"
-              src="images/Tabel 2.webp"
-              alt="Mobile Apps Development"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
-            <h3 class="h4 mb-4">Bonus Kuartal</h3>
-
-            <p class="pb-1">
-              Merupakan akumulasi bonus atas setiap unit kendaraan konsumen yang
-              direferensikan oleh agent hingga funding selama 3 bulan
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skema Bonus Agent Motor  -->
-      <section class="container pt-5">
-        <h2 class="text-center">SKEMA BONUS AGENT MOTOR</h2>
-        <!-- RWD Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6">
-            <img
-              class="d-block mx-auto"
-              src="images/tabel-motor (1).webp"
-              alt="tabel1"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
-            <h3 class="h4 mb-4">Bonus Promosi</h3>
-
-            <p class="pb-1">
-              Merupakan bonus atas setiap unit kendaraan konsumen yang
-              direferensikan oleh Agent hingga funding secara real-time
-            </p>
-          </div>
-        </div>
-        <!-- Web Dev Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6 offset-lg-1 order-md-2">
-            <img
-              class="d-block mx-auto"
-              src="images/tabel-motor (3).webp"
-              alt="Web Development"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1">
-            <h3 class="h4 mb-4">Bonus Progressif</h3>
-
-            <p class="pb-1">
-              Merupakan Akumulasi bonus data setiap unit kendaraan konsumen yang
-              direferensikan oleh agent hingga funding selama satu bulan
-            </p>
-          </div>
-        </div>
-        <!-- Mobile Dev Service-->
-        <div class="row align-items-center border-bottom">
-          <div class="col-md-6">
-            <img
-              class="d-block mx-auto"
-              src="images/tabel-motor (2).webp"
-              alt="Mobile Apps Development"
-            />
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
-            <h3 class="h4 mb-4">Bonus Kuartal</h3>
-
-            <p class="pb-1">
-              Merupakan akumulasi bonus atas setiap unit kendaraan konsumen yang
-              direferensikan oleh agent hingga funding selama 3 bulan
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- NETFIN CTA -->
-
-      <section class="container bg-light py-5 rounded py-md-5">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 px-5">
-            <div
-              class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1"
-              style="max-width: 516px"
-            >
-              <form
-                class="needs-validation"
-                novalidate=""
-                action="form-handler.php"
-                method="post"
-              >
-                <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
-                <p
-                  class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
-                >
-                  Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB
-                  Truck.
+      <section class="container body py-5">
+        <h2 class="text-center fw-bold text-light mb-4">
+          KEUNTUNGAN AGENT BFI
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-custom h-100">
+              <!-- Added h-100 -->
+              <div class="card-header-custom">GENFI PLATFORM</div>
+              <div class="card-body d-flex flex-column text-center">
+                <div class="icon-container">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+                    alt="Platform Icon"
+                  />
+                </div>
+                <p>
+                  Platform on the go yang mudah digunakan & diperuntukkan kepada
+                  agent BFI untuk:
                 </p>
-                <b>Informasi Diri</b>
-                <div class="input-group mb-3 mt-2">
-                  <i
-                    class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="nama"
-                    placeholder="Nama"
-                    required="true"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <i
-                    class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="hp"
-                    placeholder="Nomor Handphone"
-                    required="true"
-                  />
-                </div>
-                <div class="input-group mb-3">
-                  <i
-                    class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"
-                  ></i>
-                  <input
-                    class="form-control rounded"
-                    type="text"
-                    name="kota"
-                    placeholder="Kota"
-                    required="true"
-                  />
-                </div>
-                <b>Divisi</b>
-
-                <div class="form-check mt-2">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-1"
-                    name="divisi"
-                    value="Customer Service"
-                    checked=""
-                  />
-                  <label class="form-check-label" for="ex-radio-1"
-                    >Customer Service</label
-                  >
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-2"
-                    name="divisi"
-                    value="Marketing BPKB Mobil"
-                  />
-                  <label class="form-check-label" for="ex-radio-2"
-                    >Marketing BPKB Mobil</label
-                  >
-                </div>
-                <div class="form-check mb-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    id="ex-radio-3"
-                    name="divisi"
-                    value="Marketing BPKB Motor"
-                  />
-                  <label class="form-check-label" for="ex-radio-3"
-                    >Marketing BPKB Motor</label
-                  >
-                </div>
-                <b>Keterangan Tambahan</b>
-                <div class="mb-3 mt-3 pb-1">
-                  <textarea
-                    class="form-control"
-                    rows="4"
-                    name="keterangan"
-                    placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb"
-                    required="true"
-                  ></textarea>
-                </div>
-                <div class="row pt-2">
-                  <div class="col-lg-6 col-md-8">
-                    <button class="btn btn-primary btn-block" type="submit">
-                      Hubungi Kami
-                    </button>
-                  </div>
-                </div>
-              </form>
+                <ul class="text-start flex-grow-1">
+                  <li>Mempermudah proses registrasi</li>
+                  <li>Transparansi leads monitoring</li>
+                  <li>Tracking bonus real time</li>
+                  <li>Self learning untuk agent</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
-            <h2 class="h1 text-center">Hubungi Kami</h2>
 
-            <a
-              target="_blank"
-              href="https://wa.me/6281558444484?text=Saya%20mau%20pengajuan%20ke%20BFI%20Agency"
-            >
-              <img
-                src="https://netfin.id/site-assets/netfin/button-wa.png"
-                class="rounded mx-auto"
-                alt="adira finance whatsapp"
-                style="width: 300px"
-              /> </a
-            ><br />
+          <div class="col-md-4">
+            <div class="card card-custom h-100">
+              <div class="card-header-custom">
+                SKEMA BONUS & LOYALTY PROGRAM
+              </div>
+              <div class="card-body d-flex flex-column text-center">
+                <div class="icon-container">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+                    alt="Bonus Icon"
+                  />
+                </div>
+                <p>
+                  Skema bonus agent yang kompetitif dan program spesial
+                  diberikan seperti:
+                </p>
+                <ul class="text-start flex-grow-1">
+                  <li>Bonus Promosi</li>
+                  <li>Bonus Progresif</li>
+                  <li>Bonus Kuartal</li>
+                  <li>Spesial Program</li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-4">
+            <div class="card card-custom h-100">
+              <div class="card-header-custom">SUPPORT NATIONAL</div>
+              <div class="card-body d-flex flex-column text-center">
+                <div class="icon-container">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+                    alt="Support Icon"
+                  />
+                </div>
+                <p>
+                  Agent BFI Finance akan mendapatkan asistensi dan pendampingan
+                  serta support lebih dari <b>180 cabang</b> yang tersebar di
+                  Indonesia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pengelompokan Agent -->
+      <section class="container mt-5">
+        <h2 class="text-center text-light mb-4">PRODUCT KNOWLEDGE MOBIL</h2>
+        <div class="table-responsive">
+          <table>
+            <thead class="table header">
+              <tr>
+                <th>Kategori</th>
+                <th>Usia Kendaraan</th>
+                <th>Maksimal Pencairan</th>
+                <th>Kepemilikan BPKB</th>
+                <th>Kepemilikan Rumah</th>
+                <th>Kapasitas Konsumen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>SJMB</strong> (Sedan Jeep Minibus)</td>
+                <td>&le; 20 Tahun</td>
+                <td>Sampai 85% dari harga kendaraan</td>
+                <td>Atas nama sendiri / orang lain</td>
+                <td>Atas nama sendiri / pasangan / keluarga</td>
+                <td>Melampirkan bukti rekening 3 bulan terakhir</td>
+              </tr>
+              <tr>
+                <td><strong>NON SJMB</strong></td>
+                <td>&le; 13 Tahun</td>
+                <td>Sampai 75% dari harga kendaraan</td>
+                <td>Atas nama sendiri / orang lain</td>
+                <td>Atas nama sendiri / pasangan / keluarga</td>
+                <td>Melampirkan bukti rekening 3 bulan terakhir</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Skema Bonus Agent Mobil 1 -->
+
+      <section class="container text-center my-5">
+        <h2 class="fw-bold text-white">SKEMA BONUS AGENT MOBIL</h2>
+        <div class="row g-4 mt-4">
+          <!-- Bonus Promosi -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-chart-line bonus-icon"></i>
+              <h4 class="mt-3">Bonus Promosi</h4>
+              <p>
+                Bonus untuk setiap unit kendaraan konsumen yang direferensikan
+                oleh Agent hingga funding secara real-time.
+              </p>
+            </div>
+          </div>
+          <!-- Bonus Progresif -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-hand-holding-usd bonus-icon"></i>
+              <h4 class="mt-3">Bonus Progresif</h4>
+              <p>
+                Akumulasi bonus atas setiap unit kendaraan konsumen yang
+                direferensikan selama satu bulan.
+              </p>
+            </div>
+          </div>
+          <!-- Bonus Kuartal -->
+          <div class="col-md-4">
+            <div class="bonus-card p-4">
+              <i class="fas fa-calendar-alt bonus-icon"></i>
+              <h4 class="mt-3">Bonus Kuartal</h4>
+              <p>
+                Akumulasi bonus untuk kendaraan konsumen yang direferensikan
+                dalam tiga bulan. Dibayarkan setiap kuartal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skema Bonus Agent Mobil  -->
+
+      <section class="container py-5">
+        <h2 class="text-center text-light">SKEMA BONUS AGENT MOBIL</h2>
+        <h2 class="text-light">Promosi dan Bonus</h2>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col table-responsive">
+            <table>
+              <tr class="header">
+                <th colspan="4">PROMOSI</th>
+              </tr>
+              <tr>
+                <th>RANGE TENOR</th>
+                <th>BOMBASTIS</th>
+                <th>STANDARD</th>
+                <th>SUPER DEAL</th>
+              </tr>
+              <tr>
+                <td>≥ 4 TAHUN</td>
+                <td>7.00 %</td>
+                <td>5.00 %</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>≥ 3 - < 4 TAHUN</td>
+                <td>6.50 %</td>
+                <td>4.00 %</td>
+                <td>1.50 %</td>
+              </tr>
+              <tr>
+                <td>≥ 2 - < 3 TAHUN</td>
+                <td>5.00 %</td>
+                <td>3.50 %</td>
+                <td>1.50 %</td>
+              </tr>
+              <tr>
+                <td>≥ 1 - < 2 TAHUN</td>
+                <td>2.50 %</td>
+                <td>2.00 %</td>
+                <td>1.00 %</td>
+              </tr>
+            </table>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Paket Bonbastis:</strong> Seluruh Paket dengan
+                keterangan "Bonbastis"
+              </li>
+              <li class="list-group-item">
+                <strong>Paket Standard:</strong>
+                <ul>
+                  <li>Seluruh Paket dengan keterangan "Standard"</li>
+                  <li>Paket C to C (Customer to Customer)</li>
+                  <li>Paket MPU (Mobil Penumpang Umum)</li>
+                </ul>
+              </li>
+              <li class="list-group-item">
+                <strong>Paket Super Deal:</strong>
+                <ul>
+                  <li>Seluruh Paket dengan keterangan "Super Deal"</li>
+                  <li>
+                    Paket Take Over & Bartar mengacu ke skema bonus Super Deal <
+                    300jt
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col mt-4 mt-lg-0 table-responsive">
+            <table>
+              <tr class="header">
+                <th colspan="3">PROGRESSIVE PERFORMANCE</th>
+              </tr>
+              <tr>
+                <th>RANGE NTF</th>
+                <th>% BONUS</th>
+                <th>BONUS/CTR</th>
+              </tr>
+              <tr>
+                <td>≥40M</td>
+                <td>5.00%</td>
+                <td>≥10CTR</td>
+              </tr>
+              <tr>
+                <td>15~<40M</td>
+                <td>4.75%</td>
+                <td>3~<10CTR</td>
+              </tr>
+              <tr>
+                <td>5~<15M</td>
+                <td>4.50%</td>
+                <td>2~<5M</td>
+              </tr>
+              <tr>
+                <td>1~<2M</td>
+                <td>4.00%</td>
+                <td>500JT~<1M</td>
+              </tr>
+              <tr>
+                <td>250JT~<500JT</td>
+                <td>2.50%</td>
+                <td>150JT~<250JT</td>
+              </tr>
+            </table>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Catatan:</strong>
+                Pembayaran bonus dihitung dari akumulasi pencapaian Agent satu
+                bulan.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="table-responsive mt-5">
+          <table>
+            <tr class="header">
+              <th colspan="2">QUARTAL</th>
+            </tr>
+            <tr>
+              <th>RANGE NTF</th>
+
+              <th>BONUS</th>
+            </tr>
+            <tr>
+              <td>≥ 10M</td>
+              <td>50 JUTA</td>
+            </tr>
+            <tr>
+              <td>3 - < 5 M</td>
+
+              <td>22.5 JUTA</td>
+            </tr>
+          </table>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>Catatan:</strong>
+              Pembayaran bonus dihitung dari akumulasi pencairan (NTF Murni)
+              selama 3 bulan (Kuartal). Periode Kuartal mulai dari Jan - Feb -
+              Mar dan seterusnya.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Loyalty Program -->
+      <section class="container my-5">
+        <h2 class="text-center text-white fw-bold mb-4">LOYALTY PROGRAM</h2>
+
+        <div class="row g-4">
+          <!-- Seasonal Program -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-custom h-100">
+              <!-- Added h-100 -->
+              <div class="card-header-custom">SEASONAL PROGRAM</div>
+              <div class="card-body d-flex flex-column text-center">
+                <img
+                  src="images/seasonal-program-bfiagency.jpg"
+                  alt="Seasonal Program"
+                />
+                <p class="mt-3">
+                  Merupakan program khusus untuk Agent yang dibuat secara
+                  seasonal menyesuaikan kebutuhan agent yang berupa extra
+                  rewards / bonus.
+                </p>
+                <div class="mt-auto"></div>
+                <!-- Push content to bottom -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Commitment Program -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-custom h-100">
+              <div class="card-header-custom">COMMITMENT PROGRAM</div>
+              <div class="card-body d-flex flex-column text-center">
+                <img src="images/gold-bfiagency.jpg" alt="Commitment Program" />
+                <p class="mt-3">
+                  Merupakan program reward berupa Logam Mulia berdasarkan
+                  kesepakatan & komitmen tertentu yang harus dicapai oleh Agent.
+                </p>
+                <div class="mt-auto"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CMP Program -->
+          <div class="col-lg-4 col-md-6 mx-auto">
+            <div class="card card-custom h-100">
+              <div class="card-header-custom">
+                CMP (CUSTOMIZED MARKETING PROGRAM)
+              </div>
+              <div class="card-body d-flex flex-column text-center">
+                <img src="images/voucher-bfiagency.jpg" alt="CMP Program" />
+                <p class="mt-3">
+                  Merupakan reward berupa barang, gathering, tour & voucher
+                  belanja atau barang lainnya sesuai dengan komitmen ARE dengan
+                  Agent yang sesuai dengan syarat & ketentuan.
+                </p>
+                <div class="mt-auto"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="text-center text-white fw-bold mb-4">COMMITMENT PROGRAM</h2>
+
+        <div class="row g-4">
+          <!-- Regular Agent -->
+          <div class="col-lg-6">
+            <div class="p-3">
+              <h5 class="text-center text-light fw-bold">REGULAR AGENT</h5>
+              <div class="table-responsive">
+                <table>
+                  <tr class="header">
+                    <th>POINTS</th>
+                    <th>REWARDS (Logam Mulia)</th>
+                  </tr>
+
+                  <tbody>
+                    <tr>
+                      <td>10.000</td>
+                      <td>Rp500.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>5.000</td>
+                      <td>Rp250.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>3.000</td>
+                      <td>Rp150.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>2.000</td>
+                      <td>Rp100.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>1.500</td>
+                      <td>Rp75.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>1.000</td>
+                      <td>Rp50.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>650</td>
+                      <td>Rp20.000.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-center">
+                <small
+                  >* 1 Points = 10.000.000 NTF Murni / Pencairan ke
+                  konsumen</small
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Partnership Agent -->
+          <div class="col-lg-6">
+            <div class="p-3">
+              <h5 class="text-center text-light fw-bold">PARTNERSHIP AGENT</h5>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>POINTS</th>
+                      <th>REWARDS (Logam Mulia)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>80.000</td>
+                      <td>Rp4.000.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>40.000</td>
+                      <td>Rp2.000.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>20.000</td>
+                      <td>Rp1.000.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>15.000</td>
+                      <td>Rp750.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>10.000</td>
+                      <td>Rp500.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>6.000</td>
+                      <td>Rp300.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>3.000</td>
+                      <td>Rp150.000.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-center">
+                <small
+                  >* 1 Points = 10.000.000 NTF Murni / Pencairan ke
+                  konsumen</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skema Bonus Agent Motor  -->
+      <section class="container pt-5">
+        <h2 class="text-center text-light">SKEMA BONUS AGENT MOTOR</h2>
+        <div class="container table-responsive">
+          <table>
+            <tr class="header">
+              <th colspan="6">PROMOSI</th>
+            </tr>
+            <tr class="header">
+              <th>Range Tender</th>
+              <th colspan="2">Paket Ekstra</th>
+              <th colspan="2">Paket Standard</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>≤ 12 BLN</th>
+              <th>24 BLN</th>
+              <th>≤ 12 BLN</th>
+              <th>24 BLN</th>
+            </tr>
+            <tr>
+              <td>3 JT</td>
+              <td>600 Ribu</td>
+              <td>750 Ribu</td>
+              <td>500 Ribu</td>
+              <td>450 Ribu</td>
+            </tr>
+            <tr>
+              <td>5 JT - 8 JT</td>
+              <td>700 Ribu</td>
+              <td>900 Ribu</td>
+              <td>475 Ribu</td>
+              <td>450 Ribu</td>
+            </tr>
+            <tr>
+              <td>8 JT - 12 JT</td>
+              <td>800 Ribu</td>
+              <td>950 Ribu</td>
+              <td>450 Ribu</td>
+              <td>425 Ribu</td>
+            </tr>
+          </table>
+
+          <table>
+            <tr class="header">
+              <th colspan="2">PROGRESSIVE</th>
+            </tr>
+            <tr class="header">
+              <th>Range CTR</th>
+              <th>Bonus / CTR</th>
+            </tr>
+            <tr>
+              <td>≥ 20 CTR</td>
+              <td>300 Ribu</td>
+            </tr>
+            <tr>
+              <td>15 - 20 CTR</td>
+              <td>250 Ribu</td>
+            </tr>
+            <tr>
+              <td>10 - 15 CTR</td>
+              <td>225 Ribu</td>
+            </tr>
+            <tr>
+              <td>5 - 10 CTR</td>
+              <td>200 Ribu</td>
+            </tr>
+            <tr>
+              <td>3 - 5 CTR</td>
+              <td>175 Ribu</td>
+            </tr>
+          </table>
+
+          <table>
+            <tr class="header">
+              <th colspan="2">QUARTAL</th>
+            </tr>
+            <tr class="header">
+              <th>Range CTR</th>
+              <th>Bonus / CTR</th>
+            </tr>
+            <tr>
+              <td>≥ 100 CTR</td>
+              <td>100 Ribu</td>
+            </tr>
+            <tr>
+              <td>50 - 100 CTR</td>
+              <td>75 Ribu</td>
+            </tr>
+            <tr>
+              <td>30 - 50 CTR</td>
+              <td>50 Ribu</td>
+            </tr>
+          </table>
         </div>
       </section>
     </main>
     <!-- Footer -->
 
-    <footer class="footer bg-dark pt-5 pt-md-6">
-      <div class="container pt-3 pt-md-0">
-        <div class="row pb-3">
-          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+    <footer class="footer pt-4 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-3 d-flex align-items-center">
             <img
               src="https://netfin.id/site-assets/netfin/logo.svg"
-              width="54"
+              width="40"
               class="pb-2"
               alt=""
             />
-            <h3 class="fs-5 text-light">BFI Agency</h3>
-            <p class="">
-              <span class="text-light me-1"
+            <p class="fs-6 fw-bold text-dark ms-3 mb-0">BFI Agency</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <p class="fs-sm mb-0">
+              <span class="text-dark opacity-50 me-1"
                 >© All rights reserved. Made by</span
               ><a
-                class="nav-link-style nav-link-light"
+                class="nav-link-style nav-link-dark"
                 href="https://netfin.id/"
                 target="_blank"
                 rel="noopener"
                 >Netfin.id</a
               >
             </p>
+          </div>
+          <div class="col-md-4 text-md-end mb-3">
             <a
-              class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2"
+              class="btn-social bs-outline bs-facebook bs-dark bs-lg me-2 mb-2"
               href="#"
               ><i class="bi bi-facebook"></i></a
             ><a
-              class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
+              class="btn-social bs-outline bs-twitter bs-dark bs-lg me-2 mb-2"
               href="#"
               ><i class="bi bi-twitter"></i></a
             ><a
-              class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2"
+              class="btn-social bs-outline bs-instagram bs-dark bs-lg me-2 mb-2"
               href="#"
               ><i class="bi bi-instagram"></i></a
             ><a
-              class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
+              class="btn-social bs-outline bs-google bs-dark bs-lg me-2 mb-2"
               href="#"
               ><i class="bi bi-google"></i
             ></a>
-          </div>
-        </div>
-        <hr class="my-0 border-light" />
-        <div class="row align-items-center mt-3 py-4">
-          <div class="col-md-6 order-md-2 text-md-end mb-3">
-            <ul class="list-inline fs-sm mb-0">
-              <li class="list-inline-item">
-                <a class="nav-link-style nav-link-light" href="#">Support</a>
-              </li>
-              <li class="list-inline-item">
-                <a class="nav-link-style nav-link-light" href="#">Contacts</a>
-              </li>
-              <li class="list-inline-item">
-                <a class="nav-link-style nav-link-light" href="#"
-                  >Terms &amp; Conditions</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 order-md-1 mb-3">
-            <p class="fs-sm mb-0">
-              <span class="text-light opacity-50 me-1"
-                >© All rights reserved. Made by</span
-              ><a
-                class="nav-link-style nav-link-light"
-                href="https://netfin.id/"
-                target="_blank"
-                rel="noopener"
-                >Netfin.id</a
-              >
-            </p>
           </div>
         </div>
       </div>
