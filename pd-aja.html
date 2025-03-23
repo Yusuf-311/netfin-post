@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PDaja.com - Pinjaman Multiguna</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon and Touch Icons-->
+
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+    <!-- Vendor styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/chartist/dist/chartist.css" />
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap CDN icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="navbar navbar-expand-lg shadow fixed-top bg-light">
+        <div class="container">
+          <a class="navbar-brand pe-sm-3" href="index.html">
+            <img src="images/pdajacom.png" width="100px" height="50px" alt="" />
+          </a>
+
+          <button class="btn btn-danger order-5 d-lg-flex d-md-flex d-none">
+            Kontak kami
+          </button>
+          <button
+            class="navbar-toggler ms-sm-3 collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-expanded="false"
+            id="menuButton"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ff0101/40/menu--v1.png"
+              alt="menu--v1"
+              id="menuIcon"
+            />
+          </button>
+
+          <nav class="navbar-collapse collapse" id="navbarNav" style="">
+            <ul
+              class="navbar-nav navbar-nav-scroll me-auto"
+              style="--ar-scroll-height: 520px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Statistik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Artikel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cek Status</a>
+              </li>
+              <li>
+                <button
+                  class="btn btn-danger text-center text-lg-start d-lg-none d-md-none"
+                >
+                  <a
+                    class="text-light"
+                    href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                  >
+                    Kontak kami
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="container-fluid px-0 py-5 pb-md-6">
+        <div class="row g-0 align-items-xl-center">
+          <div class="col-lg-6 col-md-7 text-end order-md-2">
+            <img
+              class="d-inline-block"
+              src="images/hero-img.jpg"
+              alt="Business people"
+              width="945"
+            />
+          </div>
+          <div class="col-lg-6 col-md-5 pt-5 pb-3 py-md-5">
+            <div
+              class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1"
+              style="max-width: 516px"
+            >
+              <h1 class="mb-grid-gutter pb-1">
+                Pinjaman Rekening Koran dengan Bunga Rendah
+              </h1>
+              <p
+                class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
+              >
+                Kami siap membantu Anda mengatasi masalah keuangan Anda. Jangan
+                ragu untuk menghubungi tim kami jika Anda memiliki pertanyaan
+                atau membutuhkan bantuan. Kami berkomitmen untuk memberikan
+                layanan yang terbaik kepada Anda.
+              </p>
+              <div class="pt-2">
+                <a
+                  href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                  class="btn btn-danger text-light"
+                  data-sub-html='&lt;h6 class="fs-sm text-light"&gt;Around Consulting&lt;/h6&gt;'
+                  ><span class="fs-sm">Ajukan Pinjaman</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefit -->
+      <section class="container">
+        <div class="row align-items-center py-4 py-xl-5 my-2">
+          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0">
+            <img
+              class="rounded-3"
+              src="https://images.unsplash.com/photo-1601597110547-78516f198ce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+              alt="Image"
+            />
+          </div>
+          <div class="col-md-6 col-xl-5 order-md-1">
+            <div class="pe-md-4 pe-xl-0">
+              <h2 class="h1 pb-2 pb-lg-3">
+                Kelebihan Pinjaman
+                <span class="text-danger">PD</span>aja.com
+              </h2>
+              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
+                PDaja.com menawarkan berbagai produk pinjaman yang dirancang
+                khusus sebagai solusi kebutuhan finansial dengan bunga yang
+                kompetitif. Nikmati proses pinjaman dengan proses yang mudah,
+                cepat, dan terpercaya.
+              </p>
+              <div class="row row-cols-2">
+                <div class="col mb-4">
+                  <div class="d-table bg-secondary rounded-1 p-2 mb-3">
+                    <img
+                      class="d-block d-dark-mode-none m-1"
+                      src="images/rekening-koran.webp"
+                      width="28"
+                      alt="Icon"
+                    /><img
+                      class="d-none d-dark-mode-block m-1"
+                      src="images/rekening-koran.webp"
+                      width="28"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-2">Pinjaman Rekening Koran</h3>
+                  <p class="fs-sm mb-0">
+                    Persyaratan yang fleksibel cukup dengan jaminan SHM, SHGB
+                    atau SHMSRS.
+                  </p>
+                </div>
+                <div class="col mb-4">
+                  <div class="d-table bg-secondary rounded-1 p-2 mb-3">
+                    <img
+                      class="d-block d-dark-mode-none m-1"
+                      src="images/penawaran-cepat.webp"
+                      width="28"
+                      alt="Icon"
+                    /><img
+                      class="d-none d-dark-mode-block m-1"
+                      src="images/penawaran-cepat.webp"
+                      width="28"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-2">Proses Penawaran Awal Cepat</h3>
+                  <p class="fs-sm mb-0">
+                    Dapatkan penawaran awal hanya dalam 10 menit dengan
+                    melengkapi detail informasi pengajuan.
+                  </p>
+                </div>
+                <div class="col mb-4">
+                  <div class="d-table bg-secondary rounded-1 p-2 mb-3">
+                    <img
+                      class="d-block d-dark-mode-none m-1"
+                      src="images/keamanan.webp"
+                      width="28"
+                      alt="Icon"
+                    /><img
+                      class="d-none d-dark-mode-block m-1"
+                      src="images/keamanan.webp"
+                      width="28"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-2">Keamanan terjamin</h3>
+                  <p class="fs-sm mb-0">
+                    Dikelola oleh Bank Sahabat Sampoerna yang telah berizin dan
+                    diawasi oleh Otoritas Jasa Keuangan.
+                  </p>
+                </div>
+                <div class="col mb-4">
+                  <div class="d-table bg-secondary rounded-1 p-2 mb-3">
+                    <img
+                      class="d-block d-dark-mode-none m-1"
+                      src="images/bunga.webp"
+                      width="28"
+                      alt="Icon"
+                    /><img
+                      class="d-none d-dark-mode-block m-1"
+                      src="images/bunga.webp"
+                      width="28"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h3 class="h5 mb-2">Bunga yang kompetitif</h3>
+                  <p class="fs-sm mb-0">
+                    Dapatkan bunga mulai dari 1,5% per bulan, hanya bayar bunga
+                    sesuai dengan pemakaian.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service -->
+      <section class="container py-5 pb-xxl-3 my-5">
+        <div class="row">
+          <div class="col-lg-4 pb-3 mb-3">
+            <h2 class="h1">Produk Pinjaman Kami</h2>
+            <p class="pe-5 mb-0">
+              Dapatkan fasilitas Pinjaman Rekening Koran dengan agunan Rumah,
+              Ruko, Gudang atau Apartemen
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col">
+                <!-- Item-->
+                <div class="card border-0 bg-secondary rounded-5 mb-4">
+                  <div class="card-body pb-3">
+                    <img src="images/probiz.webp" class="mb-2" alt="" />
+                    <h3 class="h4">PROBIZ</h3>
+                    <p class="mb-0">
+                      Fasilitas pinjaman untuk pengusaha yang sudah stabil dan
+                      ingin mengembangkan usahanya.
+                    </p>
+                  </div>
+                  <div class="card-footer border-0 pt-3 mb-3">
+                    <a
+                      class="btn btn-icon btn-lg btn-outline-danger rounded-circle stretched-link"
+                      href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      ><i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Item-->
+                <div class="card border-0 bg-secondary rounded-5">
+                  <div class="card-body pb-3">
+                    <img src="images/expro.webp" class="mb-2" alt="" />
+                    <h3 class="h4">EXPRO</h3>
+                    <p class="mb-0">
+                      Solusi pinjaman multiguna untuk Karyawan, Eksekutif dan
+                      Profesional seperti, Dokter, Guru, PNS, Content Creator,
+                      dan lainnya.
+                    </p>
+                  </div>
+                  <div class="card-footer border-0 pt-3 mb-3">
+                    <a
+                      class="btn btn-icon btn-lg btn-outline-danger rounded-circle stretched-link"
+                      href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      ><i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <!-- Item-->
+                <div class="card border-0 bg-secondary rounded-5 mb-4">
+                  <div class="card-body pb-3">
+                    <img src="images/mekarin.webp" class="mb-2" alt="" />
+                    <h3 class="h4">MEKARINAJA</h3>
+                    <p class="mb-0">
+                      Pinjaman multiguna dengan fasilitas plafon Rekening Koran.
+                      Dengan persyaratan yang fleksibel, cocok untuk Anda yang
+                      baru memulai bisnis.
+                    </p>
+                  </div>
+                  <div class="card-footer border-0 pt-3 mb-3">
+                    <a
+                      class="btn btn-icon btn-lg btn-outline-danger rounded-circle stretched-link"
+                      href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      ><i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Item-->
+                <div class="card border-0 bg-secondary rounded-5">
+                  <div class="card-body pb-3">
+                    <img src="images/sbs.webp" class="mb-2" alt="" />
+                    <h3 class="h4">SMART BUSINESS SOLUTIONS</h3>
+                    <p class="mb-0">
+                      Smart Business Solutions, platform jual beli hak tagih
+                      invoice antara perusahaan anda dan supplier Anda yang
+                      diotomasi dengan sistem yang terintegrasi.
+                    </p>
+                  </div>
+                  <div class="card-footer border-0 pt-3 mb-3">
+                    <a
+                      class="btn btn-icon btn-lg btn-outline-danger rounded-circle stretched-link"
+                      href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      ><i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Item-->
+              </div>
+              <div class="col">
+                <div class="card border-0 bg-secondary rounded-5">
+                  <div class="card-body pb-3">
+                    <img src="images/payrol.webp" class="mb-2" alt="" />
+                    <h3 class="h4">PAYROLL LOAN</h3>
+                    <p class="mb-0">
+                      Solusi pembiayaan tanpa jaminan untuk karyawan perusahaan
+                      dengan skema pembayaran autodebet gaji
+                    </p>
+                  </div>
+                  <div class="card-footer border-0 pt-3 mb-3">
+                    <a
+                      class="btn btn-icon btn-lg btn-outline-danger rounded-circle stretched-link"
+                      href="https://wa.me/6282116109549?text=Halo%20Bank%20Sampoerna%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      ><i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Area -->
+      <section class="bg-danger py-6">
+        <div class="position-relative zindex-5 container py-2">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-5 offset-lg-1 order-lg-2 pb-5 pb-lg-0 text-center text-lg-start"
+            >
+              <h2 class="text-light">Cakupan Area</h2>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <img src="images/indonesia-location.png" alt="" />
+              <div class="row">
+                <div class="col-sm-4 mb-2 pb-4 mb-sm-0 pb-sm-0">
+                  <div class="px-2 text-center">
+                    <img
+                      width="50"
+                      height="50"
+                      src="https://img.icons8.com/ios/50/ffffff/marker--v1.png"
+                      alt="marker--v1"
+                    />
+
+                    <p class="fs-lg fw-medium text-light mb-0 pt-1">
+                      Jabodetabek
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-2 pb-4 mb-sm-0 pb-sm-0">
+                  <div class="px-2 text-center">
+                    <img
+                      width="50"
+                      height="50"
+                      src="https://img.icons8.com/ios/50/ffffff/marker--v1.png"
+                      alt="marker--v1"
+                    />
+                    <p class="fs-lg fw-medium text-light mb-0 pt-1">Surabaya</p>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-2 pb-4 mb-sm-0 pb-sm-0">
+                  <div class="px-2 text-center">
+                    <img
+                      width="50"
+                      height="50"
+                      src="https://img.icons8.com/ios/50/ffffff/marker--v1.png"
+                      alt="marker--v1"
+                    />
+                    <p class="fs-lg fw-medium text-light mb-0 pt-1">Bali</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="container py-5 my-md-2 my-lg-3 my-xl-4 my-xxl-5">
+        <div class="row align-items-center py-1 py-sm-3 py-md-4 my-lg-2">
+          <div class="col-lg-4 offset-xl-1">
+            <h2 class="h1 text-center text-lg-start pb-3 pb-lg-1">
+              Penerima Pinjaman <span class="text-danger">PD</span>aja.com
+            </h2>
+         
+            <ul class="list-unstyled d-none d-lg-block pb-3 mb-3 mb-lg-4">
+              <li class="d-flex pt-2">
+                <span class="display-5 fs-4 mt-n1 me-4" style="color: #16c995"
+                  >10%</span
+                >Profesional
+              </li>
+              <li class="d-flex pt-2">
+                <span class="display-5 fs-4 mt-n1 me-4" style="color: #6a9bf4"
+                  >20%</span
+                >
+                Karyawan
+              </li>
+
+              <li class="d-flex pt-2">
+                <span class="display-5 fs-4 mt-n1 me-4" style="color: #f74f78"
+                  >67%</span
+                >Pengusaha
+              </li>
+
+              <li class="d-flex pt-2">
+                <span class="display-5 fs-4 mt-n1 me-4" style="color: #fcd733"
+                  >2%</span
+                >Pensiunan
+              </li>
+            </ul>
+            <a class="btn btn-danger d-none d-lg-inline-flex" href="#"
+              >Ajukan Pinjaman</a
+            >
+          </div>
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
+            <div
+              class="ct-chart ct-perfect-fifth"
+              data-pie-chart='{"series": [10.3,20.6,67.0,2.1]}'
+              ,
+              data-series-color='{"colors": ["#6a9bf4", "#16c995", "#f74f78","#FCD733"]}'
+            ></div>
+            <div
+              class="d-flex mt-4 flex-wrap d-lg-none justify-content-center fs-sm"
+            >
+              <div class="border rounded-1 py-1 px-2 me-2 mb-2">
+                <div
+                  class="d-inline-block align-middle me-1"
+                  style="
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    background-color: #6a9bf4;
+                  "
+                ></div>
+                <span class="d-inline-block align-middle">Profesional</span>
+              </div>
+              <div class="border rounded-1 py-1 px-2 me-2 mb-2">
+                <div
+                  class="d-inline-block align-middle me-1"
+                  style="
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    background-color: #16c995;
+                  "
+                ></div>
+                <span class="d-inline-block align-middle">Karyawan</span>
+              </div>
+              <div class="border rounded-1 py-1 px-2 me-2 mb-2">
+                <div
+                  class="d-inline-block align-middle me-1"
+                  style="
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    background-color: #f74f78;
+                  "
+                ></div>
+                <span class="d-inline-block align-middle">Pengusaha</span>
+              </div>
+              <div class="border rounded-1 py-1 px-2 me-2 mb-2">
+                <div
+                  class="d-inline-block align-middle me-1"
+                  style="
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    background-color: #fcd733;
+                  "
+                ></div>
+                <span class="d-inline-block align-middle">Pensiunan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Footer -->
+
+      <footer class="footer bg-dark pt-5 pt-md-6">
+        <div class="container pt-3 pt-md-0">
+          <div class="row pb-3">
+            <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+              <a class="d-block mb-3" href="index.html" style="width: 153px"
+                ><img src="images/pdajacom.png" alt="Around"
+              /></a>
+              <p class="fs-sm text-light opacity-60 pb-2 pb-sm-3">
+                Sampoerna Strategic Square North Tower Lt. 17 <br />Jl. Jend
+                Sudirman Kav 45 Jakarta Selatan 12930
+              </p>
+
+              <a
+                class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-facebook"></i></a
+              ><a
+                class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-twitter"></i></a
+              ><a
+                class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-instagram"></i></a
+              ><a
+                class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
+                href="#"
+                ><i class="bi bi-google"></i
+              ></a>
+            </div>
+            <div class="col-md-2 col-sm-4 ms-auto pb-1 mb-4"></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 pb-1 mb-4"></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 mb-4"></div>
+          </div>
+          <hr class="my-0 border-light" />
+          <div class="row align-items-center mt-3 py-4">
+            <div class="col-md-6 order-md-2 text-md-end mb-3">
+              <ul class="list-inline fs-sm mb-0">
+                <li class="list-inline-item">
+                  <a class="nav-link-style nav-link-light" href="#">Support</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link-style nav-link-light" href="#">Contacts</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link-style nav-link-light" href="#"
+                    >Terms &amp; Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 order-md-1 mb-3">
+              <p class="fs-sm mb-0">
+                <span class="text-light opacity-50 me-1"
+                  >© All rights reserved. Made by</span
+                ><a
+                  class="nav-link-style nav-link-light"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  >Netfin</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="vendor/chartist/dist/chartist.js"></script>
+    <script
+      rel="stylesheet"
+      media="screen"
+      src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      rel="stylesheet"
+      media="screen"
+      src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
+    ></script>
+
+    <script src="js/theme.min.js"></script>
+
+    <script>
+      // Get references to the button and the img element
+      const menuButton = document.getElementById("menuButton");
+      const menuIcon = document.getElementById("menuIcon");
+
+      // Define the two different icon sources
+      const initialIconSrc = "https://img.icons8.com/ff0101/40/menu--v1.png";
+      const newIconSrc = "https://img.icons8.com/ff0101/40/multiply.png";
+
+      // Add a click event listener to the button
+      menuButton.addEventListener("click", () => {
+        // Check if the current source is the initial icon
+        if (menuIcon.src === initialIconSrc) {
+          // If it is, change it to the new icon
+          menuIcon.src = newIconSrc;
+        } else {
+          // If it's not, change it back to the initial icon
+          menuIcon.src = initialIconSrc;
+        }
+      });
+    </script>
+  </body>
+</html>
