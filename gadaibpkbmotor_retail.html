@@ -1,409 +1,1217 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>gadaibpkbmotor-retail</title>
 
-<head>
-  <title>Gadai BPKB Motor</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
 
-  <!-- SEO Meta Tags-->
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta name="author" content="" />
+    <!-- Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/netfin-logo.png" />
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+    <!-- vendor styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/tiny-slider/dist/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+    <!-- Bootstrap CDN icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
-  <!-- Viewport -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/slider.css" />
+    <!-- Page loading styles-->
+    <style>
+      .hero {
+        background-image: url(images/hero-section-background.svg);
+        background-size: cover;
+      }
 
-  <!-- Import Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"
-    id="google-font" />
-  <!-- vendor styles-->
-  <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
-  <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css" />
-  <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css" />
-  <link rel="stylesheet" media="screen" href="vendor/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" media="screen" href="vendor/flatpickr/dist/flatpickr.min.css" />
-  <!-- Main Theme Styles + Bootstrap-->
-  <link rel="stylesheet" media="screen" href="css/theme.min.css" />
-  <!-- Bootstrap CDN icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      .cta {
+        background-image: url(images/background-cta.png);
+        background-size: cover;
+      }
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/slider.css" />
-</head>
+      .text-bfi {
+        color: #04559f;
+      }
 
-<body>
-  <!-- Header -->
-  <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky navbar-stuck" data-scroll-header=""
-    data-fixed-element="">
-    <div class="container px-0 px-xl-3">
-      <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-        <span class="navbar-toggler-icon"></span></button><a
-        class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="../index.html">Gadai BPKB
-        Motor</a>
-      <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
-        <a class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block"
-          href="https://wa.me/6281558444484?text=Halo%20gadaibpkbmotor%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
-          data-bs-toggle="modal" data-view="#modal-signup-view">Ajukan Sekarang</a>
-      </div>
-      <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
-        <div class="offcanvas-header navbar-shadow">
-          <h5 class="mt-1 mb-0">Menu</h5>
-          <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      .bg-bfi {
+        background-color: #04559f;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      th {
+        background-color: #04559f;
+        color: white;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #ffeb99;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky navbar-stuck"
+      data-scroll-header=""
+      data-fixed-element=""
+    >
+      <div class="container px-0 px-xl-3">
+        <button
+          class="navbar-toggler ms-n2 me-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#primaryMenu"
+        >
+          <span class="navbar-toggler-icon"></span></button
+        ><a
+          class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+          href="../index.html"
+          >gadaibpkbmotor.id</a
+        >
+        <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+          <a
+            class="btn btn-primary ms-grid-gutter d-none d-lg-inline-block"
+            href="https://wa.me/6281558444484?text=Halo%20gadaibpkbmotor%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
+            data-bs-toggle="modal"
+            data-view="#modal-signup-view"
+            >Ajukan Sekarang</a
+          >
         </div>
-        <div class="offcanvas-body">
-          <!-- Menu-->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/contact.html">Contact</a>
+        <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+          <div class="offcanvas-header navbar-shadow">
+            <h5 class="mt-1 mb-0">Menu</h5>
+            <button
+              class="btn-close lead"
+              type="button"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid hero p-lg-5 pt-5 pt-lg-6">
+      <div class="container">
+        <div class="row align-items-center border-bottom py-5">
+          <div class="col text-light">
+            <span class="bg-light text-bfi p-2 fs-5 mb-5 rounded-3">
+              Pinjaman Jaminan BPKB Motor
+            </span>
+            <p class="text-light my-3 h4">*Subsection</p>
+            <h1 class="mb-4 mt-4 text-light display-4">
+              <span> Butuh dana tunai Untuk</span>
+              <br />
+              <span class="text-warning">Pendidikan?</span>
+            </h1>
+
+            <div>
+              <h3 class="text-light fs-3">bpkbmotor.id siap membantu Anda</h3>
+              <ul class="fs-4 list-unstyled">
+                <li>
+                  <i class="ai-check-circle text-success me-2"></i>Pengajuan
+                  cepat disetujui
+                </li>
+                <li>
+                  <i class="ai-check-circle text-success me-2"></i>Tenor Panjang
+                  sampai 48 bulan
+                </li>
+              </ul>
+            </div>
+            <div
+              class="row align-items-center d-lg-flex justify-content-center my-lg-4 gap-lg-7"
+            >
+              <div class="col-lg-3">
+                <a
+                  href="https://wa.me/6281558444484?text=Halo%20gadaibpkbmotor%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
+                  ><button class="btn btn-lg btn-warning rounded-0 fs-4">
+                    Ajukan Sekarang <i class="ai-chevron-right"></i></button
+                ></a>
+              </div>
+              <div class="col fw-bold mt-3 mt-lg-0">
+                <a
+                  href="https://wa.me/6281558444484?text=Halo%20gadaibpkbmotor%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB"
+                  ><button class="btn btn-lg btn-outline-light fs-4 rounded-0">
+                    <i class="ai-percent"></i>
+                    Hitung Simulasi
+                  </button></a
+                >
+              </div>
+            </div>
+            <p class="">
+              bpkbmotor.id berizin dan diawasi oleh Otoritas Jasa Keuangan<img
+                src="images/logo ojk.png"
+                width="80"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="col-md-6 py-3">
+            <img
+              class="d-block mx-auto"
+              src="images/hero-gadaibpkb.png"
+              alt="Responsive Web Design"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5">
+      <div class="row">
+        <div class="col table-responsive" bis_skin_checked="1">
+          <h5 class="text-bfi">Tabel Cicilan BPKB motor</h5>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>FUNDING BERSIH</th>
+                <th>6 BULAN</th>
+                <th>12 BULAN</th>
+                <th>18 BULAN</th>
+                <th>24 BULAN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2,000,000</td>
+                <td>581,500</td>
+                <td>312,500</td>
+                <td>241,000</td>
+                <td>235,000</td>
+              </tr>
+              <tr>
+                <td>2,500,000</td>
+                <td>705,000</td>
+                <td>361,000</td>
+                <td>278,000</td>
+                <td>269,500</td>
+              </tr>
+              <tr>
+                <td>3,000,000</td>
+                <td>802,000</td>
+                <td>415,500</td>
+                <td>319,000</td>
+                <td>269,500</td>
+              </tr>
+              <tr>
+                <td>3,500,000</td>
+                <td>914,000</td>
+                <td>480,000</td>
+                <td>366,500</td>
+                <td>311,000</td>
+              </tr>
+              <tr>
+                <td>4,000,000</td>
+                <td>1,013,500</td>
+                <td>534,500</td>
+                <td>409,000</td>
+                <td>346,500</td>
+              </tr>
+              <tr>
+                <td>4,500,000</td>
+                <td>1,111,000</td>
+                <td>590,000</td>
+                <td>450,000</td>
+                <td>381,000</td>
+              </tr>
+              <tr>
+                <td>5,000,000</td>
+                <td>1,250,500</td>
+                <td>640,500</td>
+                <td>493,000</td>
+                <td>416,000</td>
+              </tr>
+              <tr>
+                <td>5,500,000</td>
+                <td>1,347,500</td>
+                <td>695,500</td>
+                <td>533,500</td>
+                <td>450,500</td>
+              </tr>
+              <tr>
+                <td>6,000,000</td>
+                <td>1,446,500</td>
+                <td>749,500</td>
+                <td>575,500</td>
+                <td>485,500</td>
+              </tr>
+              <tr>
+                <td>6,500,000</td>
+                <td>1,543,500</td>
+                <td>804,500</td>
+                <td>616,000</td>
+                <td>520,000</td>
+              </tr>
+              <tr>
+                <td>7,000,000</td>
+                <td>1,642,000</td>
+                <td>859,000</td>
+                <td>658,000</td>
+                <td>555,000</td>
+              </tr>
+              <tr>
+                <td>7,500,000</td>
+                <td>1,749,500</td>
+                <td>923,000</td>
+                <td>707,500</td>
+                <td>597,500</td>
+              </tr>
+              <tr>
+                <td>8,000,000</td>
+                <td>1,848,000</td>
+                <td>978,000</td>
+                <td>749,500</td>
+                <td>632,500</td>
+              </tr>
+              <tr>
+                <td>8,500,000</td>
+                <td>1,945,500</td>
+                <td>1,032,000</td>
+                <td>790,000</td>
+                <td>667,000</td>
+              </tr>
+              <tr>
+                <td>9,000,000</td>
+                <td>2,044,000</td>
+                <td>1,087,000</td>
+                <td>832,000</td>
+                <td>702,000</td>
+              </tr>
+              <tr>
+                <td>9,500,000</td>
+                <td>2,142,500</td>
+                <td>1,141,500</td>
+                <td>872,500</td>
+                <td>736,500</td>
+              </tr>
+              <tr>
+                <td>10,000,000</td>
+                <td>2,255,500</td>
+                <td>1,205,000</td>
+                <td>921,000</td>
+                <td>777,500</td>
+              </tr>
+              <tr>
+                <td>10,500,000</td>
+                <td>2,354,000</td>
+                <td>1,259,500</td>
+                <td>962,000</td>
+                <td>813,000</td>
+              </tr>
+              <tr>
+                <td>11,000,000</td>
+                <td>2,451,000</td>
+                <td>1,314,000</td>
+                <td>1,004,500</td>
+                <td>847,000</td>
+              </tr>
+              <tr>
+                <td>11,500,000</td>
+                <td>2,549,500</td>
+                <td>1,368,500</td>
+                <td>1,045,000</td>
+                <td>882,500</td>
+              </tr>
+              <tr>
+                <td>12,000,000</td>
+                <td>2,647,000</td>
+                <td>1,423,500</td>
+                <td>1,087,000</td>
+                <td>917,000</td>
+              </tr>
+              <tr>
+                <td>12,500,000</td>
+                <td>2,745,500</td>
+                <td>1,477,500</td>
+                <td>1,129,500</td>
+                <td>952,500</td>
+              </tr>
+              <tr>
+                <td>13,000,000</td>
+                <td>2,843,000</td>
+                <td>1,532,500</td>
+                <td>1,170,000</td>
+                <td>987,000</td>
+              </tr>
+              <tr>
+                <td>13,500,000</td>
+                <td>2,945,500</td>
+                <td>1,587,000</td>
+                <td>1,214,000</td>
+                <td>1,024,000</td>
+              </tr>
+              <tr>
+                <td>14,000,000</td>
+                <td>3,042,500</td>
+                <td>1,644,000</td>
+                <td>1,255,000</td>
+                <td>1,058,000</td>
+              </tr>
+              <tr>
+                <td>14,500,000</td>
+                <td>3,140,000</td>
+                <td>1,698,500</td>
+                <td>1,295,500</td>
+                <td>1,092,500</td>
+              </tr>
+              <tr>
+                <td>15,000,000</td>
+                <td>3,237,000</td>
+                <td>1,752,500</td>
+                <td>1,336,500</td>
+                <td>1,127,000</td>
+              </tr>
+              <tr>
+                <td>15,500,000</td>
+                <td>3,334,500</td>
+                <td>1,807,000</td>
+                <td>1,377,500</td>
+                <td>1,161,000</td>
+              </tr>
+              <tr>
+                <td>16,000,000</td>
+                <td>3,431,500</td>
+                <td>1,861,000</td>
+                <td>1,418,000</td>
+                <td>1,195,500</td>
+              </tr>
+              <tr>
+                <td>16,500,000</td>
+                <td>3,532,500</td>
+                <td>1,915,500</td>
+                <td>1,461,000</td>
+                <td>1,232,000</td>
+              </tr>
+              <tr>
+                <td>17,000,000</td>
+                <td>3,630,000</td>
+                <td>1,973,500</td>
+                <td>1,502,000</td>
+                <td>1,266,000</td>
+              </tr>
+              <tr>
+                <td>17,500,000</td>
+                <td>3,727,000</td>
+                <td>2,027,500</td>
+                <td>1,543,000</td>
+                <td>1,300,500</td>
+              </tr>
+              <tr>
+                <td>18,000,000</td>
+                <td>3,824,500</td>
+                <td>2,082,000</td>
+                <td>1,583,500</td>
+                <td>1,334,500</td>
+              </tr>
+              <tr>
+                <td>19,000,000</td>
+                <td>4,017,500</td>
+                <td>2,187,500</td>
+                <td>1,666,500</td>
+                <td>1,404,500</td>
+              </tr>
+              <tr>
+                <td>20,000,000</td>
+                <td>4,213,500</td>
+                <td>2,297,000</td>
+                <td>1,749,500</td>
+                <td>1,474,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col table-responsive" bis_skin_checked="1">
+          <h5 class="text-bfi">
+            Tabel Cicilan setelah Cashback untuk bulan ke 1
+          </h5>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>FUNDING BERSIH</th>
+                <th>6 BULAN</th>
+                <th>12 BULAN</th>
+                <th>18 BULAN</th>
+                <th>24 BULAN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2,000,000</td>
+                <td>431,500</td>
+                <td>162,500</td>
+                <td>41,000</td>
+                <td>35,000</td>
+              </tr>
+              <tr>
+                <td>2,500,000</td>
+                <td>555,000</td>
+                <td>211,000</td>
+                <td>78,000</td>
+                <td>69,500</td>
+              </tr>
+              <tr>
+                <td>3,000,000</td>
+                <td>652,000</td>
+                <td>265,500</td>
+                <td>119,000</td>
+                <td>69,500</td>
+              </tr>
+              <tr>
+                <td>3,500,000</td>
+                <td>764,000</td>
+                <td>330,000</td>
+                <td>166,500</td>
+                <td>111,000</td>
+              </tr>
+              <tr>
+                <td>4,000,000</td>
+                <td>863,500</td>
+                <td>384,500</td>
+                <td>209,000</td>
+                <td>146,500</td>
+              </tr>
+              <tr>
+                <td>4,500,000</td>
+                <td>961,000</td>
+                <td>440,000</td>
+                <td>250,000</td>
+                <td>181,000</td>
+              </tr>
+              <tr>
+                <td>5,000,000</td>
+                <td>1,100,500</td>
+                <td>490,500</td>
+                <td>293,000</td>
+                <td>216,000</td>
+              </tr>
+              <tr>
+                <td>5,500,000</td>
+                <td>1,097,500</td>
+                <td>445,500</td>
+                <td>233,500</td>
+                <td>150,500</td>
+              </tr>
+              <tr>
+                <td>6,000,000</td>
+                <td>1,196,500</td>
+                <td>499,500</td>
+                <td>275,500</td>
+                <td>185,500</td>
+              </tr>
+              <tr>
+                <td>6,500,000</td>
+                <td>1,293,500</td>
+                <td>554,500</td>
+                <td>316,000</td>
+                <td>220,000</td>
+              </tr>
+              <tr>
+                <td>7,000,000</td>
+                <td>1,392,000</td>
+                <td>609,000</td>
+                <td>358,000</td>
+                <td>255,000</td>
+              </tr>
+              <tr>
+                <td>7,500,000</td>
+                <td>1,499,500</td>
+                <td>673,000</td>
+                <td>407,500</td>
+                <td>297,500</td>
+              </tr>
+              <tr>
+                <td>8,000,000</td>
+                <td>1,548,000</td>
+                <td>678,000</td>
+                <td>399,500</td>
+                <td>282,500</td>
+              </tr>
+              <tr>
+                <td>8,500,000</td>
+                <td>1,645,500</td>
+                <td>732,000</td>
+                <td>440,000</td>
+                <td>317,000</td>
+              </tr>
+              <tr>
+                <td>9,000,000</td>
+                <td>1,744,000</td>
+                <td>787,000</td>
+                <td>482,000</td>
+                <td>352,000</td>
+              </tr>
+              <tr>
+                <td>9,500,000</td>
+                <td>1,842,500</td>
+                <td>841,500</td>
+                <td>522,500</td>
+                <td>386,500</td>
+              </tr>
+              <tr>
+                <td>10,000,000</td>
+                <td>1,905,500</td>
+                <td>855,000</td>
+                <td>521,000</td>
+                <td>377,500</td>
+              </tr>
+              <tr>
+                <td>10,500,000</td>
+                <td>2,004,000</td>
+                <td>909,500</td>
+                <td>562,000</td>
+                <td>413,000</td>
+              </tr>
+              <tr>
+                <td>11,000,000</td>
+                <td>2,101,000</td>
+                <td>964,000</td>
+                <td>604,500</td>
+                <td>447,000</td>
+              </tr>
+              <tr>
+                <td>11,500,000</td>
+                <td>2,199,500</td>
+                <td>1,018,500</td>
+                <td>645,000</td>
+                <td>482,500</td>
+              </tr>
+              <tr>
+                <td>12,000,000</td>
+                <td>2,297,000</td>
+                <td>1,073,500</td>
+                <td>687,000</td>
+                <td>517,000</td>
+              </tr>
+              <tr>
+                <td>12,500,000</td>
+                <td>2,395,500</td>
+                <td>1,127,500</td>
+                <td>729,500</td>
+                <td>552,500</td>
+              </tr>
+              <tr>
+                <td>13,000,000</td>
+                <td>2,493,000</td>
+                <td>1,182,500</td>
+                <td>770,000</td>
+                <td>587,000</td>
+              </tr>
+              <tr>
+                <td>13,500,000</td>
+                <td>2,595,500</td>
+                <td>1,237,000</td>
+                <td>814,000</td>
+                <td>624,000</td>
+              </tr>
+              <tr>
+                <td>14,000,000</td>
+                <td>2,692,500</td>
+                <td>1,294,000</td>
+                <td>855,000</td>
+                <td>658,000</td>
+              </tr>
+              <tr>
+                <td>14,500,000</td>
+                <td>2,790,000</td>
+                <td>1,348,500</td>
+                <td>895,500</td>
+                <td>692,500</td>
+              </tr>
+              <tr>
+                <td>15,000,000</td>
+                <td>2,887,000</td>
+                <td>1,402,500</td>
+                <td>936,500</td>
+                <td>727,000</td>
+              </tr>
+              <tr>
+                <td>20,000,000</td>
+                <td>3,863,500</td>
+                <td>1,947,000</td>
+                <td>1,349,500</td>
+                <td>1,074,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="container pt-2">
+      <h3>Cara Gadai BPKB Motor Disini</h3>
+      <p>Pengajuan cepat melalui online tanpa perlu datang ke kantor.</p>
+      <div class="row pb-4 mb-2 pt-5 py-md-5">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex align-items-center">
+            <img src="images/icons8-money-100.png" width="50" alt="" />
+            <div class="ps-3">
+              <h6 class="fs-base text-dark mb-1">
+                Nilai pinjaman mulai 2 juta dengan 95% nilai kendaraan.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex align-items-center">
+            <img src="images/icons8-percentage-100.png" width="50" alt="" />
+            <div class="ps-3">
+              <h6 class="fs-base text-dark mb-1">
+                Bunga sangat rendah mulai dari 1.7% per bulan.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex align-items-center">
+            <img src="images/icons8-delivery-time-100.png" width="50" alt="" />
+            <div class="ps-3">
+              <h6 class="fs-base text-dark mb-1">
+                Pencairan cepat hanya 1 hari kerja lewat orang dalam.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex align-items-center">
+            <img src="images/icons8-calendar-100.png" width="50" alt="" />
+            <div class="ps-3">
+              <h6 class="fs-base text-dark mb-1">
+                Tenor mulai dari 6 bulan sampai dengan 24 bulan.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Langkah-langkah Pengajuan</h4>
+          <p>
+            Tanpa perlu repot dan bingung, hubungi kami melalui online agar
+            proses gadai semakin cepat dan mudah.
+          </p>
+        </div>
+        <div class="col">
+          <h4>Syarat Jaminan BKPB Motor</h4>
+          <p>
+            Dapatkan pinjaman dengan cepat dan mudah dengan tenor hingga 24
+            bulan.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="col-10">
+            <div class="d-flex align-items-center">
+              <img
+                src="images/Pengajuan-melalui-whatsapp-128px-min.webp"
+                alt=""
+                width="100"
+                class="me-3"
+              />
+              <div class="">
+                <h6 class="text-dark mb-1">1. Chat Melalui WhatsApp</h6>
+                <p class="mb-0 text-dark opacity-50">
+                  Mudah dan cepat, kami akan memandu anda dokumen apa saja yang
+                  diperlukan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="d-flex align-items-center">
+              <img
+                src="images/Konfirmasi-Data-128px-min.webp"
+                width="100"
+                class="me-3"
+                alt=""
+              />
+              <div class="">
+                <h6 class="text-dark mb-1">2. Konfimasi Data</h6>
+                <p class="mb-0 text-dark opacity-50">
+                  Team kami akan kembali memastikan data untuk pengajuan telah
+                  sesuai
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="d-flex align-items-center">
+              <img
+                src="images/Survey-128px-min.webp"
+                width="100"
+                class="me-3"
+                alt=""
+              />
+              <div class="">
+                <h6 class="text-dark mb-1">3. Validasi dan Survey</h6>
+                <p class="mb-0 text-dark opacity-50">
+                  Bila telah memenuhi persyaratan maka akan dilanjutkan ke
+                  proses selanjutnya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="d-flex align-items-center">
+              <img
+                src="images/Pencairan-dana-128px-min.webp"
+                width="100"
+                class="me-3"
+                alt=""
+              />
+              <div class="">
+                <h6 class="text-dark mb-1">4. Pencairan Dana</h6>
+                <p class="mb-0 text-dark opacity-50">
+                  Segera setelah semua proses selesai, dana akan ditransfer ke
+                  rekening pendaftar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <!-- Basic accordion -->
+          <div class="accordion" id="accordionExample">
+            <!-- Item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Profil Diri
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse show"
+                id="collapseOne"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Warga Negara Indonesia</li>
+                    <li>Berusia 21-65 tahun</li>
+                    <li>
+                      Profesi pekerjaan
+                      <ul>
+                        <li>
+                          Karyawan Swasta (Min tetap 1 tahun / min kontrak 2
+                          tahun)
+                        </li>
+                        <li>PNS</li>
+                        <li>Wiraswasta (Min 1 tahun)</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Tidak dapat diterima jika bisnis atau tipe pekerjaan
+                      melanggar hukum
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Profil Kendaraan
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse"
+                id="collapseTwo"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Motor merupakan kendaraan milik sendiri dengan BPKB asli
+                    </li>
+                    <li>
+                      BPKB bisa atas nama sendiri, pasangan dan orang lain
+                      (Lampirkan bukti pembelian)
+                    </li>
+                    <li>
+                      Usia kendaraan maks. 10 tahun (Min. Tahun Kendaraan 2011)
+                      dengan merk motor Jepang dan Italia
+                    </li>
+                    <li>
+                      STNK
+                      <ul>
+                        <li>Atas nama sendiri (pajak mati maks 4 tahun)</li>
+                        <li>Pajak mati lebih dari 4 tahun potong pencairan</li>
+                      </ul>
+                    </li>
+                    <li>Plat Hitam (Tidak plat merah)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-light my-0 mb-5" />
+    </section>
+
+    <!-- Service -->
+    <section class="container pt-5 pb-4 py-md-6 pt-lg-7">
+      <h2 class="text-center pt-3">Pelayanan Kami</h2>
+      <p
+        class="d-block fs-sm text-muted text-center mx-auto pb-4 mb-5"
+        style="max-width: 400px"
+      >
+        subsection
+      </p>
+      <div class="row">
+        <div
+          class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center"
+        >
+          <img
+            class="d-inline-block mb-3"
+            src="https://img.icons8.com/wired/64/idea.png"
+            alt="Strategy"
+            width="74"
+          />
+          <h3 class="h5">Info Pengajuan</h3>
+          <ul class="list-unstyled">
+            <li class="mb-0">
+              Pengajuan Tanpa Survey dengan Syarat BI Checking Bersih
             </li>
           </ul>
         </div>
+        <div
+          class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center"
+        >
+          <img
+            class="d-inline-block mb-3"
+            src="https://img.icons8.com/ios/100/scooter.png"
+            alt="Digital"
+            width="85"
+          />
+
+          <h3 class="h5">Jaminan BPBK MOTOR dan motor</h3>
+          <ul class="list-unstyled"></ul>
+        </div>
+        <div
+          class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center"
+        >
+          <img
+            class="d-inline-block mb-3"
+            src="https://img.icons8.com/dotty/80/last-24-hours.png"
+            alt="Visual Identity"
+            width="78"
+          />
+          <h3 class="h5">Kami Siap Melayani anda 24 jam</h3>
+          <ul class="list-unstyled"></ul>
+        </div>
+        <div
+          class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center"
+        >
+          <img
+            class="d-inline-block mb-3"
+            src="https://img.icons8.com/ios/100/investment.png"
+            alt="Motion"
+            width="83"
+          />
+          <h3 class="h5">Proses Approval hanya 5 menit</h3>
+          <ul class="list-unstyled"></ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <!-- Hero -->
-  <section>
-    <div class="jarallax bg-dark min-vh-100 py-5 align-items-center" data-jarallax="" data-type="scroll-opacity"
-      data-speed="0.7">
-      <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
+    <section class="py-5">
+      <div class="container">
+        <h2>Our Partners/ Our Clients</h2>
+        <section class="customer-logos slider text-center">
+          <div class="slide text-center">
+            <img
+              src="images/logo adira.png"
+              class="text-center"
+              style="width: 200px !important"
+            />
+          </div>
 
-      <div class="container position-relative zindex-5 py-sm-4 py-lg-5 mt-4">
-        <!-- Text + button-->
-        <div class="row pt-lg-2 py-xl-4 py-xxl-5 mb-md-4 mb-lg-5">
-          <div class="col-md-10 col-lg-9 col-xl-8 col-xxl-7 pt-5 mb-5">
-            <h1 class="display-4 text-light text-uppercase pb-sm-2 pb-md-3">
-              subsection
-            </h1>
-            <h1 class="display-4 text-light text-uppercase pb-sm-2 pb-md-3">
-              Dapatkan dana cepat dengan gadai bpkb motor anda ganti dengan 
-            </h1>
+          <div class="slide text-center">
+            <img
+              src="images/logo baf.png"
+              class="text-center"
+              style="width: 200px !important"
+            />
+          </div>
 
-            <a class="btn btn-outline-light"
-              href="https://wa.me/6281558444484?text=Halo%20gadaibpkbmotor%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0BPKB">Langsung
-              Ajukan</a>
+          <div class="slide text-center">
+            <img
+              src="images/logo adira.png"
+              class="text-center"
+              style="width: 200px !important"
+            />
+          </div>
+
+          <div class="slide text-center">
+            <img
+              src="images/logo bfi.png"
+              class="text-center"
+              style="width: 150px !important"
+            />
+          </div>
+          <div class="slide text-center">
+            <img
+              src="images/logo wom.png"
+              class="text-center"
+              style="width: 200px !important"
+            />
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container my-5 pb-5 mb-3 pb-md-6 pb-lg-7">
+      <h2 class="text-center mb-5">Informasi Pembiayaan subsection</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="accordion" id="faq">
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header" id="faq-heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-1"
+                  aria-expanded="true"
+                  aria-controls="faq-content-1"
+                >
+                  1. Bagaimana cara pengajuan subsection ?
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse show"
+                id="faq-content-1"
+                aria-labelledby="faq-heading-1"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  <div class="fs-sm">
+                    Pengajuan subsection hanya memerlukan KTP dan STNK untuk
+                    data awal yang digunakan untuk pengecekan BI checking
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header" id="faq-heading-2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-2"
+                  aria-expanded="false"
+                  aria-controls="faq-content-2"
+                >
+                  2. Berapa lama proses subsection ?
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse"
+                id="faq-content-2"
+                aria-labelledby="faq-heading-2"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  <div class="fs-sm">
+                    Proses pengajuan subsection hanya memerlukan waktu kurang
+                    dari 24 jam untuk melakukan pencairan
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow">
+              <h2 class="accordion-header" id="faq-heading-3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-3"
+                  aria-expanded="false"
+                  aria-controls="faq-content-3"
+                >
+                  3. Apakah aman melakukan pengajuan subsection ?
+                </button>
+              </h2>
+              <div
+                class="accordion-collapse collapse"
+                id="faq-content-3"
+                aria-labelledby="faq-heading-3"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body">
+                  <div class="fs-sm">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident, similique sunt in culpa
+                    qui officia deserunt mollitia animi, id est laborum et
+                    dolorum fuga.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="jarallax-container-0" style="
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -100;
-            clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
-          ">
-        <div class="jarallax-img" style="
-              background-image: url(&quot;https://i.pinimg.com/originals/5f/99/43/5f994382f7be99b7b81839e94aa25ce5.jpg&quot;);
-              object-fit: cover;
-              object-position: 50% 50%;
-              max-width: none;
-              position: fixed;
-              top: 0px;
-              left: 0px;
-              width: 854px;
-              height: 791.544px;
-              overflow: hidden;
-              pointer-events: none;
-              transform-style: preserve-3d;
-              backface-visibility: hidden;
-              margin-top: -8.77187px;
-              transform: translate3d(0px, 8.77187px, 0px);
-              opacity: 1;
-            "
-          data-jarallax-original-styles="background-image: url(https://i.pinimg.com/originals/5f/99/43/5f994382f7be99b7b81839e94aa25ce5.jpg);">
+        <div class="col-md-6">
+          <img
+            class="d-block mx-auto"
+            src="images/joy-online-support-service-1.png"
+            alt="Illustration"
+            height="500px"
+            width="500px"
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Service -->
-  <section class="container pt-5 pb-4 py-md-6 pt-lg-7">
-    <h2 class="text-center pt-3">Pelayanan Kami</h2>
-    <p class="d-block fs-sm text-muted text-center mx-auto pb-4 mb-5" style="max-width: 400px">
-      subsection
-    </p>
-    <div class="row">
-      <div class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center">
-        <img class="d-inline-block mb-3" src="https://img.icons8.com/wired/64/idea.png" alt="Strategy" width="74" />
-        <h3 class="h5">Info Pengajuan</h3>
-        <ul class="list-unstyled">
-          <li class="mb-0">
-            Pengajuan Tanpa Survey dengan Syarat BI Checking Bersih
+    <!-- Footer -->
+
+    <footer class="footer bg-darker py-4">
+      <div
+        class="container d-md-flex align-items-center justify-content-between py-2 text-center text-md-start"
+        bis_skin_checked="1"
+      >
+        <ul class="list-inline fs-sm mb-3 mb-md-0 order-md-2">
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#">Support</a>
+          </li>
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#">Contacts</a>
+          </li>
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#"
+              >Terms &amp; Conditions</a
+            >
           </li>
         </ul>
-      </div>
-      <div class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center">
-        <img class="d-inline-block mb-3" src="https://img.icons8.com/ios/100/scooter.png" alt="Digital" width="85" />
-
-        <h3 class="h5">Jaminan BPBK MOTOR dan MOBIL</h3>
-        <ul class="list-unstyled"></ul>
-      </div>
-      <div class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center">
-        <img class="d-inline-block mb-3" src="https://img.icons8.com/dotty/80/last-24-hours.png" alt="Visual Identity"
-          width="78" />
-        <h3 class="h5">Kami Siap Melayani anda 24 jam</h3>
-        <ul class="list-unstyled"></ul>
-      </div>
-      <div class="col-lg-2 offset-lg-1 col-sm-3 col-6 mb-grid-gutter text-center">
-        <img class="d-inline-block mb-3" src="https://img.icons8.com/ios/100/investment.png" alt="Motion" width="83" />
-        <h3 class="h5">Proses Approval hanya 5 menit</h3>
-        <ul class="list-unstyled"></ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5">
-    <div class="container">
-      <h2>Our Partners/ Our Clients</h2>
-      <section class="customer-logos slider text-center">
-        <div class="slide text-center">
-          <img src="images/logo adira.png" class="text-center" style="width: 200px !important" />
-        </div>
-
-        <div class="slide text-center">
-          <img src="images/logo baf.png" class="text-center" style="width: 200px !important" />
-        </div>
-
-        <div class="slide text-center">
-          <img src="images/logo adira.png" class="text-center" style="width: 200px !important" />
-        </div>
-
-        <div class="slide text-center">
-          <img src="images/logo bfi.png" class="text-center" style="width: 150px !important" />
-        </div>
-        <div class="slide text-center">
-          <img src="images/logo wom.png" class="text-center" style="width: 200px !important" />
-        </div>
-      </section>
-    </div>
-  </section>
-
-  <!-- CTA Netfin -->
-  <section class="container bg-light py-5 rounded py-md-5">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 px-5">
-        <div class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1" style="max-width: 516px">
-          <form class="needs-validation" novalidate="" action="form-handler.php" method="post">
-            <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
-            <p class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter">
-              Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB Truck.
-            </p>
-            <b>Informasi Diri</b>
-            <div class="input-group mb-3 mt-2">
-              <i class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-              <input class="form-control rounded" type="text" name="nama" placeholder="Nama" required="true" />
-            </div>
-            <div class="input-group mb-3">
-              <i class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-              <input class="form-control rounded" type="text" name="hp" placeholder="Nomor Handphone" required="true" />
-            </div>
-            <div class="input-group mb-3">
-              <i class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-              <input class="form-control rounded" type="text" name="kota" placeholder="Kota" required="true" />
-            </div>
-            <b>Divisi</b>
-
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="radio" id="ex-radio-1" name="divisi" value="Customer Service"
-                checked="" />
-              <label class="form-check-label" for="ex-radio-1">Customer Service</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" id="ex-radio-2" name="divisi" value="Marketing BPKB Mobil" />
-              <label class="form-check-label" for="ex-radio-2">Marketing BPKB Mobil</label>
-            </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="radio" id="ex-radio-3" name="divisi" value="Marketing BPKB Motor" />
-              <label class="form-check-label" for="ex-radio-3">Marketing BPKB Motor</label>
-            </div>
-            <b>Keterangan Tambahan</b>
-            <div class="mb-3 mt-3 pb-1">
-              <textarea class="form-control" rows="4" name="keterangan"
-                placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb" required="true"></textarea>
-            </div>
-            <div class="row pt-2">
-              <div class="col-lg-6 col-md-8">
-                <button class="btn btn-primary btn-block" type="submit">
-                  Hubungi Kami
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
-        <h2 class="h1 text-center">Hubungi Kami</h2>
-        <p class="text-center pb-4 mb-2 mb-lg-3">
-          Kami Adira finance 24 jam siap Melayani
+        <p class="fs-sm mb-0 me-3 order-md-1">
+          <span class="text-light opacity-50 me-1"
+            >© All rights reserved. Made by</span
+          ><a
+            class="nav-link-style nav-link-light"
+            href="https://netfin.id/"
+            target="_blank"
+            rel="noopener"
+            >Netfin.id</a
+          >
         </p>
-        <a target="_blank" href="https://wa.me/6281558444484">
-          <img src="https://netfin.id/site-assets/netfin/button-wa.png" class="rounded mx-auto"
-            alt="adira finance whatsapp" style="width: 300px" /> </a><br />
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- FAQ -->
-  <section class="container my-5 pb-5 mb-3 pb-md-6 pb-lg-7">
-    <h2 class="text-center mb-5">Informasi Pembiayaan subsection</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-5 mb-md-0">
-        <div class="accordion" id="faq">
-          <div class="accordion-item shadow">
-            <h2 class="accordion-header" id="faq-heading-1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1"
-                aria-expanded="true" aria-controls="faq-content-1">
-                1. Bagaimana cara pengajuan subsection ?
-              </button>
-            </h2>
-            <div class="accordion-collapse collapse show" id="faq-content-1" aria-labelledby="faq-heading-1"
-              data-bs-parent="#faq">
-              <div class="accordion-body">
-                <div class="fs-sm">
-                  Pengajuan subsection hanya memerlukan KTP dan STNK untuk
-                  data awal yang digunakan untuk pengecekan BI checking
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item shadow">
-            <h2 class="accordion-header" id="faq-heading-2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#faq-content-2" aria-expanded="false" aria-controls="faq-content-2">
-                2. Berapa lama proses subsection ?
-              </button>
-            </h2>
-            <div class="accordion-collapse collapse" id="faq-content-2" aria-labelledby="faq-heading-2"
-              data-bs-parent="#faq">
-              <div class="accordion-body">
-                <div class="fs-sm">
-                  Proses pengajuan subsection hanya memerlukan waktu kurang
-                  dari 24 jam untuk melakukan pencairan
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item shadow">
-            <h2 class="accordion-header" id="faq-heading-3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#faq-content-3" aria-expanded="false" aria-controls="faq-content-3">
-                3. Apakah aman melakukan pengajuan subsection ?
-              </button>
-            </h2>
-            <div class="accordion-collapse collapse" id="faq-content-3" aria-labelledby="faq-heading-3"
-              data-bs-parent="#faq">
-              <div class="accordion-body">
-                <div class="fs-sm">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus
-                  qui blanditiis praesentium voluptatum deleniti atque
-                  corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident, similique sunt in culpa
-                  qui officia deserunt mollitia animi, id est laborum et
-                  dolorum fuga.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img class="d-block mx-auto" src="images/joy-online-support-service-1.png" alt="Illustration" height="500px"
-          width="500px" />
-      </div>
-    </div>
-  </section>
+    <!-- Slider -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-  <!-- Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
-  <footer class="footer bg-dark pt-5 pb-4">
-    <div class="container pb-2 text-center text-md-start">
-      <div class="row pt-md-2 pb-3">
-        <div class="col-lg-4 col-md-4 pb-4">
-          <a class="d-inline-block mb-3 fs-5" href="#" style="width: 305px"><img src="images/netfin-logo.png" alt="" />
-            >Gadai BPKB Motor</a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
 
-          <p class="fs-sm text-light opacity-50 mb-0">
-            Proudly Present by Tiga Pilar Digital Inc <br />
-            We are All Around You
-          </p>
-        </div>
-        <div class="col-md-5 pt-2 pb-4">
-          <div class="widget widget-light">
-            <h4 class="widget-title mb-3">Support</h4>
-            <div class="d-lg-flex">
-              <ul class="me-lg-5">
-                <li>
-                  <a class="widget-link" href="mailto:support@netfin.id"><i
-                      class="bi bi-envelope-at fs-lg me-2"></i>support@netfin.id</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a class="widget-link" href="tel:6281558444484"><i
-                      class="bi bi-telephone fs-lg me-2"></i>6281558444484</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 pt-2 pb-4">
-          <div class="widget widget-light">
-            <h4 class="widget-title mb-3">Follow</h4>
-            <a class="btn-social bs-outline bs-light bs-facebook bs-lg me-2 mb-2" href="#"><i
-                class="bi bi-facebook"></i></a><a class="btn-social bs-outline bs-light bs-twitter bs-lg me-2 mb-2"
-              href="#"><i class="bi bi-twitter"></i></a><a
-              class="btn-social bs-outline bs-light bs-instagram bs-lg me-2 mb-2" href="#"><i
-                class="bi bi-instagram"></i></a><a class="btn-social bs-outline bs-light bs-google bs-lg mb-2"
-              href="#"><i class="bi bi-google"></i></a>
-          </div>
-        </div>
-      </div>
-      <p class="fs-sm text-center mb-0">
-        <span class="text-light opacity-50">© All rights reserved. Made by </span><a
-          class="nav-link-style nav-link-light" href="#" target="_blank" rel="noopener">Netfin</a>
-      </p>
-    </div>
-  </footer>
-
-  <!-- Slider -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
-  <!-- Vendor scrits: js libraries and plugins-->
-  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
-  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="vendor/jarallax/dist/jarallax.min.js"></script>
-  <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
-  <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
-  <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
-  <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
-  <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- Main theme script-->
-  <script src="js/theme.min.js"></script>
-
-  <!-- Custom Javascript  -->
-  <script src="js/slider.js"></script>
-</body>
-
+    <!-- Custom Javascript  -->
+    <script src="js/slider.js"></script>
+  </body>
 </html>
