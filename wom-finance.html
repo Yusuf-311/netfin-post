@@ -1,0 +1,1130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WOM Finance</title>
+    <!-- SEO Meta Tags-->
+    <meta
+      name="description"
+      content="Around - Multipurpose Bootstrap Template"
+    />
+    <meta
+      name="keywords"
+      content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative"
+    />
+    <meta name="author" content="Createx Studio" />
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon and Touch Icons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_wom.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_wom.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_wom.webp"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg" />
+    <meta name="msapplication-TileColor" content="#766df4" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        border: 0.15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector(".page-loading");
+          preloader.classList.remove("active");
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+    <!-- Vendor Styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+    />
+    <link rel="stylesheet" href="vendor/tiny-slider/dist/tiny-slider.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      th {
+        background-color: #175aa0;
+        color: white;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #ffeb99;
+        transition: 0.3s;
+      }
+      .header {
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <header
+        class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky"
+        data-scroll-header
+        data-fixed-element
+      >
+        <div class="container px-0 px-xl-3">
+          <button
+            class="navbar-toggler ms-n2 me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#primaryMenu"
+          >
+            <span class="navbar-toggler-icon"></span></button
+          ><a
+            class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+            href="index.html"
+            ><img
+              class="d-none d-lg-block"
+              src="images/wom-finance-logo (1).webp"
+              alt="Around"
+              width="153" /><img
+              class="d-lg-none"
+              src="images/logo/logo-icon.png"
+              alt="Around"
+              width="58"
+          /></a>
+
+          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+            <div class="offcanvas-header navbar-shadow">
+              <h5 class="mt-1 mb-0">Menu</h5>
+              <button
+                class="btn-close lead"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/ombak-reguler-website-okt-2024_1320x560 (1).webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/waspada-penipuan-web_1320x560.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/wombastis-2024-web_banner-utama-1320-x-5601.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/new---banner-utama---suku-bunga.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/promo-bpjs-web_1320x560.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/baner-utama-1320x560.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/banner-utama_1320x560.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/cgc-motorku-2023-web_banner-utama--1320-x-560.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/faq-banner-web-resize-2_1320-x-560-1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/faq-wom-juli-2023-web_banner-utama--1320-x-560-1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/lindungi-password-kawan_1320x560-1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Service -->
+      <section class="container py-5 py-md-6 py-lg-7 my-3">
+        <p class="h2 text-center mb-6">Subsection</p>
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-5 text-center text-md-start mb-5 mb-md-0">
+            <h2 class="mb-3">Pilih Solusi Pembiayaan Sesuai Kebutuhan</h2>
+            <p class="text-muted mb-4 pb-2">
+              Find aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint doloremque.
+            </p>
+          </div>
+          <div class="col-lg-8 col-md-7 bg-position-center bg-repeat-0">
+            <div class="mx-auto" style="max-width: 610px">
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                  <div
+                    class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+                  >
+                    <img
+                      class="d-inline-block mb-4 mt-2"
+                      src="images/multiguna-motorku.svg"
+                      alt="Icon"
+                      width="100"
+                    />
+                    <h3 class="h5 mb-2">MotorKu</h3>
+                    <p class="fs-sm">
+                      Ayo, penuhi kebutuhan pembiayaanmu dengan jaminan BPKB
+                      motor di WOM Finance yang prosesnya mudah dan cepat.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="https://wa.me/6281558444484?text=Halo%20WOW%20Finance%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      >Ajukan</a
+                    >
+                  </div>
+                  <div
+                    class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+                  >
+                    <img
+                      class="d-inline-block mb-4 mt-2"
+                      src="images/icon-web4_transfarant.svg"
+                      alt="Icon"
+                      width="100"
+                    />
+                    <h3 class="h5 mb-2">Motor Baru</h3>
+                    <p class="fs-sm">
+                      Ayo, miliki motor idamanmu dengan pembiayaan motor baru
+                      dari WOM Finance yang prosesnya mudah dan cepat.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="https://wa.me/6281558444484?text=Halo%20WOW%20Finance%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      >Ajukan</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div
+                    class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+                  >
+                    <img
+                      class="d-inline-block mb-4 mt-2"
+                      src="images/multiguna-mobilku.svg"
+                      alt="Icon"
+                      width="100"
+                    />
+                    <h3 class="h5 mb-2">MobilKu</h3>
+                    <p class="fs-sm">
+                      Ayo, penuhi kebutuhan pembiayaanmu dengan jaminan BPKB
+                      mobil di WOM Finance yang prosesnya mudah dan cepat.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="https://wa.me/6281558444484?text=Halo%20WOW%20Finance%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      >Ajukan</a
+                    >
+                  </div>
+                  <div
+                    class="bg-light shadow-lg rounded-3 p-4 mb-grid-gutter text-center text-sm-start"
+                  >
+                    <img
+                      class="d-inline-block mb-4 mt-2"
+                      src="images/masku.svg"
+                      alt="Icon"
+                      width="100"
+                    />
+                    <h3 class="h5 mb-2">MASKu</h3>
+                    <p class="fs-sm">
+                      Ayo, cicil logam mulia MASKu dari WOM Finance yang
+                      dikelola dengan prinsip syariah.
+                    </p>
+                    <a
+                      class="btn btn-outline-primary"
+                      href="https://wa.me/6281558444484?text=Halo%20WOW%20Finance%20saya%20mau%20mengajukan%C2%A0Pinjaman%C2%A0"
+                      >Ajukan</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabel -->
+
+      <section class="container-fluid bg-light p-lg-5 py-4">
+        <div class="container">
+          <div class="table-responsive" bis_skin_checked="1">
+            <h5 class="text-bfi">Tabel Cicilan BPKB Mobil</h5>
+
+            <table>
+              <thead class="table header">
+                <tr>
+                  <th>Cashback</th>
+                  <th>12 BULAN</th>
+                  <th>24 BULAN</th>
+                  <th>36 BULAN</th>
+                  <th>48 BULAN</th>
+                </tr>
+              </thead>
+              <tbody class="text-body">
+                <tr>
+                  <td>20,000,000</td>
+                  <td>2,159,000.00</td>
+                  <td>1,230,500.00</td>
+                  <td>984,500.00</td>
+                  <td>896,000.00</td>
+                </tr>
+                <tr>
+                  <td>25,000,000</td>
+                  <td>2,598,500.00</td>
+                  <td>1,465,500.00</td>
+                  <td>1,163,000.00</td>
+                  <td>1,048,500.00</td>
+                </tr>
+                <tr>
+                  <td>30,000,000</td>
+                  <td>3,099,000.00</td>
+                  <td>1,750,500.00</td>
+                  <td>1,389,500.00</td>
+                  <td>1,252,000.00</td>
+                </tr>
+                <tr>
+                  <td>35,000,000</td>
+                  <td>3,538,500.00</td>
+                  <td>1,985,500.00</td>
+                  <td>1,568,000.00</td>
+                  <td>1,404,500.00</td>
+                </tr>
+                <tr>
+                  <td>40,000,000</td>
+                  <td>4,039,500.00</td>
+                  <td>2,270,000.00</td>
+                  <td>1,795,000.00</td>
+                  <td>1,608,000.00</td>
+                </tr>
+                <tr>
+                  <td>45,000,000</td>
+                  <td>4,479,000.00</td>
+                  <td>2,505,000.00</td>
+                  <td>1,973,500.00</td>
+                  <td>1,760,500.00</td>
+                </tr>
+                <tr>
+                  <td>50,000,000</td>
+                  <td>4,980,000.00</td>
+                  <td>3,529,000.00</td>
+                  <td>2,200,000.00</td>
+                  <td>1,963,500.00</td>
+                </tr>
+                <tr>
+                  <td>60,000,000</td>
+                  <td>5,920,500.00</td>
+                  <td>3,309,000.00</td>
+                  <td>2,605,500.00</td>
+                  <td>2,319,500.00</td>
+                </tr>
+                <tr>
+                  <td>70,000,000</td>
+                  <td>6,860,500.00</td>
+                  <td>3,828,500.00</td>
+                  <td>3,010,500.00</td>
+                  <td>2,675,500.00</td>
+                </tr>
+                <tr>
+                  <td>80,000,000</td>
+                  <td>7,759,500.00</td>
+                  <td>4,306,000.00</td>
+                  <td>3,369,500.00</td>
+                  <td>2,955,000.00</td>
+                </tr>
+                <tr>
+                  <td>90,000,000</td>
+                  <td>8,692,500.00</td>
+                  <td>4,818,000.00</td>
+                  <td>3,766,500.00</td>
+                  <td>3,299,000.00</td>
+                </tr>
+                <tr>
+                  <td>100,000,000</td>
+                  <td>9,625,500.00</td>
+                  <td>5,330,000.00</td>
+                  <td>4,163,500.00</td>
+                  <td>3,643,000.00</td>
+                </tr>
+                <tr>
+                  <td>150,000,000</td>
+                  <td>14,432,000.00</td>
+                  <td>8,023,500.00</td>
+                  <td>6,294,000.00</td>
+                  <td>5,569,000.00</td>
+                </tr>
+                <tr>
+                  <td>200,000,000</td>
+                  <td>19,157,000.00</td>
+                  <td>10,634,000.00</td>
+                  <td>8,330,000.00</td>
+                  <td>7,357,500.00</td>
+                </tr>
+                <tr>
+                  <td>250,000,000</td>
+                  <td>24,097,000.00</td>
+                  <td>13,305,000.00</td>
+                  <td>10,367,000.00</td>
+                  <td>9,034,000.00</td>
+                </tr>
+                <tr>
+                  <td>300,000,000</td>
+                  <td>28,762,500.00</td>
+                  <td>15,865,000.00</td>
+                  <td>12,352,500.00</td>
+                  <td>10,754,000.00</td>
+                </tr>
+                <tr>
+                  <td>350,000,000</td>
+                  <td>33,428,000.00</td>
+                  <td>18,425,500.00</td>
+                  <td>14,337,500.00</td>
+                  <td>12,474,000.00</td>
+                </tr>
+                <tr>
+                  <td>400,000,000</td>
+                  <td>38,236,500.00</td>
+                  <td>21,268,000.00</td>
+                  <td>16,797,000.00</td>
+                  <td>14,821,500.00</td>
+                </tr>
+                <tr>
+                  <td>450,000,000</td>
+                  <td>43,191,500.00</td>
+                  <td>24,179,500.00</td>
+                  <td>19,046,000.00</td>
+                  <td>16,775,500.00</td>
+                </tr>
+                <tr>
+                  <td>500,000,000</td>
+                  <td>47,857,000.00</td>
+                  <td>26,739,500.00</td>
+                  <td>21,031,500.00</td>
+                  <td>18,495,500.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-12 table-responsive" bis_skin_checked="1">
+              <h5 class="text-bfi">Cashback BPKB Mobil</h5>
+              <table border="1">
+                <thead class="table header">
+                  <tr class="fs-sm">
+                    <th>PLAFOND</th>
+                    <th>12 BULAN</th>
+                    <th>24 BULAN</th>
+                    <th>36 BULAN</th>
+                    <th>48 BULAN</th>
+                  </tr>
+                </thead>
+                <tbody class="fw-bold text-success">
+                  <tr>
+                    <td>20,000,000</td>
+                    <td>400,000.00</td>
+                    <td>700,000.00</td>
+                    <td>800,000.00</td>
+                    <td>1,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>25,000,000</td>
+                    <td>500,000.00</td>
+                    <td>875,000.00</td>
+                    <td>1,000,000.00</td>
+                    <td>1,250,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>30,000,000</td>
+                    <td>600,000.00</td>
+                    <td>1,050,000.00</td>
+                    <td>1,200,000.00</td>
+                    <td>1,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>35,000,000</td>
+                    <td>700,000.00</td>
+                    <td>1,225,000.00</td>
+                    <td>1,400,000.00</td>
+                    <td>1,750,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>40,000,000</td>
+                    <td>800,000.00</td>
+                    <td>1,400,000.00</td>
+                    <td>1,600,000.00</td>
+                    <td>2,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>45,000,000</td>
+                    <td>900,000.00</td>
+                    <td>1,575,000.00</td>
+                    <td>1,800,000.00</td>
+                    <td>2,250,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>50,000,000</td>
+                    <td>1,000,000.00</td>
+                    <td>1,750,000.00</td>
+                    <td>2,000,000.00</td>
+                    <td>2,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>60,000,000</td>
+                    <td>1,200,000.00</td>
+                    <td>2,100,000.00</td>
+                    <td>2,400,000.00</td>
+                    <td>3,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>70,000,000</td>
+                    <td>1,400,000.00</td>
+                    <td>2,450,000.00</td>
+                    <td>2,800,000.00</td>
+                    <td>3,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>80,000,000</td>
+                    <td>1,600,000.00</td>
+                    <td>2,800,000.00</td>
+                    <td>3,200,000.00</td>
+                    <td>4,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>90,000,000</td>
+                    <td>1,800,000.00</td>
+                    <td>3,150,000.00</td>
+                    <td>3,600,000.00</td>
+                    <td>4,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>100,000,000</td>
+                    <td>2,000,000.00</td>
+                    <td>3,500,000.00</td>
+                    <td>4,000,000.00</td>
+                    <td>5,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>150,000,000</td>
+                    <td>3,000,000.00</td>
+                    <td>5,250,000.00</td>
+                    <td>6,000,000.00</td>
+                    <td>7,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>200,000,000</td>
+                    <td>4,000,000.00</td>
+                    <td>7,000,000.00</td>
+                    <td>8,000,000.00</td>
+                    <td>10,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>250,000,000</td>
+                    <td>5,000,000.00</td>
+                    <td>8,750,000.00</td>
+                    <td>10,000,000.00</td>
+                    <td>12,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>300,000,000</td>
+                    <td>6,000,000.00</td>
+                    <td>10,500,000.00</td>
+                    <td>12,000,000.00</td>
+                    <td>15,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>350,000,000</td>
+                    <td>7,000,000.00</td>
+                    <td>12,250,000.00</td>
+                    <td>14,000,000.00</td>
+                    <td>17,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>400,000,000</td>
+                    <td>8,000,000.00</td>
+                    <td>14,000,000.00</td>
+                    <td>16,000,000.00</td>
+                    <td>20,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>450,000,000</td>
+                    <td>9,000,000.00</td>
+                    <td>15,750,000.00</td>
+                    <td>18,000,000.00</td>
+                    <td>22,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>500,000,000</td>
+                    <td>10,000,000.00</td>
+                    <td>17,500,000.00</td>
+                    <td>20,000,000.00</td>
+                    <td>25,000,000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-dark">
+                *cashback berupa uang tunai h +1 setelah pencairan
+              </p>
+            </div>
+            <div class="col-lg-6 col-12 table-responsive" bis_skin_checked="1">
+              <h5 class="text-bfi">
+                Simulasi Cicilan BPKB Mobil Pertama setelah di Potong Cashback
+              </h5>
+              <table border="1">
+                <thead class="table header">
+                  <tr class="fs-sm">
+                    <th>PLAFOND</th>
+                    <th>12 BULAN</th>
+                    <th>24 BULAN</th>
+                    <th>36 BULAN</th>
+                    <th>48 BULAN</th>
+                  </tr>
+                </thead>
+                <tbody class="text-danger">
+                  <tr>
+                    <td>20,000,000</td>
+                    <td>1,759,000.00</td>
+                    <td>530,500.00</td>
+                    <td>184,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>25,000,000</td>
+                    <td>2,098,500.00</td>
+                    <td>590,500.00</td>
+                    <td>163,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>30,000,000</td>
+                    <td>2,499,000.00</td>
+                    <td>700,500.00</td>
+                    <td>189,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>35,000,000</td>
+                    <td>2,838,500.00</td>
+                    <td>760,500.00</td>
+                    <td>168,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>40,000,000</td>
+                    <td>3,239,500.00</td>
+                    <td>870,000.00</td>
+                    <td>195,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>45,000,000</td>
+                    <td>3,579,000.00</td>
+                    <td>930,000.00</td>
+                    <td>173,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>50,000,000</td>
+                    <td>3,980,000.00</td>
+                    <td>1,779,000.00</td>
+                    <td>200,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>60,000,000</td>
+                    <td>4,720,500.00</td>
+                    <td>1,209,000.00</td>
+                    <td>205,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>70,000,000</td>
+                    <td>5,460,500.00</td>
+                    <td>1,378,500.00</td>
+                    <td>210,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>80,000,000</td>
+                    <td>6,159,500.00</td>
+                    <td>1,506,000.00</td>
+                    <td>169,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>90,000,000</td>
+                    <td>6,892,500.00</td>
+                    <td>1,668,000.00</td>
+                    <td>166,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>100,000,000</td>
+                    <td>7,625,500.00</td>
+                    <td>1,830,000.00</td>
+                    <td>163,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>150,000,000</td>
+                    <td>11,432,000.00</td>
+                    <td>2,773,500.00</td>
+                    <td>294,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>200,000,000</td>
+                    <td>15,157,000.00</td>
+                    <td>3,634,000.00</td>
+                    <td>330,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>250,000,000</td>
+                    <td>19,097,000.00</td>
+                    <td>4,555,000.00</td>
+                    <td>367,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>300,000,000</td>
+                    <td>22,762,500.00</td>
+                    <td>5,365,000.00</td>
+                    <td>352,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>350,000,000</td>
+                    <td>26,428,000.00</td>
+                    <td>6,175,500.00</td>
+                    <td>337,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>400,000,000</td>
+                    <td>30,236,500.00</td>
+                    <td>7,268,000.00</td>
+                    <td>797,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>450,000,000</td>
+                    <td>34,191,500.00</td>
+                    <td>8,429,500.00</td>
+                    <td>1,046,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>500,000,000</td>
+                    <td>37,857,000.00</td>
+                    <td>9,239,500.00</td>
+                    <td>1,031,500.00</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo -->
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/promo 1.webp"
+              class="img-fluid rounded"
+              alt="Card image"
+            />
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="img-fluid shadow rounded"
+              src="images/promo 2.webp"
+              width="400"
+              alt="Card image"
+            />
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/promo 3.webp"
+              class="img-fluid rounded"
+              alt="Card image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Layanan -->
+      <section class="bg-faded-primary position-relative py-md-7 mt-5 py-5">
+        <div class="container my-2 my-md-0">
+          <div class="row align-items-center">
+            <!-- Image on top -->
+
+            <div class="col-md-5 mb-md-0 mb-5 pb-md-0 pb-3">
+              <img
+                class="d-block mx-md-0 mx-auto"
+                src="images/layanan-kami.webp"
+                alt="Illustration"
+              />
+            </div>
+            <div
+              class="col-lg-6 offset-lg-1 col-md-7 text-md-start text-center"
+            >
+              <div class="mx-md-0 mx-auto" style="max-width: 500px">
+                <h2 class="mb-md-5 mb-4">
+                  Nikmati Berbagai Kemudahan Layanan dari WOM Finance
+                </h2>
+                <!-- Media item (Service)-->
+                <div class="d-md-flex align-items-start d-block mb-4 pb-2">
+                  <img
+                    class="me-md-4 mb-md-0 mb-4"
+                    src="images/icon-stopwatch.svg"
+                    alt="Icon"
+                  />
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">Cepat & Mudah</h3>
+                    <p class="mb-0 fs-sm">
+                      Menawarkan pembiayaan dengan persyaratan dokumen yang
+                      mudah, proses cepat, dan pilihan angsuran dan tenor yang
+                      sesuai kemampuan konsumen
+                    </p>
+                  </div>
+                </div>
+                <!-- Media item (Service)-->
+                <div class="d-md-flex align-items-start d-block mb-4 pb-2">
+                  <img
+                    class="me-md-4 mb-md-0 mb-4"
+                    src="images/icon-building.svg"
+                    alt="Icon"
+                  />
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">Jaringan Luas</h3>
+                    <p class="mb-0 fs-sm">
+                      Memiliki 167 lokasi pelayanan yang tersebar di Indonesia
+                    </p>
+                  </div>
+                </div>
+                <!-- Media item (Service)-->
+                <div class="d-md-flex align-items-start d-block">
+                  <img
+                    class="me-md-4 mb-md-0 mb-4"
+                    src="images/icon-button-click.svg"
+                    alt="Icon"
+                  />
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">Beragam Pembayaran</h3>
+                    <p class="mb-0 fs-sm">
+                      Bekerja sama dengan mitra pembayaran baik offline maupun
+                      online untuk memudahkan pembayaran tagihan tepat waktu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shape shape-top shape-curve bg-body">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+            <path
+              fill="currentColor"
+              d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section class="container py-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="text-center"></div>
+              <div class="card-body">
+                <h5 class="card-title">Muhammad Ikhsan Nawawi</h5>
+                <p class="card-text">
+                  WOM merupakan tempat dengan pelayanan yang baik, dan tempat
+                  berlabuh yang cepat. Pelayanan prima dan mantap membuat
+                  konsumen senang dan tidak ragu merekomendasikan WOM Finance.
+                  Jaya selalu WOM Finance!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 my-4 my-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Barada Giyantana</h5>
+                <p class="card-text"></p>
+                <ul>
+                  <li>Proses pengajuan mudah</li>
+                  <li>Persyaratan pengajuan mudah</li>
+                  <li>Hasil approval cepat</li>
+                  <li>Selalu di ingatkan ketika akan jatuh tempo by phone</li>
+                  <li>Pembayaran juga mudah bisa melalui E Channel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Bagja Nugraha</h5>
+                <p class="card-text">
+                  Excellent service. Especially for customer service named Restu
+                  in Cianjur branches. He solved each problomes promptly. Also,
+                  all staff are humble, smiling, and help to understand.
+                  offering product which has low interest rate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-darker py-4">
+      <div
+        class="container d-md-flex align-items-center justify-content-between py-2 text-center text-md-start"
+        bis_skin_checked="1"
+      >
+        <ul class="list-inline fs-sm mb-3 mb-md-0 order-md-2">
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#">Support</a>
+          </li>
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#">Contacts</a>
+          </li>
+          <li class="list-inline-item my-1">
+            <a class="nav-link-style nav-link-light" href="#"
+              >Terms &amp; Conditions</a
+            >
+          </li>
+        </ul>
+        <p class="fs-sm mb-0 me-3 order-md-1">
+          <span class="text-light opacity-50 me-1"
+            >© All rights reserved. Made by</span
+          ><a
+            class="nav-link-style nav-link-light"
+            href="https://netfin.id/"
+            target="_blank"
+            rel="noopener"
+            >Netfin.id</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button--><a
+      class="btn-scroll-top"
+      href="#top"
+      data-scroll
+      data-fixed-element
+      ><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span
+      ><i class="btn-scroll-top-icon ai-arrow-up"> </i
+    ></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>
