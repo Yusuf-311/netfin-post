@@ -95,6 +95,56 @@
     #gallery-modal .modal-img {
       width: 100%;
     }
+
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .product-img {
+      height: 180px;
+      width: 100%;
+      object-fit: contain;
+    }
+    .product-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .price {
+      color: #333;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .detail-btn {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      color: #666;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      padding: 4px 10px;
+      margin-top: 10px;
+    }
+    .detail-btn:hover {
+      background-color: #f8f8f8;
+    }
+    .new-badge {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background-color: #ff5722;
+      color: white;
+      padding: 3px 8px;
+      font-size: 0.7rem;
+      border-radius: 3px;
+    }
   </style>
   <body>
     <!-- Header -->
@@ -232,507 +282,509 @@
         </svg>
       </div>
 
-      <!-- Tabs-->
-      <div class="container pb-7">
-        <div class="row align-items-center pb-7">
-          <div class="col-lg-3">
-            <ul
-              class="nav nav-tabs media-tabs media-tabs-light justify-content-center justify-content-lg-start pb-3 mb-4 pb-lg-0 mb-lg-0"
-              role="tablist"
+      <div class="container mt-5">
+        <!-- Nav tabs -->
+        <ul
+          class="nav nav-underline justify-content-center mb-4"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              href="#matic"
+              class="nav-link active text-light h4"
+              data-bs-toggle="tab"
+              role="tab"
             >
-              <li class="nav-item me-3 mb-3" style="width: 200px">
-                <a
-                  class="nav-link active"
-                  href="#matic"
-                  data-bs-toggle="tab"
-                  role="tab"
-                >
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 rounded"
-                      src="images/matic-thumb.webp"
-                      alt="Product"
-                      width="60"
-                    />
-                    <div class="w-100 ps-2 ms-1">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="fs-sm fw-medium pe-1">MATIC</div>
-                        <i class="ai-chevron-right lead ms-2 me-1"></i>
-                      </div>
-                    </div></div
-                ></a>
-              </li>
-              <li class="nav-item me-3 mb-3" style="width: 200px">
-                <a
-                  class="nav-link"
-                  href="#sport"
-                  data-bs-toggle="tab"
-                  role="tab"
-                >
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 rounded"
-                      src="images/sport-thumb.webp"
-                      alt="Product"
-                      width="60"
-                    />
-                    <div class="w-100 ps-2 ms-1">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="fs-sm pe-1">SPORT</div>
-                        <i class="ai-chevron-right lead ms-2 me-1"></i>
-                      </div>
-                    </div></div
-                ></a>
-              </li>
-              <li class="nav-item me-3 mb-3" style="width: 200px">
-                <a class="nav-link" href="#cub" data-bs-toggle="tab" role="tab">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 rounded"
-                      src="images/cub-thumb.webp"
-                      alt="Product"
-                      width="60"
-                    />
-                    <div class="w-100 ps-2 ms-1">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="fs-sm pe-1">CUB</div>
-                        <i class="ai-chevron-right lead ms-2 me-1"></i>
-                      </div>
-                    </div></div
-                ></a>
-              </li>
-              <li class="nav-item me-3 mb-3" style="width: 200px">
-                <a class="nav-link" href="#ev" data-bs-toggle="tab" role="tab">
-                  <div class="d-flex align-items-center">
-                    <img
-                      class="flex-shrink-0 rounded"
-                      src="images/ev-thumb.webp"
-                      alt="Product"
-                      width="60"
-                    />
-                    <div class="w-100 ps-2 ms-1">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="fs-sm pe-1">EV</div>
-                        <i class="ai-chevron-right lead ms-2 me-1"></i>
-                      </div>
-                    </div></div
-                ></a>
-              </li>
-            </ul>
+              <i class="fi-home me-2"></i>
+              Matic
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#sport"
+              class="nav-link text-light h4"
+              data-bs-toggle="tab"
+              role="tab"
+            >
+              <i class="fi-user me-2"></i>
+              Sport
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#cub"
+              class="nav-link text-light h4"
+              data-bs-toggle="tab"
+              role="tab"
+            >
+              <i class="fi-user me-2"></i>
+              Cub
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#ev"
+              class="nav-link text-light h4"
+              data-bs-toggle="tab"
+              role="tab"
+            >
+              <i class="fi-user me-2"></i>
+              EV
+            </a>
+          </li>
+        </ul>
+
+        <!-- Tabs content -->
+        <div class="tab-content pb-6">
+          <div class="tab-pane fade show active" id="matic" role="tabpanel">
+            <div class="row">
+              <!-- BeAT -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img src="images/Beat.webp" alt="BeAT" class="product-img" />
+                  <h5 class="product-title">BeAT</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 18.975.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- BeAT Street -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Beat Street.webp"
+                    alt="BeAT Street"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">BeAT Street</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 20.100.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Genio -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Genio.webp"
+                    alt="Genio"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Genio</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 20.325.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Scoopy -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Scoopy.webp"
+                    alt="Scoopy"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Scoopy</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 23.250.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Vario 125 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/vario125.webp"
+                    alt="Vario 125"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New!</span>
+                  <h5 class="product-title">Vario 125</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 23.925.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Vario 160 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/vario160.webp"
+                    alt="Vario 160"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Vario 160</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 28.225.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- SH150i -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/stylo160.webp"
+                    alt="SH150i"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New!</span>
+                  <h5 class="product-title">Stylo 160</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 29.000.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- PCX 160 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/pcx160.webp"
+                    alt="PCX 160"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">PCX 160</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 33.500.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- ADV 160 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/adv160.webp"
+                    alt="ADV 160"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">ADV 160</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 36.600.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Forza -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/forza.webp"
+                    alt="Forza"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Forza</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 90.900.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-9">
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="matic">
-                <div class="row align-items-center">
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Beat.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">BeAT</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 18,430,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Beat Street.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">BeAT Street</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 19,300,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Genio.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">Genio</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 19,575,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Beat.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">Scoopy</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 22,525,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+          <div class="tab-pane fade" id="sport" role="tabpanel">
+            <div class="row">
+              <!-- First Row -->
+              <!-- CB150 Verza -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/cb150.webp"
+                    alt="CB150 Verza"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CB150 Verza</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 23.725.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
                 </div>
               </div>
-              <div class="tab-pane fade" id="sport">
-                <div class="row align-items-center">
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/CB150 Verza.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">CB150 Verza</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 22,160,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Sonic 150R.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">Sonic 150R</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 27,040,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/CB150R Streetfire.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">CB150R Streetfire</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 31,780,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/CB150X.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">CB150X</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 34,520,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+
+              <!-- Sonic 150R -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Sonic 150R.webp"
+                    alt="Sonic 150R"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Sonic 150R</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 28.000.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
                 </div>
               </div>
-              <div class="tab-pane fade" id="cub">
-                <div class="row align-items-center">
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Revo.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">REVO</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 16,535,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Supra X 125 FI.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">Supra X 125 FI</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 19,900,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/GTR 150.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">GTR 150</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 25,915,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Supercub C125.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">Supercub C125</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 77,665,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+
+              <!-- CB150R Streetfire -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/CB150R Streetfire.webp"
+                    alt="CB150R Streetfire"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">CB150R Streetfire</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 32.025.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
                 </div>
               </div>
-              <div class="tab-pane fade" id="ev">
-                <div class="row align-items-center">
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/Beat.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">ICON e:</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 28,000,000 - 32,000,000*</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/EM1.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">EM1 e: & EM1 e: PLUS</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 40,000,000</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6 mb-grid-gutter">
-                    <div
-                      class="card card-hover border-0 shadow mx-auto"
-                      href="#"
-                      style="max-width: 400px"
-                    >
-                      <img
-                        class="card-img-top"
-                        src="images/CUV3.webp"
-                        alt="Life Science"
-                      />
-                      <div class="card-body">
-                        <h3 class="h5 mb-3">CUV e: & CUV e: RoadSync Duo</h3>
-                        <p class="fs-sm text-black-50 mb-0">Harga mulai</p>
-                        <p class="h5 fw-bold">Rp. 53,000,000 - 61,000,000*</p>
-                        <a
-                          href="https://wa.me/6281558444484?text=Halo%2C%20honda%20saya%20ingin%20melakukan%20pengajuan"
-                          target="_blank"
-                        >
-                          <button class="btn btn-dark-honda rounded">
-                            Selengkapnya
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+
+              <!-- Second Row -->
+              <!-- CB150X -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/CB150X.webp"
+                    alt="CB150X"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CB150X</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 34.550.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CRF150L -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/crf150l.webp"
+                    alt="CRF150L"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CRF150L</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 37.125.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CBR150R -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/cbr150r.webp
+                    "
+                    alt="CBR150R"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">CBR150R</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 38.475.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Third Row -->
+              <!-- CBR250RR -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/cbr250rr.webp"
+                    alt="CBR250RR"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CBR250RR</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 66.400.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CRF250L -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/crf250l.webp"
+                    alt="CRF250L"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CRF250L</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 80.125.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- ST125 Dax -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/sti25dax.webp"
+                    alt="ST125 Dax"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">ST125 Dax</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 82.175.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Fourth Row -->
+              <!-- Monkey -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/monkey.webp"
+                    alt="Monkey"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">Monkey</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 87.200.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CRF250 RALLY -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/crf250rally.webp"
+                    alt="CRF250 RALLY"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CRF250 RALLY</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 93.953.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cub" role="tabpanel">
+            <div class="row">
+              <!-- Revo -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img src="images/Revo.webp" alt="Revo" class="product-img" />
+                  <h5 class="product-title">Revo</h5>
+                  <div class="text-muted small">Harga mulai</div>
+                  <div class="price">Rp. 17,385,000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Supra X 125 FI -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Supra X 125 FI.webp"
+                    alt="Supra X 125 FI"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Supra X 125 FI</h5>
+                  <div class="text-muted small">Harga mulai</div>
+                  <div class="price">Rp. 20,750,000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- GTR 150 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/GTR 150.webp"
+                    alt="GTR 150"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">GTR 150</h5>
+                  <div class="text-muted small">Harga mulai</div>
+                  <div class="price">Rp. 26,715,000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- Supercub C125 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/Supercub C125.webp"
+                    alt="Supercub C125"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">Supercub C125</h5>
+                  <div class="text-muted small">Harga mulai</div>
+                  <div class="price">Rp. 79,941,000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CT125 -->
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/ct125.webp"
+                    alt="CT125"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">CT125</h5>
+                  <div class="text-muted small">Harga mulai</div>
+                  <div class="price">Rp. 82,539,000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ev" role="tabpanel">
+            <!-- Electric Scooters Row -->
+            <div class="row">
+              <!-- ICON e: -->
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/ICONe.webp"
+                    alt="ICON e:"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">ICON e:</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 28.000.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- EM1 e: & EM1e: PLUS -->
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/EM1.webp"
+                    alt="EM1 e: & EM1e: PLUS"
+                    class="product-img"
+                  />
+                  <h5 class="product-title">EM1 e: & EM1e: PLUS</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 40.000.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
+                </div>
+              </div>
+
+              <!-- CUV e: & CUV e: RoadSync Duo -->
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="product-card position-relative">
+                  <img
+                    src="images/CUV3.webp"
+                    alt="CUV e: & CUV e: RoadSync Duo"
+                    class="product-img"
+                  />
+                  <span class="new-badge">New !</span>
+                  <h5 class="product-title">CUV e: & CUV e: RoadSync Duo</h5>
+                  <div class="text-muted small">Harga Mulai</div>
+                  <div class="price">Rp. 54.450.000</div>
+                  <button class="detail-btn">Selengkapnya</button>
                 </div>
               </div>
             </div>
@@ -741,7 +793,7 @@
       </div>
     </section>
 
-    <section class="container pt-5">
+    <section class="container pt-lg-5 p-4">
       <!-- Related posts carousel -->
       <p class="h2 text-center">Subsection</p>
       <h3 class="h3 text-danger">Dealer Motor Honda Bandung</h3>
@@ -841,118 +893,161 @@
 
     <section class="gallery text-center">
       <div class="container-lg">
-        <div class="row gy-4 row-cols-2 row-cols-md-4">
-          <div class="col">
-            <img
-              src="images/materi1.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi2.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi3.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi4.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi5.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi6.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi7.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi8.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi9.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi10.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi11.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi12.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi13.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi14.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi15.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
-          </div>
-          <div class="col">
-            <img
-              src="images/materi16.webp"
-              class="gallery-item rounded-2"
-              alt="gallery"
-            />
+        <h2 class="text-center text-dark mb-5">Pricelist Terbaru 2025</h2>
+        <!-- Responsive carousel with multiple items -->
+        <div class="tns-carousel-wrapper">
+          <div
+            class="tns-carousel-inner"
+            data-carousel-options='{"items": 5, "controls": true,   "autoplay": true,
+            "autoplayTimeout": 3000, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":2, "gutter": 16},"768":{"items":3, "gutter": 16}, "1100":{"gutter": 24}}}'
+          >
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (1).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (2).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (3).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (4).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (5).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (6).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (7).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (8).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (9).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (10).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (11).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (12).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (13).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (14).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (15).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (16).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (17).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (18).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (19).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (20).jpeg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <img
+                class="rounded"
+                src="images/katalog motor (21).jpeg"
+                alt="Image"
+              />
+            </div>
           </div>
         </div>
         <div class="mt-4">
